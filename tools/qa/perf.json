@@ -1,0 +1,10 @@
+[
+ {"goto": "http://localhost:8787/"},
+ {"waitFor": "#b-start", "timeout": 60000},
+ {"eval": "JSON.stringify({boot: window.__boot, t: Object.fromEntries(Object.entries(window.__game.world.timings).map(([k,v])=>[k,Math.round(v)]))})"},
+ {"click": "#b-start"},
+ {"wait": 3500},
+ {"eval": "(() => { const g = window.__game; g.teleport('sunny-dock',0,0,0); return 1; })()"},
+ {"wait": 800},
+ {"eval": "(() => { const g = window.__game; const rows = []; g.scene.traverse(o => { if (!o.isMesh && !o.isPoints) return; if (!o.visible) return; let p = o; while (p) { if (!p.visible) return; p = p.parent; } const geo = o.geometry; const n = geo.index ? geo.index.count/3 : geo.attributes.position.count/3; const inst = o.isInstancedMesh ? o.count : 1; rows.push([o.name || o.type, Math.round(n*inst), o.castShadow ? 'S' : '-']); }); rows.sort((a,b)=>b[1]-a[1]); const total = rows.reduce((s,r)=>s+r[1],0); return JSON.stringify({meshes: rows.length, total, top: rows.slice(0,25)}); })()"}
+]

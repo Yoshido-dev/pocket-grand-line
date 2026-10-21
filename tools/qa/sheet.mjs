@@ -1,0 +1,14 @@
+import { chromium } from 'playwright-core';
+import fs from 'node:fs';
+const dir = process.argv[2]; const prefix = process.argv[3] || 'npc-'; const out = process.argv[4];
+const files = fs.readdirSync(dir).filter((f) => f.startsWith(prefix) && f.endsWith('.png')).sort();
+const cols = 3;
+const html = `<html><body style="margin:0;background:#222;display:grid;grid-template-columns:repeat(${cols},1fr);gap:4px">${files.map((f) => `<div style="position:relative"><img src="file:///${dir}/${f}" style="width:100%;display:block"><span style="position:absolute;left:6px;bottom:6px;background:#000a;color:#fff;font:bold 16px sans-serif;padding:2px 6px">${f.replace(prefix, '').replace('.png', '')}</span></div>`).join('')}</body></html>`;
+fs.writeFileSync(dir + '/_sheet.html', html);
+const b = await chromium.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: true });
+const p = await b.newPage({ viewport: { width: 1500, height: 900 } });
+await p.goto('file:///' + dir + '/_sheet.html');
+await p.waitForTimeout(500);
+await p.screenshot({ path: out, fullPage: true });
+await b.close();
+console.log(files.length, 'images ->', out);

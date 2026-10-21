@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pocket Grand Line — island review</title>
+<style>html,body{margin:0;height:100%;overflow:hidden;background:#5db8f0}</style>
+<div id="boot">Building the island review…</div>
+<canvas id="c" tabindex="0" aria-label="Game view"></canvas>
+<div id="ui"></div>
+<script type="module">
+  // QA only: the collaborative preview can be backgrounded by the host. Its
+  // native animation frames then stop, including main.ts's initial build wait.
+  // Keep the real entry point/controller running at 20 Hz for canvas review.
+  // This page is not a Vite production entry and does not change the game clock.
+  window.requestAnimationFrame = callback => window.setTimeout(() => callback(performance.now()), 50);
+  window.cancelAnimationFrame = handle => window.clearTimeout(handle);
+  await import('/src/main.ts');
+</script>
+</html>

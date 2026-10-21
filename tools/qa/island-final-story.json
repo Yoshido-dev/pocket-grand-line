@@ -1,0 +1,447 @@
+{
+  "boot": {
+    "buildMs": 516,
+    "warmMs": 206
+  },
+  "done": true,
+  "endText": "CONGRATULATIONS!\nWANTED\nFOR SERVICES TO THE CREW\nTHE MESSENGER\nBOUNTY: 8 DELIVERIES · 1 HAT RETURNED · 0 PROMISES BROKEN\n\nLAPS WALKED: 0.0 · SWIM ATTEMPTS: 5 · TIME: 1:08\n\nEvery parcel home. KANPAI!\n\nCONTINUE\nCREDITS",
+  "endVisible": true,
+  "errors": [],
+  "finale": true,
+  "flags": [
+    "flag-raised"
+  ],
+  "hidden": false,
+  "rows": [
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 0,
+        "j2-too-salty": -1,
+        "j3-cant-climb": -1,
+        "j4-friend-price": -1,
+        "j5-not-crying": -1,
+        "j6-long-way-round": -1,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "luffy"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 1,
+        "j2-too-salty": -1,
+        "j3-cant-climb": -1,
+        "j4-friend-price": -1,
+        "j5-not-crying": -1,
+        "j6-long-way-round": -1,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "sanji"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": -1,
+        "j3-cant-climb": -1,
+        "j4-friend-price": -1,
+        "j5-not-crying": -1,
+        "j6-long-way-round": -1,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "luffy"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 0,
+        "j3-cant-climb": -1,
+        "j4-friend-price": -1,
+        "j5-not-crying": -1,
+        "j6-long-way-round": -1,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "sanji"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 1,
+        "j3-cant-climb": -1,
+        "j4-friend-price": -1,
+        "j5-not-crying": -1,
+        "j6-long-way-round": -1,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "zoro"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": -1,
+        "j4-friend-price": -1,
+        "j5-not-crying": -1,
+        "j6-long-way-round": -1,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "sanji"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 0,
+        "j4-friend-price": -1,
+        "j5-not-crying": -1,
+        "j6-long-way-round": -1,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "usopp"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 1,
+        "j4-friend-price": -1,
+        "j5-not-crying": -1,
+        "j6-long-way-round": -1,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "chopper"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 2,
+        "j4-friend-price": -1,
+        "j5-not-crying": -1,
+        "j6-long-way-round": -1,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "usopp"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": -1,
+        "j5-not-crying": -1,
+        "j6-long-way-round": -1,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "chopper"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 0,
+        "j5-not-crying": -1,
+        "j6-long-way-round": -1,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "nami"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 1,
+        "j5-not-crying": -1,
+        "j6-long-way-round": -1,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "vivi"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 2,
+        "j5-not-crying": -1,
+        "j6-long-way-round": -1,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "nami"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 2,
+        "j5-not-crying": 0,
+        "j6-long-way-round": -1,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "kaya"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 2,
+        "j5-not-crying": 1,
+        "j6-long-way-round": -1,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "franky"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 2,
+        "j5-not-crying": 2,
+        "j6-long-way-round": -1,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "usopp"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 2,
+        "j5-not-crying": 2,
+        "j6-long-way-round": 0,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "brook"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 2,
+        "j5-not-crying": 2,
+        "j6-long-way-round": 1,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "jinbe"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 2,
+        "j5-not-crying": 2,
+        "j6-long-way-round": 2,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "crocus"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 2,
+        "j5-not-crying": 2,
+        "j6-long-way-round": 3,
+        "j7-laughter-tree": -1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "brook"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 2,
+        "j5-not-crying": 2,
+        "j6-long-way-round": 3,
+        "j7-laughter-tree": 0,
+        "j8-hold-my-hat": -1
+      },
+      "target": "robin"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 2,
+        "j5-not-crying": 2,
+        "j6-long-way-round": 3,
+        "j7-laughter-tree": 1,
+        "j8-hold-my-hat": -1
+      },
+      "target": "jinbe"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 2,
+        "j5-not-crying": 2,
+        "j6-long-way-round": 3,
+        "j7-laughter-tree": 2,
+        "j8-hold-my-hat": -1
+      },
+      "target": "brook"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 2,
+        "j5-not-crying": 2,
+        "j6-long-way-round": 3,
+        "j7-laughter-tree": 3,
+        "j8-hold-my-hat": -1
+      },
+      "target": "robin"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 2,
+        "j5-not-crying": 2,
+        "j6-long-way-round": 3,
+        "j7-laughter-tree": 3,
+        "j8-hold-my-hat": 1
+      },
+      "target": "luffy"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 2,
+        "j5-not-crying": 2,
+        "j6-long-way-round": 3,
+        "j7-laughter-tree": 3,
+        "j8-hold-my-hat": 2
+      },
+      "target": "golden-bell"
+    },
+    {
+      "changed": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 2,
+        "j5-not-crying": 2,
+        "j6-long-way-round": 3,
+        "j7-laughter-tree": 3,
+        "j8-hold-my-hat": 3
+      },
+      "target": "luffy"
+    },
+    {
+      "done": true,
+      "endVisible": true,
+      "errors": [],
+      "state": {
+        "j1-meat-urgent": 2,
+        "j2-too-salty": 2,
+        "j3-cant-climb": 3,
+        "j4-friend-price": 2,
+        "j5-not-crying": 2,
+        "j6-long-way-round": 3,
+        "j7-laughter-tree": 3,
+        "j8-hold-my-hat": 3
+      }
+    }
+  ],
+  "state": {
+    "j1-meat-urgent": 2,
+    "j2-too-salty": 2,
+    "j3-cant-climb": 3,
+    "j4-friend-price": 2,
+    "j5-not-crying": 2,
+    "j6-long-way-round": 3,
+    "j7-laughter-tree": 3,
+    "j8-hold-my-hat": 3
+  }
+}

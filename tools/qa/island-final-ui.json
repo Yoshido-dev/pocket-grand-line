@@ -1,0 +1,70 @@
+{
+  "desktop": {
+    "count": 6,
+    "fov": 50,
+    "names": [
+      "Foosha",
+      "Baratie",
+      "Loguetown",
+      "Syrup Village",
+      "Cocoyasi Grove",
+      "Pine Point"
+    ],
+    "offscreen": [],
+    "overlaps": [],
+    "tracked": [
+      "Baratie"
+    ]
+  },
+  "mobile": {
+    "count": 3,
+    "fov": 64,
+    "names": [
+      "Foosha",
+      "Syrup Village",
+      "North Stair"
+    ],
+    "offscreen": [],
+    "overlaps": [],
+    "tracked": []
+  },
+  "mobileTargetView": {
+    "count": 3,
+    "fov": 64,
+    "names": [
+      "Baratie",
+      "North Stair",
+      "Jaya"
+    ],
+    "offscreen": [],
+    "overlaps": [],
+    "tracked": [
+      "Baratie"
+    ]
+  },
+  "currentLocks": {
+    "dialogueDrift": 0,
+    "menuDrift": 0,
+    "resumedDistance": 1.3166247446554669
+  },
+  "currentTraversal": {
+    "arrived": true,
+    "done": true,
+    "errors": [],
+    "landSamples": 0,
+    "last": {
+      "end": 0.9777210648574998,
+      "h": -0.3641046109696716,
+      "lane": 4.4,
+      "rm": 1.5788063819564842,
+      "swims": 0,
+      "t": 43.01559999999404,
+      "tale": 14.92460887741555
+    },
+    "minTale": 8.977305270754648,
+    "offLaneSamples": 0,
+    "samples": 172,
+    "seconds": 43.01559999999404,
+    "swims": 0
+  }
+}

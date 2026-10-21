@@ -1,0 +1,2065 @@
+{
+ "url": "http://localhost:8787/",
+ "R": 50,
+ "xf": {},
+ "keys": {
+  "planet:ground:position": {
+   "type": "f32",
+   "n": 69126,
+   "sha": "d03829fb937a921046e719835f96b9ad214aa42aba9613f4a8e8d79d86a7155e",
+   "file": "planet_ground_position.bin"
+  },
+  "planet:ground:normal": {
+   "type": "f32",
+   "n": 69126,
+   "sha": "2ba573f85882151ee30ffb361c1c0c5fdbee97042ed5b0aee6bd16750ccf594a",
+   "file": "planet_ground_normal.bin"
+  },
+  "planet:ground:color": {
+   "type": "f32",
+   "n": 69126,
+   "sha": "b9238ee577c52246e724dfa28b1ae5e9de0f51be4c7dc2cee0b435d4455cb2ec",
+   "file": "planet_ground_color.bin"
+  },
+  "planet:ground:index": {
+   "type": "u32",
+   "n": 138240,
+   "sha": "d3f26ce90958198aa1f1d718719ad8dccb47c41f27910fc534fb575b20d67a7e",
+   "file": "planet_ground_index.bin"
+  },
+  "planet:ocean:position": {
+   "type": "f32",
+   "n": 17286,
+   "sha": "03dc53ca75ecc95dc2e100bcef89c6ac1fa4e4ec87e8f84503af5c0bc645dd40",
+   "file": "planet_ocean_position.bin"
+  },
+  "planet:ocean:aBed": {
+   "type": "f32",
+   "n": 5762,
+   "sha": "86f64adc53ddb41d11385b8cac2d604bcbaabfd92f6db916a3d1f4085c16c790",
+   "file": "planet_ocean_aBed.bin"
+  },
+  "planet:ocean:aShallow": {
+   "type": "f32",
+   "n": 17286,
+   "sha": "aab30be66944b3fd2927ae216eee0951901add8c77332b05a49fdf9d499381c6",
+   "file": "planet_ocean_aShallow.bin"
+  },
+  "planet:ocean:aDeep": {
+   "type": "f32",
+   "n": 17286,
+   "sha": "4c981df6b0f13360447d86eb8e1efba9ca77f1ea29cda2165694b8185f6f2b09",
+   "file": "planet_ocean_aDeep.bin"
+  },
+  "planet:ocean:aWaves": {
+   "type": "f32",
+   "n": 5762,
+   "sha": "ce1ba228953cebfa0a999f105bfb13ce2e7563eee975acf86f1e0749191b238a",
+   "file": "planet_ocean_aWaves.bin"
+  },
+  "planet:ocean:index": {
+   "type": "u32",
+   "n": 34560,
+   "sha": "7eae4521d93765c0dcbe33f82a8069c1da44dd6d976801ea9924d0aeb063df6c",
+   "file": "planet_ocean_index.bin"
+  },
+  "cond:alabasta:1": {
+   "type": "f32",
+   "n": 525,
+   "sha": "92b33911949892c4a8ed655b5fdde4bc244237807b9c62d9209b9ed723f621c6",
+   "file": "cond_alabasta_1.bin"
+  },
+  "zone:alabasta:position": {
+   "type": "f32",
+   "n": 22863,
+   "sha": "5c5d577bd0b7d638ca523576065b49ad9f5b9e6ed1d046c75b2f6cf02012e099",
+   "file": "zone_alabasta_position.bin"
+  },
+  "zone:alabasta:normal": {
+   "type": "f32",
+   "n": 22863,
+   "sha": "c5a782fd1c8f6c6b48ce7b5e97fd317fcb2b4c11fc691e1be58a1975a7f89936",
+   "file": "zone_alabasta_normal.bin"
+  },
+  "zone:alabasta:color": {
+   "type": "f32",
+   "n": 22863,
+   "sha": "55137248fba2201af5d442d12c0cea522052b17e2794932e5d2ad3fe161b4001",
+   "file": "zone_alabasta_color.bin"
+  },
+  "zone:alabasta:onormal": {
+   "type": "f32",
+   "n": 22863,
+   "sha": "c0a59146ad492ecb9bdf270be4a4b6242ee0a19e500631c6c0861360c4aeed1d",
+   "file": "zone_alabasta_onormal.bin"
+  },
+  "flora:alabasta|palm": {
+   "type": "f32",
+   "n": 176,
+   "sha": "b8a921d660ffdbaf33bafae921c4b1edf3396676004a77a6c632ef8e86b6855a",
+   "file": "flora_alabasta_palm.bin"
+  },
+  "flora:alabasta|grass": {
+   "type": "f32",
+   "n": 48,
+   "sha": "dbce5f46049897f1b02f3d6c10e0835822c1f820215f29fe7b446523e27096fa",
+   "file": "flora_alabasta_grass.bin"
+  },
+  "flora:alabasta|cactus": {
+   "type": "f32",
+   "n": 96,
+   "sha": "f595893bdbd2daf90478b9865f17632e376428e7d48248e2ab2ac0e36aaec01e",
+   "file": "flora_alabasta_cactus.bin"
+  },
+  "flora:alabasta|rock": {
+   "type": "f32",
+   "n": 128,
+   "sha": "4ba74d59f10a1ef2f8593feebe750df30e65945a6c2c8e698e2a4eb81d9312b7",
+   "file": "flora_alabasta_rock.bin"
+  },
+  "dyn:alabasta": {
+   "type": "f64",
+   "n": 80,
+   "sha": "b8518433dffbd7f0ccefeece9b1492c81776433b93afd9399fcf2f6a37a98f65",
+   "file": "dyn_alabasta.bin"
+  },
+  "cond:amazon-lily:1": {
+   "type": "f32",
+   "n": 210,
+   "sha": "c4c92370f1e0cee03f462b684a7e8a66684114451c2914243e000ee4f855aed9",
+   "file": "cond_amazon-lily_1.bin"
+  },
+  "zone:amazon-lily:position": {
+   "type": "f32",
+   "n": 18663,
+   "sha": "ca6296caee93dd5cdd5f3c927746d2100b804a13851fd33354640c95c094c6e6",
+   "file": "zone_amazon-lily_position.bin"
+  },
+  "zone:amazon-lily:normal": {
+   "type": "f32",
+   "n": 18663,
+   "sha": "e5f7fdcde469884c3749e51805d79292322c6835e691aa32938c3e59ae218d0e",
+   "file": "zone_amazon-lily_normal.bin"
+  },
+  "zone:amazon-lily:color": {
+   "type": "f32",
+   "n": 18663,
+   "sha": "a108a3a244d4d5348272739ecbfaa139a5bb0afa47a05c0b486262dc40c409e0",
+   "file": "zone_amazon-lily_color.bin"
+  },
+  "zone:amazon-lily:onormal": {
+   "type": "f32",
+   "n": 18663,
+   "sha": "01a96f85d481a1d5a201280c5d2194c08d4806994d3080c117ec6b1860de4cbd",
+   "file": "zone_amazon-lily_onormal.bin"
+  },
+  "flora:amazon-lily|nw-jungle": {
+   "type": "f32",
+   "n": 176,
+   "sha": "f5597560682aaedbc34e960610778a1e261ba5fbf7fb38ad577d18d84da4183c",
+   "file": "flora_amazon-lily_nw-jungle.bin"
+  },
+  "flora:amazon-lily|nw-fern": {
+   "type": "f32",
+   "n": 144,
+   "sha": "d78abd52556107a4d07587af14c7cc2f93e3ccf67e9a07c1845a0591c724e77e",
+   "file": "flora_amazon-lily_nw-fern.bin"
+  },
+  "flora:amazon-lily|palm": {
+   "type": "f32",
+   "n": 96,
+   "sha": "e5e8f573c5dd38ec4aa6d643df830e702ce8d9fdaa1946f5c0295d7aa6ceb1ec",
+   "file": "flora_amazon-lily_palm.bin"
+  },
+  "flora:amazon-lily|rock": {
+   "type": "f32",
+   "n": 64,
+   "sha": "4e260145dccbd17415714d9f8ebb02cb1d452161fd5d7d9944ae043550c03cc3",
+   "file": "flora_amazon-lily_rock.bin"
+  },
+  "dyn:amazon-lily": {
+   "type": "f64",
+   "n": 96,
+   "sha": "3e80b792a0b01e7217f79db933f5ccd83a43514979324b3071fe6107db1f2d46",
+   "file": "dyn_amazon-lily.bin"
+  },
+  "cond:baratie:2": {
+   "type": "f32",
+   "n": 1020,
+   "sha": "b41c3f3182e09f18e183b1de6fde32a3608e1cd60780637762ceae07ae8368a6",
+   "file": "cond_baratie_2.bin"
+  },
+  "zone:baratie:position": {
+   "type": "f32",
+   "n": 18735,
+   "sha": "4dbe0193e2bf3e7c9657f103230563c42d04d4238601ba8e3dacb5ad801873e6",
+   "file": "zone_baratie_position.bin"
+  },
+  "zone:baratie:normal": {
+   "type": "f32",
+   "n": 18735,
+   "sha": "df14a8542c2ca08d9ff36deb2c8565d7fecb3e3e2828425064df3de316d6ec96",
+   "file": "zone_baratie_normal.bin"
+  },
+  "zone:baratie:color": {
+   "type": "f32",
+   "n": 18735,
+   "sha": "6fef55dc757ed49d1f54ccf38e1546d4e99fa1b7f4e33cefdbfd885d5cae21de",
+   "file": "zone_baratie_color.bin"
+  },
+  "zone:baratie:onormal": {
+   "type": "f32",
+   "n": 18735,
+   "sha": "4ea867067f3b452e621d185590663c8c8466480b9b1756f1d7132abe0076698b",
+   "file": "zone_baratie_onormal.bin"
+  },
+  "flora:baratie|palm": {
+   "type": "f32",
+   "n": 128,
+   "sha": "8d6ef83b3a4cd6c695473eca6c0f0dd37448161560b3b4be2349ab708b13880d",
+   "file": "flora_baratie_palm.bin"
+  },
+  "flora:baratie|rock": {
+   "type": "f32",
+   "n": 208,
+   "sha": "5123d61a6b396755000831ffc60cc77612440cfcc8ed574f4355cbb840acd600",
+   "file": "flora_baratie_rock.bin"
+  },
+  "dyn:baratie": {
+   "type": "f64",
+   "n": 80,
+   "sha": "0e607fb6b364fe463bf5a86c360fb090ddcf04fec7c05a6bf0e296f007d83576",
+   "file": "dyn_baratie.bin"
+  },
+  "cond:cocoyasi:2": {
+   "type": "f32",
+   "n": 756,
+   "sha": "d209ba4060e7386b3e7f56ee34a2f29b78d72774436f4479841565681d475b5e",
+   "file": "cond_cocoyasi_2.bin"
+  },
+  "zone:cocoyasi:position": {
+   "type": "f32",
+   "n": 28317,
+   "sha": "ca309bceb00c909e1f0b870b4c5d8723c6316d0920619fc4d917f8938f569805",
+   "file": "zone_cocoyasi_position.bin"
+  },
+  "zone:cocoyasi:normal": {
+   "type": "f32",
+   "n": 28317,
+   "sha": "c1b45cb2557f7436799d10e94571a8f1a2068e41bd88f5f9da33eef8c3945d9c",
+   "file": "zone_cocoyasi_normal.bin"
+  },
+  "zone:cocoyasi:color": {
+   "type": "f32",
+   "n": 28317,
+   "sha": "f9424d5c22486650f376e7f35e9c6ec9d3240262c28d305b9822399a2658c78c",
+   "file": "zone_cocoyasi_color.bin"
+  },
+  "zone:cocoyasi:onormal": {
+   "type": "f32",
+   "n": 28317,
+   "sha": "3e82b5e72aae3aac93fbee14244c4b3092ede89d6117c94ad2b2062c587a54ed",
+   "file": "zone_cocoyasi_onormal.bin"
+  },
+  "flora:cocoyasi|tangerine": {
+   "type": "f32",
+   "n": 320,
+   "sha": "f4a39f721f4393815f6025ae3cbedde7af02e40ec051f2201661c9665f93dfee",
+   "file": "flora_cocoyasi_tangerine.bin"
+  },
+  "flora:cocoyasi|palm": {
+   "type": "f32",
+   "n": 128,
+   "sha": "8fa3690b715ba9db9f29905f4ab7e2a2c765258e2928cc3bab9b271427f67981",
+   "file": "flora_cocoyasi_palm.bin"
+  },
+  "flora:cocoyasi|rock": {
+   "type": "f32",
+   "n": 192,
+   "sha": "12c80447ca64f62dcf7dc4c235f52e98c0f4bbeb96c66946b0ed5877de650ad4",
+   "file": "flora_cocoyasi_rock.bin"
+  },
+  "flora:cocoyasi|grass": {
+   "type": "f32",
+   "n": 192,
+   "sha": "15b3ef5a0c96fd386da1732dd48ca27a8d7c225d633cebd9fba4d415ebf79c76",
+   "file": "flora_cocoyasi_grass.bin"
+  },
+  "flora:cocoyasi|flowers": {
+   "type": "f32",
+   "n": 32,
+   "sha": "8004f456a039337b030230149983a48181c9b7b704e62d617db8b944837b244a",
+   "file": "flora_cocoyasi_flowers.bin"
+  },
+  "dyn:cocoyasi": {
+   "type": "f64",
+   "n": 96,
+   "sha": "713858ade55c3bf9e9a4d9232e7917a5853b389cd7cceee8760785f251edc6d3",
+   "file": "dyn_cocoyasi.bin"
+  },
+  "zone:coo-beach:position": {
+   "type": "f32",
+   "n": 12783,
+   "sha": "d564ea1e4cd6e7a347cd666e883003d63c9ac6b37c6cd26c56306b5f9d09c915",
+   "file": "zone_coo-beach_position.bin"
+  },
+  "zone:coo-beach:normal": {
+   "type": "f32",
+   "n": 12783,
+   "sha": "9a2ad8c66b22f2bf4d6d6ab3af61ef3ca8911cbdc7832a6da8c267f0369fb457",
+   "file": "zone_coo-beach_normal.bin"
+  },
+  "zone:coo-beach:color": {
+   "type": "f32",
+   "n": 12783,
+   "sha": "94576d5419cd0331e822725d319ffd931f5505d07135ba45c4be3c00ea937667",
+   "file": "zone_coo-beach_color.bin"
+  },
+  "zone:coo-beach:onormal": {
+   "type": "f32",
+   "n": 12783,
+   "sha": "7dd807e89430d8d7befe5a27b05715415b575eca6293486909df1ca3377f13fe",
+   "file": "zone_coo-beach_onormal.bin"
+  },
+  "flora:coo-beach|palm": {
+   "type": "f32",
+   "n": 128,
+   "sha": "1f8a26808ff338889ebbecf5c31fe8d99ec4fb2d97c9e1a6be6dafed14e7958a",
+   "file": "flora_coo-beach_palm.bin"
+  },
+  "flora:coo-beach|rock": {
+   "type": "f32",
+   "n": 336,
+   "sha": "ac490c73113a4843b90c18421fdef4f61e3b86f34d7153140a82d9d57ca2130e",
+   "file": "flora_coo-beach_rock.bin"
+  },
+  "dyn:coo-beach": {
+   "type": "f64",
+   "n": 64,
+   "sha": "58a4fd5e702c8aae85b392cd0f16dac529f6124431bffbf700623277ba7d4667",
+   "file": "dyn_coo-beach.bin"
+  },
+  "cond:dressrosa:2": {
+   "type": "f32",
+   "n": 630,
+   "sha": "33765d5999d3db5104c57e01235d062b2e6253a6c304bc33d442ff71974cd644",
+   "file": "cond_dressrosa_2.bin"
+  },
+  "zone:dressrosa:position": {
+   "type": "f32",
+   "n": 20259,
+   "sha": "36d5c5e1850c330740713ccb833b566ad3dc03a20cb5c9144e7b1053c53307e6",
+   "file": "zone_dressrosa_position.bin"
+  },
+  "zone:dressrosa:normal": {
+   "type": "f32",
+   "n": 20259,
+   "sha": "9b23a29689ef2ef3bc67e760847f235cdeb7b7d0f6d2bc9c0819cac105012c81",
+   "file": "zone_dressrosa_normal.bin"
+  },
+  "zone:dressrosa:color": {
+   "type": "f32",
+   "n": 20259,
+   "sha": "900f80297256abaf117f7b4b695ce979250965fe4b7bf002ec90e4501fe3a761",
+   "file": "zone_dressrosa_color.bin"
+  },
+  "zone:dressrosa:onormal": {
+   "type": "f32",
+   "n": 20259,
+   "sha": "e4ed886193b6908d218f24c8f66b3a80496b3a14fe8c0054730b66a1e8f04c72",
+   "file": "zone_dressrosa_onormal.bin"
+  },
+  "flora:dressrosa|nw-cypress": {
+   "type": "f32",
+   "n": 128,
+   "sha": "13f3dd1cc7270d9116fea05ba4e75ee432b99088646af13ba2a57989e47c4511",
+   "file": "flora_dressrosa_nw-cypress.bin"
+  },
+  "flora:dressrosa|tangerine": {
+   "type": "f32",
+   "n": 80,
+   "sha": "24598bbbd99234cd3efd87ce3b3557a25401c41d6d542df6e70b8225f0d86e0e",
+   "file": "flora_dressrosa_tangerine.bin"
+  },
+  "flora:dressrosa|rock": {
+   "type": "f32",
+   "n": 80,
+   "sha": "42dd1b9d392f35361d3c90f217c73768a10711d407b649113b31325eef578119",
+   "file": "flora_dressrosa_rock.bin"
+  },
+  "dyn:dressrosa": {
+   "type": "f64",
+   "n": 96,
+   "sha": "79d2bcb90035882b6a2b7aaa1f814baf59522416adca9a56efb02b2d15f64443",
+   "file": "dyn_dressrosa.bin"
+  },
+  "cond:drum:4": {
+   "type": "f32",
+   "n": 210,
+   "sha": "ca273cf4452cdce49e5e062061dc89dfc3fc0dc67ac1a14e51e93ac9ba2194d7",
+   "file": "cond_drum_4.bin"
+  },
+  "zone:drum:position": {
+   "type": "f32",
+   "n": 19194,
+   "sha": "014df48ae05598e147f0b6f2bfee1d1d674dbc18c715ddc67d8e6b9d7d143bf9",
+   "file": "zone_drum_position.bin"
+  },
+  "zone:drum:normal": {
+   "type": "f32",
+   "n": 19194,
+   "sha": "8d1ce15fc9f697ee6afd8e1935ff76f350af9f7b845ff6e0845bde334cebebd2",
+   "file": "zone_drum_normal.bin"
+  },
+  "zone:drum:color": {
+   "type": "f32",
+   "n": 19194,
+   "sha": "1293785ce8ec3bc251f21905385d28f8a038661686adeaa284d47edac451c383",
+   "file": "zone_drum_color.bin"
+  },
+  "zone:drum:onormal": {
+   "type": "f32",
+   "n": 19194,
+   "sha": "4544feec131dd920dc9b93ba621cd381d63cca143c3e2b5d228d73d089ad1b16",
+   "file": "zone_drum_onormal.bin"
+  },
+  "flora:drum|snowpine": {
+   "type": "f32",
+   "n": 224,
+   "sha": "c9e8ca0a9dd812d0edbcc4e11e0f2405b1a9c71e4f97b59ccab65f2bb57c8127",
+   "file": "flora_drum_snowpine.bin"
+  },
+  "flora:drum|snowrock": {
+   "type": "f32",
+   "n": 128,
+   "sha": "7d1524e5dde974065fb9f3c4ffcd8b7d18ee189d801f0c4f6ae88b28dd557686",
+   "file": "flora_drum_snowrock.bin"
+  },
+  "dyn:drum": {
+   "type": "f64",
+   "n": 112,
+   "sha": "be72f166e47bed8c947d71c1dc28659607f6b706d3017ccd0491334a60ad99e7",
+   "file": "dyn_drum.bin"
+  },
+  "cond:egghead:2": {
+   "type": "f32",
+   "n": 420,
+   "sha": "08bb6fac685fee3fb0848bb89098d1047ea746d7f02c376c1ccdfcb3856e2412",
+   "file": "cond_egghead_2.bin"
+  },
+  "zone:egghead:position": {
+   "type": "f32",
+   "n": 17808,
+   "sha": "c26f5367f4715d9b38787a240fe512f1b15eeb5d0f658ccc63e18799b2cb173b",
+   "file": "zone_egghead_position.bin"
+  },
+  "zone:egghead:normal": {
+   "type": "f32",
+   "n": 17808,
+   "sha": "0a5505be51f972f7f9c2b54e66adb360646e5430f5bb6b2c9db53ba98e9ec554",
+   "file": "zone_egghead_normal.bin"
+  },
+  "zone:egghead:color": {
+   "type": "f32",
+   "n": 17808,
+   "sha": "6112430684cfb65034eac6fb6fe244deccf007affbc35006cdc51ea8de1ff9ba",
+   "file": "zone_egghead_color.bin"
+  },
+  "zone:egghead:onormal": {
+   "type": "f32",
+   "n": 17808,
+   "sha": "50250ef386e5cde8135f0a4abfc200aba2d6b18308c50b7a14d4313e2c832c84",
+   "file": "zone_egghead_onormal.bin"
+  },
+  "flora:egghead|rock": {
+   "type": "f32",
+   "n": 80,
+   "sha": "cff4d84f718f783d2916b12ae439ec3e50ddae3a1f66b6db6450279b524f332a",
+   "file": "flora_egghead_rock.bin"
+  },
+  "flora:egghead|tree": {
+   "type": "f32",
+   "n": 64,
+   "sha": "030b121db46295be848fd0114a694f5edf30a99087fcd3709dff1d264d5cfcba",
+   "file": "flora_egghead_tree.bin"
+  },
+  "dyn:egghead": {
+   "type": "f64",
+   "n": 64,
+   "sha": "76ed6b572c8fd42e65f69a80b686505c6b34b160e655c8a55344c15056a5b1e1",
+   "file": "dyn_egghead.bin"
+  },
+  "zone:enies-lobby:position": {
+   "type": "f32",
+   "n": 18171,
+   "sha": "cac1971b5cca8eae58df948e31c42476f43d9af3f7d32fd54a510270a8248249",
+   "file": "zone_enies-lobby_position.bin"
+  },
+  "zone:enies-lobby:normal": {
+   "type": "f32",
+   "n": 18171,
+   "sha": "7637bf80f256e405b78461ffafd8a5daf7cc6692418ff89245d95d50cc345bf0",
+   "file": "zone_enies-lobby_normal.bin"
+  },
+  "zone:enies-lobby:color": {
+   "type": "f32",
+   "n": 18171,
+   "sha": "8069ac90f896d1fc8cb2df2fcd3e7387b98e3e055512c85ef994682c87543c50",
+   "file": "zone_enies-lobby_color.bin"
+  },
+  "zone:enies-lobby:onormal": {
+   "type": "f32",
+   "n": 18171,
+   "sha": "73f5103c8d802bbaa4d6781e8d779da6c67ccc5787714a738677ab6a5d01b95a",
+   "file": "zone_enies-lobby_onormal.bin"
+  },
+  "dyn:enies-lobby": {
+   "type": "f64",
+   "n": 32,
+   "sha": "dd73c60bab0a3cce9b6e3c9ef01d4776c44ea71fdcfea61f839720c00dfd82b5",
+   "file": "dyn_enies-lobby.bin"
+  },
+  "cond:fish-man-island:3": {
+   "type": "f32",
+   "n": 420,
+   "sha": "057b4d5a487898e161b5462d5f9c7273fdb14935593617c9a55683ba000e6a72",
+   "file": "cond_fish-man-island_3.bin"
+  },
+  "zone:fish-man-island:position": {
+   "type": "f32",
+   "n": 25572,
+   "sha": "ee7cb15f2ccefbe2830dd00602a652cef71fa3eebb172103667b3b2650b7a3d0",
+   "file": "zone_fish-man-island_position.bin"
+  },
+  "zone:fish-man-island:normal": {
+   "type": "f32",
+   "n": 25572,
+   "sha": "f0cf28f4300fe48f18d50b03146c9263d207dc650f304c9d9c39c69214bd8ef5",
+   "file": "zone_fish-man-island_normal.bin"
+  },
+  "zone:fish-man-island:color": {
+   "type": "f32",
+   "n": 25572,
+   "sha": "85eb755829d5e4c31d05207b9188e6eef9d9bf68223acc68bd28246f6ee4fd9b",
+   "file": "zone_fish-man-island_color.bin"
+  },
+  "zone:fish-man-island:onormal": {
+   "type": "f32",
+   "n": 25572,
+   "sha": "38a9b34a4c6c8ad8bcd029ed31fe22f0331c05e1475523c591ca5d4b355e9ca3",
+   "file": "zone_fish-man-island_onormal.bin"
+  },
+  "flora:fish-man-island|rock": {
+   "type": "f32",
+   "n": 144,
+   "sha": "e3981807e3ba446dbb7968d6e6efc93af1d6815c3849417bf6b0902cfb8dd20c",
+   "file": "flora_fish-man-island_rock.bin"
+  },
+  "dyn:fish-man-island": {
+   "type": "f64",
+   "n": 80,
+   "sha": "621c9973f61128e34dd1a1640e6f9cb1c549bdb8e805536d4e8d94e616824233",
+   "file": "dyn_fish-man-island.bin"
+  },
+  "zone:impel-down:position": {
+   "type": "f32",
+   "n": 13029,
+   "sha": "b280aaa9f7360b4ed98f15ba690ad097d974433e8d89400b25ba1fd994b9ead1",
+   "file": "zone_impel-down_position.bin"
+  },
+  "zone:impel-down:normal": {
+   "type": "f32",
+   "n": 13029,
+   "sha": "dccf3cb59aa4e8f46951fa1678a17440779348b350ad0f41b9fda565f4b174f6",
+   "file": "zone_impel-down_normal.bin"
+  },
+  "zone:impel-down:color": {
+   "type": "f32",
+   "n": 13029,
+   "sha": "c59fbdf806cc758c34d138c76f0439591fa8b5784dd56dd5b678c286f0077d77",
+   "file": "zone_impel-down_color.bin"
+  },
+  "zone:impel-down:onormal": {
+   "type": "f32",
+   "n": 13029,
+   "sha": "fd91df3c51e9d8a12268bc32d0d038c8e8eaae6c2de0c01d3f7e55dac9be4113",
+   "file": "zone_impel-down_onormal.bin"
+  },
+  "flora:impel-down|kp-srock": {
+   "type": "f32",
+   "n": 16,
+   "sha": "0de946c7e4caee2a34f82a955b011a505fa0b443c89010c8a1a54506d3f3474f",
+   "file": "flora_impel-down_kp-srock.bin"
+  },
+  "dyn:impel-down": {
+   "type": "f64",
+   "n": 48,
+   "sha": "5271e76f828e077b7081d248bb55d2a992ea5cdcc3c3ff68b87e76b9d5bb9cb8",
+   "file": "dyn_impel-down.bin"
+  },
+  "zone:jaya-skypiea:position": {
+   "type": "f32",
+   "n": 20382,
+   "sha": "5463bd1204d41536c995bd70ee210c787ce5a4678e5f9bb0ddbb8f1f3a90efa7",
+   "file": "zone_jaya-skypiea_position.bin"
+  },
+  "zone:jaya-skypiea:normal": {
+   "type": "f32",
+   "n": 20382,
+   "sha": "55a1f2a1e48c0456b638adc53d95b6ee9c44bc6265289a6c6afe31b940047006",
+   "file": "zone_jaya-skypiea_normal.bin"
+  },
+  "zone:jaya-skypiea:color": {
+   "type": "f32",
+   "n": 20382,
+   "sha": "c14286e49d990b778bb12486fa307dd1c620f0e369cab102a6ac53815d97ef5b",
+   "file": "zone_jaya-skypiea_color.bin"
+  },
+  "zone:jaya-skypiea:onormal": {
+   "type": "f32",
+   "n": 20382,
+   "sha": "8d7633392413a845d863a4e16b11375c33eb05331760e23bd6f088bcacfc08aa",
+   "file": "zone_jaya-skypiea_onormal.bin"
+  },
+  "flora:jaya-skypiea|jungletree": {
+   "type": "f32",
+   "n": 208,
+   "sha": "8d105d0fb6c5d5f345cc4636e9be089757aec560179688b8013ec3dca7dc8e8d",
+   "file": "flora_jaya-skypiea_jungletree.bin"
+  },
+  "flora:jaya-skypiea|palm": {
+   "type": "f32",
+   "n": 96,
+   "sha": "078bf57b8599da35a18ce0d3d26ebea51ba069e35a280dde09cdd2ffab16f46e",
+   "file": "flora_jaya-skypiea_palm.bin"
+  },
+  "flora:jaya-skypiea|bush": {
+   "type": "f32",
+   "n": 64,
+   "sha": "6edfdecbdec575abd7f3a554f0235e42bd765d8fad1fceeef73da15ba3cd0fcc",
+   "file": "flora_jaya-skypiea_bush.bin"
+  },
+  "flora:jaya-skypiea|flowers": {
+   "type": "f32",
+   "n": 32,
+   "sha": "b09723915578ba26c3dc0a15bbb2920352927bdf51a6381d8c2cd8d2fba9aedb",
+   "file": "flora_jaya-skypiea_flowers.bin"
+  },
+  "flora:jaya-skypiea|rock": {
+   "type": "f32",
+   "n": 48,
+   "sha": "81353f48a4b68cf68d3980d89538c07d8838e550d579f601e5c0e56d0d77f2d8",
+   "file": "flora_jaya-skypiea_rock.bin"
+  },
+  "dyn:jaya-skypiea": {
+   "type": "f64",
+   "n": 128,
+   "sha": "665f5821f2ed97e001be1ea944ca55a1afa0ca83031c2f205c02a4eb00a6ef4a",
+   "file": "dyn_jaya-skypiea.bin"
+  },
+  "zone:kamabakka:position": {
+   "type": "f32",
+   "n": 34110,
+   "sha": "ca4b6836eba987060930c482798cb97d8341931001cae79867b5fdecca6de425",
+   "file": "zone_kamabakka_position.bin"
+  },
+  "zone:kamabakka:normal": {
+   "type": "f32",
+   "n": 34110,
+   "sha": "d02a93d6a6bf5a94f395c3fe7925ce5a279056f90e6cea00132cc6cb29e67a8c",
+   "file": "zone_kamabakka_normal.bin"
+  },
+  "zone:kamabakka:color": {
+   "type": "f32",
+   "n": 34110,
+   "sha": "fadcd4ae9b9fe47ade5bf4864896dfc81519517aa0c241d6389acfabb06fe905",
+   "file": "zone_kamabakka_color.bin"
+  },
+  "zone:kamabakka:onormal": {
+   "type": "f32",
+   "n": 34110,
+   "sha": "b89488918bd4cb30c1b00c1ca1144720051c6a1b479a478cd9fe9ed5441ffef7",
+   "file": "zone_kamabakka_onormal.bin"
+  },
+  "flora:kamabakka|kp-pink": {
+   "type": "f32",
+   "n": 160,
+   "sha": "fa99b6cd0733ab98364c4a6bdbcabb814e7d64c26fd3542d457c5b840eee1bbf",
+   "file": "flora_kamabakka_kp-pink.bin"
+  },
+  "flora:kamabakka|sakura": {
+   "type": "f32",
+   "n": 64,
+   "sha": "1e685a1eb3803c8c59a8a733d1d5924d256a2af027c0ee07e54e99a24395fa3a",
+   "file": "flora_kamabakka_sakura.bin"
+  },
+  "flora:kamabakka|kp-prock": {
+   "type": "f32",
+   "n": 128,
+   "sha": "863caea57a790ad3f0b9edf3cfd08cffbf3e8318127b23523b59388e976e0547",
+   "file": "flora_kamabakka_kp-prock.bin"
+  },
+  "dyn:kamabakka": {
+   "type": "f64",
+   "n": 64,
+   "sha": "b8f8b0b79015be1c1d2dd10bcf21b0ba0e1fc7a5d28e1171ae8b1cebefd766a7",
+   "file": "dyn_kamabakka.bin"
+  },
+  "zone:laugh-tale-fog:position": {
+   "type": "f32",
+   "n": 1626,
+   "sha": "47f8c278be2990f6d967e17e0a3dc7f78a4dd52101bc0d13c32020a750a3e9e3",
+   "file": "zone_laugh-tale-fog_position.bin"
+  },
+  "zone:laugh-tale-fog:normal": {
+   "type": "f32",
+   "n": 1626,
+   "sha": "ac9917e888a035a6639e6ab0b74f5c4ea8e3c5b7d98acf1b6787c2208fa4c803",
+   "file": "zone_laugh-tale-fog_normal.bin"
+  },
+  "zone:laugh-tale-fog:color": {
+   "type": "f32",
+   "n": 1626,
+   "sha": "8b005588d660a3ef4ce0920b81267d9524a544a4656c4b9a071a14a24aa18c76",
+   "file": "zone_laugh-tale-fog_color.bin"
+  },
+  "zone:laugh-tale-fog:onormal": {
+   "type": "f32",
+   "n": 1626,
+   "sha": "912401fc36ee75bf7971982ef6732a91830cc5365cb44be222a43e866765c758",
+   "file": "zone_laugh-tale-fog_onormal.bin"
+  },
+  "flora:laugh-tale-fog|rock": {
+   "type": "f32",
+   "n": 192,
+   "sha": "afe9b67bd1e2af66fd563001c5ad4ddb50d1293e173cf8b55888840219d26c8c",
+   "file": "flora_laugh-tale-fog_rock.bin"
+  },
+  "flora:laugh-tale-fog|palm": {
+   "type": "f32",
+   "n": 48,
+   "sha": "043c8dccc7300a43fab6710c6ba0e7155f06a1a9dd35465c4ebc6197933e1188",
+   "file": "flora_laugh-tale-fog_palm.bin"
+  },
+  "dyn:laugh-tale-fog": {
+   "type": "f64",
+   "n": 80,
+   "sha": "01ee7c0be53ee8ba038fb15f29decb97495b4309b802b948193d4a77b12176b4",
+   "file": "dyn_laugh-tale-fog.bin"
+  },
+  "zone:little-garden:position": {
+   "type": "f32",
+   "n": 7620,
+   "sha": "a81025a271854600e4f587e65e1b3129e50b66f3a5995f7996fd44c50a338077",
+   "file": "zone_little-garden_position.bin"
+  },
+  "zone:little-garden:normal": {
+   "type": "f32",
+   "n": 7620,
+   "sha": "77f902468cdd9444f63f52f86a0c1f46877b3808ba0bc5721280e883b3af986f",
+   "file": "zone_little-garden_normal.bin"
+  },
+  "zone:little-garden:color": {
+   "type": "f32",
+   "n": 7620,
+   "sha": "e1426a4220015c1c637c893223573beeaa2d361a619aa717bcc07f496e4461fd",
+   "file": "zone_little-garden_color.bin"
+  },
+  "zone:little-garden:onormal": {
+   "type": "f32",
+   "n": 7620,
+   "sha": "8dff0c85c8ba420c6810ab9da7630e61dbed98a269b260d6c7ba234e957be007",
+   "file": "zone_little-garden_onormal.bin"
+  },
+  "flora:little-garden|kp-ptree": {
+   "type": "f32",
+   "n": 144,
+   "sha": "86bb8a849ff103f46c2944ee0dd712c39c4e7b550c6c51600557ce547d716017",
+   "file": "flora_little-garden_kp-ptree.bin"
+  },
+  "flora:little-garden|kp-fern": {
+   "type": "f32",
+   "n": 320,
+   "sha": "0c4d72995e9ee347e5736d774b6ec0ea4577a525b17b7cc3c67a88d887a4974e",
+   "file": "flora_little-garden_kp-fern.bin"
+  },
+  "flora:little-garden|palm": {
+   "type": "f32",
+   "n": 64,
+   "sha": "9fec57b45a0494ce52a61d90bc04ab5ef06a80f3aa222413e15e64435810d4df",
+   "file": "flora_little-garden_palm.bin"
+  },
+  "flora:little-garden|grass": {
+   "type": "f32",
+   "n": 16,
+   "sha": "32481618838176e1ca022ea97c1a4993da429992c8c349f09425cd701a5deab6",
+   "file": "flora_little-garden_grass.bin"
+  },
+  "dyn:little-garden": {
+   "type": "f64",
+   "n": 112,
+   "sha": "2cd79919f589e9420a55a95b5dd6e6e5ea49c9f6a4c150c029ae6f7b6f7f8372",
+   "file": "dyn_little-garden.bin"
+  },
+  "zone:loguetown:position": {
+   "type": "f32",
+   "n": 22602,
+   "sha": "39f6f678090da69bf2eec8c16ea8897c8c4f0ddada051878da8e5f4b2960e36d",
+   "file": "zone_loguetown_position.bin"
+  },
+  "zone:loguetown:normal": {
+   "type": "f32",
+   "n": 22602,
+   "sha": "7212654446956ae73e2fd24b2cfeb6a2a0836e654e37e0189c26014722bd9704",
+   "file": "zone_loguetown_normal.bin"
+  },
+  "zone:loguetown:color": {
+   "type": "f32",
+   "n": 22602,
+   "sha": "41105c0ea972af36e7042c01e85e6bed291b221a12d1fa50f4c22ecae6f076cb",
+   "file": "zone_loguetown_color.bin"
+  },
+  "zone:loguetown:onormal": {
+   "type": "f32",
+   "n": 22602,
+   "sha": "e894ebea4a55c54e37b790cabaea0b19de274c0cce1132fa08505a18b4a85920",
+   "file": "zone_loguetown_onormal.bin"
+  },
+  "flora:loguetown|tree": {
+   "type": "f32",
+   "n": 80,
+   "sha": "fcdfe55167d2321bbc4e55c840aaf9ff7d2a492a006bb6323a96c7af276cf873",
+   "file": "flora_loguetown_tree.bin"
+  },
+  "flora:loguetown|rock": {
+   "type": "f32",
+   "n": 80,
+   "sha": "9f8a041f598a098c1ac2416af57aa02b10d0148a281f97acbe2bcaafa052cb7d",
+   "file": "flora_loguetown_rock.bin"
+  },
+  "flora:loguetown|bush": {
+   "type": "f32",
+   "n": 48,
+   "sha": "046c735fee9ddf8035732db131d2ad161e84664d90ea3dc2b115eca15bd2d523",
+   "file": "flora_loguetown_bush.bin"
+  },
+  "dyn:loguetown": {
+   "type": "f64",
+   "n": 112,
+   "sha": "5ad40dc87bdd96b7469b98c1f911e6ef30e325ac4a70a09986cfdcacb17da017",
+   "file": "dyn_loguetown.bin"
+  },
+  "zone:marineford:position": {
+   "type": "f32",
+   "n": 22098,
+   "sha": "b1118215cb6e763cee667bcadf098daa672299d2727b42b7cc6f43b38de614dd",
+   "file": "zone_marineford_position.bin"
+  },
+  "zone:marineford:normal": {
+   "type": "f32",
+   "n": 22098,
+   "sha": "c9a93008464a114291369197db77779ec575e2a48f7bfda0caff281821a1c81a",
+   "file": "zone_marineford_normal.bin"
+  },
+  "zone:marineford:color": {
+   "type": "f32",
+   "n": 22098,
+   "sha": "99568120c4556c9d2ee2d86ebc85154db06131825ac31addfefc0bc450657820",
+   "file": "zone_marineford_color.bin"
+  },
+  "zone:marineford:onormal": {
+   "type": "f32",
+   "n": 22098,
+   "sha": "4a2351eb4c90107826cb5701e1774e7dd84e45b7c1924dd506784e0b73955448",
+   "file": "zone_marineford_onormal.bin"
+  },
+  "dyn:marineford": {
+   "type": "f64",
+   "n": 32,
+   "sha": "8dafced68818189a6f7a7d74e7b7946ebda746c14ed5efd1e07eba51b2bc2595",
+   "file": "dyn_marineford.bin"
+  },
+  "cond:mary-geoise:1": {
+   "type": "f32",
+   "n": 420,
+   "sha": "d162ccb470606141b7a29a2cfc9e057d80c8e554815ef6c3fccf16a06de23c6c",
+   "file": "cond_mary-geoise_1.bin"
+  },
+  "cond:mary-geoise:3": {
+   "type": "f32",
+   "n": 96,
+   "sha": "f6db3ccc910a0613f7d97a1ac0770977955242d591ed8d5c12d031a05ea716f0",
+   "file": "cond_mary-geoise_3.bin"
+  },
+  "zone:mary-geoise:position": {
+   "type": "f32",
+   "n": 28563,
+   "sha": "c0fd4263cc068ff520b4a7f136ba9b63ae1c4bab5a39d4289501d7def3a669ae",
+   "file": "zone_mary-geoise_position.bin"
+  },
+  "zone:mary-geoise:normal": {
+   "type": "f32",
+   "n": 28563,
+   "sha": "e83fb653d6615ba24017991a9cf568a769aaa162f291b8f6c3dbb78f5c2f4131",
+   "file": "zone_mary-geoise_normal.bin"
+  },
+  "zone:mary-geoise:color": {
+   "type": "f32",
+   "n": 28563,
+   "sha": "bed6f5218734191960f490c1466d69fc2aad5b3a80ef87f6471341c9b6323ad2",
+   "file": "zone_mary-geoise_color.bin"
+  },
+  "zone:mary-geoise:onormal": {
+   "type": "f32",
+   "n": 28563,
+   "sha": "6103f940d69e28cd5e2e4a3f08dad343bf439873c5d5d826462733c250ca19b1",
+   "file": "zone_mary-geoise_onormal.bin"
+  },
+  "flora:mary-geoise|redrock": {
+   "type": "f32",
+   "n": 64,
+   "sha": "9ad60e92ecb9ea746bd8603e011addc036f99ae14225e67fe67b1bd0aa467046",
+   "file": "flora_mary-geoise_redrock.bin"
+  },
+  "dyn:mary-geoise": {
+   "type": "f64",
+   "n": 80,
+   "sha": "8b5ee74e9bee691fa565d3a45c297f5b0856cb0a0ed07f630bd8813fcbfef420",
+   "file": "dyn_mary-geoise.bin"
+  },
+  "cond:north-stair:1": {
+   "type": "f32",
+   "n": 72,
+   "sha": "a7231db5210b54bc17f190e6eda389ca9aa5973c8f7646a1e2acf0c5b925bd9a",
+   "file": "cond_north-stair_1.bin"
+  },
+  "cond:north-stair:4": {
+   "type": "f32",
+   "n": 48,
+   "sha": "c89e175eadbb740a7def48004ac8dd9300b9abb92751c4fcb26bef0991f29050",
+   "file": "cond_north-stair_4.bin"
+  },
+  "zone:north-stair:position": {
+   "type": "f32",
+   "n": 18072,
+   "sha": "bf26868d0b44fc50122f4624003bb13e8ce7e540ce2d853436236e5e94a956eb",
+   "file": "zone_north-stair_position.bin"
+  },
+  "zone:north-stair:normal": {
+   "type": "f32",
+   "n": 18072,
+   "sha": "37bc4d968a688184cd33db89ea6f75057c7a4f9eca6b19fdd5c2f274bb6b8994",
+   "file": "zone_north-stair_normal.bin"
+  },
+  "zone:north-stair:color": {
+   "type": "f32",
+   "n": 18072,
+   "sha": "434df69ef43f2d1f197fd9a77a125551831fc9267eabc5c6f0c29465453282f4",
+   "file": "zone_north-stair_color.bin"
+  },
+  "zone:north-stair:onormal": {
+   "type": "f32",
+   "n": 18072,
+   "sha": "d0999f92ea8fc0e5c0c9d7c4dfb01665784ad38378110ca508b75257e742f023",
+   "file": "zone_north-stair_onormal.bin"
+  },
+  "flora:north-stair|snowpine": {
+   "type": "f32",
+   "n": 224,
+   "sha": "267e710ae3ede5711aea3bc64e3d748f64c50c020b3b5f27706e1462a8254e87",
+   "file": "flora_north-stair_snowpine.bin"
+  },
+  "flora:north-stair|snowrock": {
+   "type": "f32",
+   "n": 384,
+   "sha": "19891d78033bf3b233aab28e11e54f156b5c4f1caa6c3b798a7887a4db9251c8",
+   "file": "flora_north-stair_snowrock.bin"
+  },
+  "dyn:north-stair": {
+   "type": "f64",
+   "n": 128,
+   "sha": "0673bd5616befad1c1ee70466a8585cef90f13a23bb1a4edf20fdf561e1bab08",
+   "file": "dyn_north-stair.bin"
+  },
+  "cond:ohara:1": {
+   "type": "f32",
+   "n": 1215,
+   "sha": "82d592ad28ceb0fe4c9edc82ea87d4277c4c2b27ff5aaa6d8b69fb1afb2ff5bc",
+   "file": "cond_ohara_1.bin"
+  },
+  "cond:ohara:2": {
+   "type": "f32",
+   "n": 6315,
+   "sha": "956cad6b52d460db098514f486abee0804f23d817c79e3a448cf568094834b21",
+   "file": "cond_ohara_2.bin"
+  },
+  "zone:ohara:position": {
+   "type": "f32",
+   "n": 25485,
+   "sha": "42b05d24153c23f36f3f1984ecd0170f095349737d58fd296657557a1e5512e6",
+   "file": "zone_ohara_position.bin"
+  },
+  "zone:ohara:normal": {
+   "type": "f32",
+   "n": 25485,
+   "sha": "af1e0fec5accc9cdc6d0eaeab5f7362127907192430b6bc0b489e9143dcab766",
+   "file": "zone_ohara_normal.bin"
+  },
+  "zone:ohara:color": {
+   "type": "f32",
+   "n": 25485,
+   "sha": "4b33662e2dacc936e69f00b6068c089de96803bc10f0e0dce775220bd430374b",
+   "file": "zone_ohara_color.bin"
+  },
+  "zone:ohara:onormal": {
+   "type": "f32",
+   "n": 25485,
+   "sha": "94e7d73e311882cccfb39907c5e513a358c95898c8946bf0d9cd39a4306dd63b",
+   "file": "zone_ohara_onormal.bin"
+  },
+  "flora:ohara|tree": {
+   "type": "f32",
+   "n": 160,
+   "sha": "2ab77adc9b38e1e41bc0841d01a1c0531ae50fdd60b0819dbb32e365df359191",
+   "file": "flora_ohara_tree.bin"
+  },
+  "flora:ohara|flowers": {
+   "type": "f32",
+   "n": 144,
+   "sha": "b64c32e3104a557d891b5ba39eeccbd5513bf2722fcc47fcd15502f037908088",
+   "file": "flora_ohara_flowers.bin"
+  },
+  "flora:ohara|rock": {
+   "type": "f32",
+   "n": 80,
+   "sha": "b87777a0a95e9bdd79111fad41b1f1ca394ce63d41b987ec1aae8a3cd90a4ea9",
+   "file": "flora_ohara_rock.bin"
+  },
+  "flora:ohara|grass": {
+   "type": "f32",
+   "n": 64,
+   "sha": "ec9e8309738c4c35d545f240e1cbb8ace798f24516aa5e662f1c7a81cfa6829f",
+   "file": "flora_ohara_grass.bin"
+  },
+  "dyn:ohara": {
+   "type": "f64",
+   "n": 80,
+   "sha": "0bbe9b779bb9c06bf78db6be50f2b6d9c20e900d43fc579b496e10da0301c05b",
+   "file": "dyn_ohara.bin"
+  },
+  "cond:pine-point:1": {
+   "type": "f32",
+   "n": 120,
+   "sha": "566cbe9c93d92ab752f54bc3ba3e7e8b7d9c2c76aad1b14bd2f81dd81442d407",
+   "file": "cond_pine-point_1.bin"
+  },
+  "zone:pine-point:position": {
+   "type": "f32",
+   "n": 7398,
+   "sha": "595d3c7cd2abd258fe8443640f21d47210a6f2b3a6f77d78f941e73f587c4666",
+   "file": "zone_pine-point_position.bin"
+  },
+  "zone:pine-point:normal": {
+   "type": "f32",
+   "n": 7398,
+   "sha": "9fbc2dcfca6f634482e27e84da313cf0fe12316d3eb8dd59285a612ad2f2aa02",
+   "file": "zone_pine-point_normal.bin"
+  },
+  "zone:pine-point:color": {
+   "type": "f32",
+   "n": 7398,
+   "sha": "cb5c84908f09113b21c9cdd132f26d7a400cc1603b5597c01de0234e3ff0a2aa",
+   "file": "zone_pine-point_color.bin"
+  },
+  "zone:pine-point:onormal": {
+   "type": "f32",
+   "n": 7398,
+   "sha": "b07bac844f5a12234ce86702240d26086d47475ef0a52fb83a2b7d9b94172b75",
+   "file": "zone_pine-point_onormal.bin"
+  },
+  "flora:pine-point|snowpine": {
+   "type": "f32",
+   "n": 272,
+   "sha": "b304b6c78ad94d13325ec6dce75017f2ac18d6d820ca19c2150c54b2bfba05af",
+   "file": "flora_pine-point_snowpine.bin"
+  },
+  "flora:pine-point|snowrock": {
+   "type": "f32",
+   "n": 192,
+   "sha": "0f6ee436160e4ba38b2dd355144bc8837180d6529ca70132fb083107d89dc995",
+   "file": "flora_pine-point_snowrock.bin"
+  },
+  "flora:pine-point|grass": {
+   "type": "f32",
+   "n": 48,
+   "sha": "485d9f0614b3e383d2563be6b7833134e3f43c82b419f4e7ff9e7b6ed9e8b869",
+   "file": "flora_pine-point_grass.bin"
+  },
+  "dyn:pine-point": {
+   "type": "f64",
+   "n": 80,
+   "sha": "b924543ee94fdc2f6ddb4df5ffe8856ab32eaf27a1840944e1adb1e54ed02848",
+   "file": "dyn_pine-point.bin"
+  },
+  "cond:punk-hazard:1": {
+   "type": "f32",
+   "n": 3081,
+   "sha": "128a74006cd135840fee84aa00a18af2182e3ff1ba9942a48541295492f1c978",
+   "file": "cond_punk-hazard_1.bin"
+  },
+  "cond:punk-hazard:4": {
+   "type": "f32",
+   "n": 420,
+   "sha": "d011dd8f8bfe2d68f5c1a81ab133ea3aea20d7ab76dc5c240d261d8c3158b5b5",
+   "file": "cond_punk-hazard_4.bin"
+  },
+  "zone:punk-hazard:position": {
+   "type": "f32",
+   "n": 9435,
+   "sha": "3794adc8b46a7256d266cf954cc0c995c2954a005f72b1ec3e9e42285f5ef108",
+   "file": "zone_punk-hazard_position.bin"
+  },
+  "zone:punk-hazard:normal": {
+   "type": "f32",
+   "n": 9435,
+   "sha": "574c7bfc971078c7fbb969f7e110375c9c3ee6902d917d56a9b3a16cea9d98be",
+   "file": "zone_punk-hazard_normal.bin"
+  },
+  "zone:punk-hazard:color": {
+   "type": "f32",
+   "n": 9435,
+   "sha": "c8bc57ece099ba31b61cee672068e13602f306b70803f21d86bab2a183888d5a",
+   "file": "zone_punk-hazard_color.bin"
+  },
+  "zone:punk-hazard:onormal": {
+   "type": "f32",
+   "n": 9435,
+   "sha": "9eb03ce45b69f2d88dd7104bcd5e4da03c0315dc9131b29c6aef5e5a1059ae43",
+   "file": "zone_punk-hazard_onormal.bin"
+  },
+  "flora:punk-hazard|deadtree": {
+   "type": "f32",
+   "n": 96,
+   "sha": "9096ca1eaa0d033b8989d1e923b89450ce3541723debedd21b8a42131b131dbb",
+   "file": "flora_punk-hazard_deadtree.bin"
+  },
+  "flora:punk-hazard|redrock": {
+   "type": "f32",
+   "n": 64,
+   "sha": "16f5e6beafe4471b20b8c66697576270abaac792b3eac6277b460e556c6659dd",
+   "file": "flora_punk-hazard_redrock.bin"
+  },
+  "flora:punk-hazard|nw-ice": {
+   "type": "f32",
+   "n": 112,
+   "sha": "811aab3a5a637c5a540a96870c676748f357ccb5d19748064946ab86761f29d6",
+   "file": "flora_punk-hazard_nw-ice.bin"
+  },
+  "flora:punk-hazard|snowpine": {
+   "type": "f32",
+   "n": 64,
+   "sha": "5723386febab42ba6bf8047cf9af9b4d6a83fbe0daec848deba26825564cbee3",
+   "file": "flora_punk-hazard_snowpine.bin"
+  },
+  "flora:punk-hazard|snowrock": {
+   "type": "f32",
+   "n": 48,
+   "sha": "eb4c5bcd85455c319209453a9278420d6addc4484a49dc1d0a87bb22e947832a",
+   "file": "flora_punk-hazard_snowrock.bin"
+  },
+  "dyn:punk-hazard": {
+   "type": "f64",
+   "n": 144,
+   "sha": "906849246dde2d3a289b444baf95336637f81e1255456192861d4edc1ae13471",
+   "file": "dyn_punk-hazard.bin"
+  },
+  "cond:sabaody:3": {
+   "type": "f32",
+   "n": 1323,
+   "sha": "c6721426428761659eae612966b963e0b9bba69d298b5db795ad8f58865927a8",
+   "file": "cond_sabaody_3.bin"
+  },
+  "zone:sabaody:position": {
+   "type": "f32",
+   "n": 26889,
+   "sha": "efe101b8e684c44cda436ce5d8d690afcc0c60e30aa9c1ac0a77de55a558996b",
+   "file": "zone_sabaody_position.bin"
+  },
+  "zone:sabaody:normal": {
+   "type": "f32",
+   "n": 26889,
+   "sha": "4eb7aa4be099e9719d4806ad29aa461e3559636123bd24cff3b44efd7fddd46d",
+   "file": "zone_sabaody_normal.bin"
+  },
+  "zone:sabaody:color": {
+   "type": "f32",
+   "n": 26889,
+   "sha": "8501aa4a53cd07506b8381f23d14620503ee2a9a58dee2c4c7a824ff4c442abd",
+   "file": "zone_sabaody_color.bin"
+  },
+  "zone:sabaody:onormal": {
+   "type": "f32",
+   "n": 26889,
+   "sha": "11c6e269bd3ad4fe623e7cbf57add7282dab13b5a0e13251c9185e6487082a28",
+   "file": "zone_sabaody_onormal.bin"
+  },
+  "flora:sabaody|mangrove": {
+   "type": "f32",
+   "n": 48,
+   "sha": "122153551ca48b30301e7b5738a53893140e7a908be73270514cd7bcde45ec37",
+   "file": "flora_sabaody_mangrove.bin"
+  },
+  "flora:sabaody|flowers": {
+   "type": "f32",
+   "n": 96,
+   "sha": "a80c8048dc552af23d28e0b767bd7eab271f34a41ef84b0936545430b76e107f",
+   "file": "flora_sabaody_flowers.bin"
+  },
+  "flora:sabaody|bush": {
+   "type": "f32",
+   "n": 64,
+   "sha": "e704510df8e64a5d8ca2c37cfcfb39df9738769f88755f4aa95abc1cff1daf35",
+   "file": "flora_sabaody_bush.bin"
+  },
+  "dyn:sabaody": {
+   "type": "f64",
+   "n": 96,
+   "sha": "e7ba47965fb79056a7d25d0d7696614b6fe34d4e2c8d68a30df559062c7badbb",
+   "file": "dyn_sabaody.bin"
+  },
+  "zone:sea-king-drum:position": {
+   "type": "f32",
+   "n": 10479,
+   "sha": "2cc669a43568b9d02afdca63fa7f278c1512fdacd0cc7e859ef2d93a84cc4db7",
+   "file": "zone_sea-king-drum_position.bin"
+  },
+  "zone:sea-king-drum:normal": {
+   "type": "f32",
+   "n": 10479,
+   "sha": "8420f99cf6517ef66224b210349661a8a171bec25ab3028d8454ac3be465e7dc",
+   "file": "zone_sea-king-drum_normal.bin"
+  },
+  "zone:sea-king-drum:color": {
+   "type": "f32",
+   "n": 10479,
+   "sha": "710074d9d94c819e5a377682677ea296a7a89e39e36b71d39f86458dc2db1367",
+   "file": "zone_sea-king-drum_color.bin"
+  },
+  "zone:sea-king-drum:onormal": {
+   "type": "f32",
+   "n": 10479,
+   "sha": "85945652589baeea8f42bf4de3d7f056a14b6e30274a46d45b5059995bc82b84",
+   "file": "zone_sea-king-drum_onormal.bin"
+  },
+  "dyn:sea-king-drum": {
+   "type": "f64",
+   "n": 16,
+   "sha": "ad5cca682ef59a003bbafd382ef6d344bb459b05b7f47d3cf94b9e6595330e0e",
+   "file": "dyn_sea-king-drum.bin"
+  },
+  "zone:sea-king-alabasta:position": {
+   "type": "f32",
+   "n": 11301,
+   "sha": "92553e8738a7a29327041f968141dc106d812a1a4cad2b67057fea5fbe95f849",
+   "file": "zone_sea-king-alabasta_position.bin"
+  },
+  "zone:sea-king-alabasta:normal": {
+   "type": "f32",
+   "n": 11301,
+   "sha": "7c616f80e1e5868e17e46f877543d36bc8a7972ec14bb64921049934f09adfa7",
+   "file": "zone_sea-king-alabasta_normal.bin"
+  },
+  "zone:sea-king-alabasta:color": {
+   "type": "f32",
+   "n": 11301,
+   "sha": "86232f8793c1df41474da12409e52071563a4c5ece6dc3091a0e4476d42daad5",
+   "file": "zone_sea-king-alabasta_color.bin"
+  },
+  "zone:sea-king-alabasta:onormal": {
+   "type": "f32",
+   "n": 11301,
+   "sha": "4ecb36b7bb98095fd942b406a82ddbd12aebd0310a4cfb1aa114f555cb81dae8",
+   "file": "zone_sea-king-alabasta_onormal.bin"
+  },
+  "dyn:sea-king-alabasta": {
+   "type": "f64",
+   "n": 16,
+   "sha": "3ceacc98a288b421122c4f3001b33eead04b4a4742f40ea5f2940cb00c34f4ad",
+   "file": "dyn_sea-king-alabasta.bin"
+  },
+  "zone:sea-king-water7:position": {
+   "type": "f32",
+   "n": 11301,
+   "sha": "e619887029df403244790eb87abe5820a8b9f82e1db67fd8e467605492e7b73f",
+   "file": "zone_sea-king-water7_position.bin"
+  },
+  "zone:sea-king-water7:normal": {
+   "type": "f32",
+   "n": 11301,
+   "sha": "9316bd65bfdab0148c37e37378f1f511828df294067ff89e07ab1dde1c3d3110",
+   "file": "zone_sea-king-water7_normal.bin"
+  },
+  "zone:sea-king-water7:color": {
+   "type": "f32",
+   "n": 11301,
+   "sha": "094a12c4ba0e8056e8347e6d92d9b5ffe3f931db6c6ff9af7b3a359237fe75d0",
+   "file": "zone_sea-king-water7_color.bin"
+  },
+  "zone:sea-king-water7:onormal": {
+   "type": "f32",
+   "n": 11301,
+   "sha": "8c1e06c87f43d912b3fa617f63f86e74999858f6c796c03b044520ba92551885",
+   "file": "zone_sea-king-water7_onormal.bin"
+  },
+  "dyn:sea-king-water7": {
+   "type": "f64",
+   "n": 16,
+   "sha": "44755db948f219150f1183f2b0762a65e7be3a8131a58982e71f86cc0b410588",
+   "file": "dyn_sea-king-water7.bin"
+  },
+  "zone:sea-king-ohara:position": {
+   "type": "f32",
+   "n": 11301,
+   "sha": "adfa8b96fed3fd9cf1bee30c4b5a07dafb987840bca5262650ec09d1fd60ac82",
+   "file": "zone_sea-king-ohara_position.bin"
+  },
+  "zone:sea-king-ohara:normal": {
+   "type": "f32",
+   "n": 11301,
+   "sha": "87bbcd199a4719f6580fbd13ef109373cfa1881c5bb318f2f1fe50fd130391f2",
+   "file": "zone_sea-king-ohara_normal.bin"
+  },
+  "zone:sea-king-ohara:color": {
+   "type": "f32",
+   "n": 11301,
+   "sha": "71f777c86512cc07d9ba7bf0b48883fd63273b2ec3ff7be4b4eb097506c26d1f",
+   "file": "zone_sea-king-ohara_color.bin"
+  },
+  "zone:sea-king-ohara:onormal": {
+   "type": "f32",
+   "n": 11301,
+   "sha": "feec88c76af61002020c513f186656c0aa3a37f5056577456e2b341fd1bac5b2",
+   "file": "zone_sea-king-ohara_onormal.bin"
+  },
+  "dyn:sea-king-ohara": {
+   "type": "f64",
+   "n": 16,
+   "sha": "01aa8fae3843ddd56bc6e90651490766be18c7b7c60721dced018bee668a0bf2",
+   "file": "dyn_sea-king-ohara.bin"
+  },
+  "cond:south-stair:3": {
+   "type": "f32",
+   "n": 192,
+   "sha": "6ebb2a61e1c028d994b95592a3676051b422e6e5790a63ece31dd97ccc8beb68",
+   "file": "cond_south-stair_3.bin"
+  },
+  "zone:south-stair:position": {
+   "type": "f32",
+   "n": 19206,
+   "sha": "5fa1ae3a4f8e41b8199370424e4b17557937a341b60842c0b1fe5ff522be597c",
+   "file": "zone_south-stair_position.bin"
+  },
+  "zone:south-stair:normal": {
+   "type": "f32",
+   "n": 19206,
+   "sha": "253acc0ad867966b839dbf978da78c0735cb40f67b3b084af5045b52a5119c90",
+   "file": "zone_south-stair_normal.bin"
+  },
+  "zone:south-stair:color": {
+   "type": "f32",
+   "n": 19206,
+   "sha": "d8de0f521962d7523a3ede60b3702296ee8e46887a006a6cb725801a6a88c388",
+   "file": "zone_south-stair_color.bin"
+  },
+  "zone:south-stair:onormal": {
+   "type": "f32",
+   "n": 19206,
+   "sha": "83f18c3aff419a84664319b670e7b3ea27fd0c001c5f3a5dacd39168a7022f29",
+   "file": "zone_south-stair_onormal.bin"
+  },
+  "flora:south-stair|snowpine": {
+   "type": "f32",
+   "n": 224,
+   "sha": "eea2d029bd5c0a9e631d043b93c6e8b9a54d9075cc891374044b72eac28019df",
+   "file": "flora_south-stair_snowpine.bin"
+  },
+  "flora:south-stair|snowrock": {
+   "type": "f32",
+   "n": 272,
+   "sha": "8ad28cfeea91faa2a9abd3574c425489015edfbf98410e474fac4f62e8c9eb9b",
+   "file": "flora_south-stair_snowrock.bin"
+  },
+  "dyn:south-stair": {
+   "type": "f64",
+   "n": 96,
+   "sha": "18772754f3990243c4b6f162c6c8641789d08097177ce5f03f284acad2350e31",
+   "file": "dyn_south-stair.bin"
+  },
+  "cond:sunny-dock:2": {
+   "type": "f32",
+   "n": 1980,
+   "sha": "6237c51d1c84229d016b016b9eeb0835038109eed9b908a925318e8d2e6742bb",
+   "file": "cond_sunny-dock_2.bin"
+  },
+  "cond:sunny-dock:3": {
+   "type": "f32",
+   "n": 1371,
+   "sha": "9537b7d712402559aac137ebbe873c706ab08c2b591037d9374fad440ba94a1f",
+   "file": "cond_sunny-dock_3.bin"
+  },
+  "cond:sunny-dock:8": {
+   "type": "f32",
+   "n": 96,
+   "sha": "01dd048059ce8b8bf7433ef77f4b3c96dfe7a278e3b4d4c376dce2a2fb43f404",
+   "file": "cond_sunny-dock_8.bin"
+  },
+  "zone:sunny-dock:position": {
+   "type": "f32",
+   "n": 38868,
+   "sha": "4bcf7dba159578bfc986fd76d3b36ae781cf49221756baff37587dba073b05ae",
+   "file": "zone_sunny-dock_position.bin"
+  },
+  "zone:sunny-dock:normal": {
+   "type": "f32",
+   "n": 38868,
+   "sha": "15669cc43bde64f882992975888d9721acf5ffcdac972a2b4da0b110ce7d6cf8",
+   "file": "zone_sunny-dock_normal.bin"
+  },
+  "zone:sunny-dock:color": {
+   "type": "f32",
+   "n": 38868,
+   "sha": "602b4c09475623dc4693181350b3974c0fc38a0ae36768944214176336b46e83",
+   "file": "zone_sunny-dock_color.bin"
+  },
+  "zone:sunny-dock:onormal": {
+   "type": "f32",
+   "n": 38868,
+   "sha": "ee1890e6500c2b2b8d8e3470d2cc77d36688b3659a271ffb852c364e2eac06d1",
+   "file": "zone_sunny-dock_onormal.bin"
+  },
+  "flora:sunny-dock|tree": {
+   "type": "f32",
+   "n": 288,
+   "sha": "285e05c889dc1ea838a11f14003e9d1de9f40319a28f7969981a56e18d9db220",
+   "file": "flora_sunny-dock_tree.bin"
+  },
+  "flora:sunny-dock|rock": {
+   "type": "f32",
+   "n": 272,
+   "sha": "36d68fdcdc4666b318afa362c5649a9bb4a4eeb3752c94500731365e019c1e8a",
+   "file": "flora_sunny-dock_rock.bin"
+  },
+  "flora:sunny-dock|grass": {
+   "type": "f32",
+   "n": 96,
+   "sha": "0e84fe2da20bb20d725905234352d3e00db456e2badf9839dc743ee8828d2bf6",
+   "file": "flora_sunny-dock_grass.bin"
+  },
+  "flora:sunny-dock|flowers": {
+   "type": "f32",
+   "n": 16,
+   "sha": "e575a6250349168a70055852966c3f9a2acda86b8ede701f0ea2d6b3562fd0dc",
+   "file": "flora_sunny-dock_flowers.bin"
+  },
+  "dyn:sunny-dock": {
+   "type": "f64",
+   "n": 160,
+   "sha": "2401b38518a3d5f6f49a8d6b132d0205e4a71cbb8b367722c3fd41823be23a8b",
+   "file": "dyn_sunny-dock.bin"
+  },
+  "cond:syrup-village:1": {
+   "type": "f32",
+   "n": 72,
+   "sha": "b89a9c2f340154b1ceb3958c8b85d3fa4bce97f483e8c62bacda61932a8c7c7d",
+   "file": "cond_syrup-village_1.bin"
+  },
+  "zone:syrup-village:position": {
+   "type": "f32",
+   "n": 25860,
+   "sha": "a1b79125e521b319b3e6d00ecfdc1672959ea89a73c0ca382e9e0d138d676b76",
+   "file": "zone_syrup-village_position.bin"
+  },
+  "zone:syrup-village:normal": {
+   "type": "f32",
+   "n": 25860,
+   "sha": "bd207293a4f39498772ec5cbacff644e56356faa1e193adc08a194bc9eec3b88",
+   "file": "zone_syrup-village_normal.bin"
+  },
+  "zone:syrup-village:color": {
+   "type": "f32",
+   "n": 25860,
+   "sha": "ddc2047b0d1b10ab863ac7a387524dba5dcef5d00196972f7eb538f15a9bce8b",
+   "file": "zone_syrup-village_color.bin"
+  },
+  "zone:syrup-village:onormal": {
+   "type": "f32",
+   "n": 25860,
+   "sha": "1c6ff40f7e4ceb4a7fb484fab2e24442fa72a69d552b250f2057e6d517f1ef66",
+   "file": "zone_syrup-village_onormal.bin"
+  },
+  "flora:syrup-village|bush": {
+   "type": "f32",
+   "n": 144,
+   "sha": "2e48211be88ebe2b7459fd446fa903f641c892c2f03b5cb62659a0cfb97e64b5",
+   "file": "flora_syrup-village_bush.bin"
+  },
+  "flora:syrup-village|flowers": {
+   "type": "f32",
+   "n": 96,
+   "sha": "2b32df86a25b96434bc942f403f67b6a12ddc8b29047bf35dbec7b2b16faf226",
+   "file": "flora_syrup-village_flowers.bin"
+  },
+  "flora:syrup-village|tree": {
+   "type": "f32",
+   "n": 240,
+   "sha": "e844045e1c777f049dc289f884e37fc94d80684751f2fb17539d78addd430c1e",
+   "file": "flora_syrup-village_tree.bin"
+  },
+  "flora:syrup-village|rock": {
+   "type": "f32",
+   "n": 192,
+   "sha": "7a1e63b1f7dd4d16d04faf0e052cb67755cc2bdd594238e40eded9e29cec8284",
+   "file": "flora_syrup-village_rock.bin"
+  },
+  "dyn:syrup-village": {
+   "type": "f64",
+   "n": 128,
+   "sha": "8966db55d22e14851a3c76e22fc925a6d684658aa5e62a659badeb567f51d987",
+   "file": "dyn_syrup-village.bin"
+  },
+  "cond:thriller-bark:2": {
+   "type": "f32",
+   "n": 1773,
+   "sha": "bee72a1f907909090d56666b6e4149771a22d8d57fe58b487d787b4b75fccdb9",
+   "file": "cond_thriller-bark_2.bin"
+  },
+  "zone:thriller-bark:position": {
+   "type": "f32",
+   "n": 16296,
+   "sha": "4848d14724a25a48e9f229c515232a4484ec332cf640c230ebba3115582262ab",
+   "file": "zone_thriller-bark_position.bin"
+  },
+  "zone:thriller-bark:normal": {
+   "type": "f32",
+   "n": 16296,
+   "sha": "1bc112531e91a694136a014d633c8467fb7b672572193fd9fc1f64b93ab0831a",
+   "file": "zone_thriller-bark_normal.bin"
+  },
+  "zone:thriller-bark:color": {
+   "type": "f32",
+   "n": 16296,
+   "sha": "1f90facbe265c7adb84078e9ef1f52faa45196e4ecfcc42d50bdb1d1b4f0cbbf",
+   "file": "zone_thriller-bark_color.bin"
+  },
+  "zone:thriller-bark:onormal": {
+   "type": "f32",
+   "n": 16296,
+   "sha": "262465520565ea80c2177f36209a8276767f55d5c073809ea078fce86fad7aa5",
+   "file": "zone_thriller-bark_onormal.bin"
+  },
+  "flora:thriller-bark|deadtree": {
+   "type": "f32",
+   "n": 48,
+   "sha": "4b1540fbedda8fae5ba6ae9a65b4dac9be0147619460042e73d3572a7368f316",
+   "file": "flora_thriller-bark_deadtree.bin"
+  },
+  "dyn:thriller-bark": {
+   "type": "f64",
+   "n": 48,
+   "sha": "9671ded6d9aca5ee3f55a92a8f7d8742ae817be7805edb3b2db3b6e0713a25ad",
+   "file": "dyn_thriller-bark.bin"
+  },
+  "cond:twin-capes:1": {
+   "type": "f32",
+   "n": 144,
+   "sha": "c23cea23216c5c989d5ff46753930a08f0ff1b83da1d9cc5fd59db09be712a1b",
+   "file": "cond_twin-capes_1.bin"
+  },
+  "cond:twin-capes:3": {
+   "type": "f32",
+   "n": 321,
+   "sha": "09c03d46b429caf312873459360945caf8af98dfebf2550d389309fec946f5ce",
+   "file": "cond_twin-capes_3.bin"
+  },
+  "zone:twin-capes:position": {
+   "type": "f32",
+   "n": 35694,
+   "sha": "2ffc6a9b89af3874a7c5a396c96d7d75721b9c4f758aa1a9a8854ca4b7e113ac",
+   "file": "zone_twin-capes_position.bin"
+  },
+  "zone:twin-capes:normal": {
+   "type": "f32",
+   "n": 35694,
+   "sha": "5d02e5bf890dfcc7c79fdb087b8c101ffefede240050eaa0d53595b53ff60097",
+   "file": "zone_twin-capes_normal.bin"
+  },
+  "zone:twin-capes:color": {
+   "type": "f32",
+   "n": 35694,
+   "sha": "d2e40800fb446485d08173870e03b1ff88d255f9abe5ca8d07050683e75ea6cc",
+   "file": "zone_twin-capes_color.bin"
+  },
+  "zone:twin-capes:onormal": {
+   "type": "f32",
+   "n": 35694,
+   "sha": "b8aad92959c7233c96147fbf2b39f157cbb54be3e3840c71b5187b990852bfab",
+   "file": "zone_twin-capes_onormal.bin"
+  },
+  "flora:twin-capes|palm": {
+   "type": "f32",
+   "n": 80,
+   "sha": "b7c1fc4e9f83c2e0838db7e9ca57a13e34b7d7bf38b4f7151ecbb46a9819ede2",
+   "file": "flora_twin-capes_palm.bin"
+  },
+  "flora:twin-capes|rock": {
+   "type": "f32",
+   "n": 112,
+   "sha": "2348c8a1e1abde07bb9adfdb6723a6cb220b366f14a36e18f73e68e09e2e937e",
+   "file": "flora_twin-capes_rock.bin"
+  },
+  "flora:twin-capes|redrock": {
+   "type": "f32",
+   "n": 160,
+   "sha": "37e06f228c30811ce9df5c320800617cd14a4e64c219275a95207cddbf7678b6",
+   "file": "flora_twin-capes_redrock.bin"
+  },
+  "flora:twin-capes|bush": {
+   "type": "f32",
+   "n": 32,
+   "sha": "ba2ea219c9ebadd214f306e94cc0c0a5ae5d1c07752fad017eafd14b60a20b85",
+   "file": "flora_twin-capes_bush.bin"
+  },
+  "dyn:twin-capes": {
+   "type": "f64",
+   "n": 128,
+   "sha": "8ca9cbe2f1fbfea7ceb05c7d35839e2ba421da7a4915f308337818dd4c3e5dbc",
+   "file": "dyn_twin-capes.bin"
+  },
+  "cond:wano:4": {
+   "type": "f32",
+   "n": 2424,
+   "sha": "849c2fcaaa621f63a707f286fdd00c976fc12ae6f1bc4c42b4392e7f64eebde3",
+   "file": "cond_wano_4.bin"
+  },
+  "zone:wano:position": {
+   "type": "f32",
+   "n": 28536,
+   "sha": "de04529387365d4ec0397ec281cff38cc23fc054c5cf2be335d82db8c2d0f60f",
+   "file": "zone_wano_position.bin"
+  },
+  "zone:wano:normal": {
+   "type": "f32",
+   "n": 28536,
+   "sha": "a56acee6549384c3920f7c20fe77513df317a9faff6733342d0db1f4d01533d3",
+   "file": "zone_wano_normal.bin"
+  },
+  "zone:wano:color": {
+   "type": "f32",
+   "n": 28536,
+   "sha": "1b236ccf8bdda3f6504ea5f11147170ab464f88374ea039e24c97528b3f8e677",
+   "file": "zone_wano_color.bin"
+  },
+  "zone:wano:onormal": {
+   "type": "f32",
+   "n": 28536,
+   "sha": "02e2e973ca1ac15f4bda8f8ea2065bba5a2a123e463c32ace3e2a54ffaf569f8",
+   "file": "zone_wano_onormal.bin"
+  },
+  "flora:wano|sakura": {
+   "type": "f32",
+   "n": 144,
+   "sha": "82b65370c5d74409ede42522ee0040c425f5c572db22c00d47d58b4e8f20d633",
+   "file": "flora_wano_sakura.bin"
+  },
+  "flora:wano|bamboo": {
+   "type": "f32",
+   "n": 64,
+   "sha": "f4d36ef55776e15f77d58c5a59ace392702bd4a9d656cf2527913670004e2604",
+   "file": "flora_wano_bamboo.bin"
+  },
+  "flora:wano|snowpine": {
+   "type": "f32",
+   "n": 64,
+   "sha": "c6d2ab3726e8dd5d752acce4d6e1317f3431a55f9c170813bc14853e2a9e4b8e",
+   "file": "flora_wano_snowpine.bin"
+  },
+  "flora:wano|grass": {
+   "type": "f32",
+   "n": 32,
+   "sha": "0916194280d3a67fd83fbc26a654929b700dcb6295e20d71b57d8a00bc87abac",
+   "file": "flora_wano_grass.bin"
+  },
+  "flora:wano|rock": {
+   "type": "f32",
+   "n": 16,
+   "sha": "c0314946f00bc6c0448d720cbbdb6c0759a3355fc7445d90f710e96caadc76dc",
+   "file": "flora_wano_rock.bin"
+  },
+  "flora:wano|flowers": {
+   "type": "f32",
+   "n": 16,
+   "sha": "3180fbb3dd44af7ca18b05a598fb00dfe3b3cefc8fdcc687e08fcb60afda6e08",
+   "file": "flora_wano_flowers.bin"
+  },
+  "dyn:wano": {
+   "type": "f64",
+   "n": 112,
+   "sha": "e9265f27088f664b914d9a031113eb33475979db03cf924055880bf5d233343d",
+   "file": "dyn_wano.bin"
+  },
+  "cond:water-7:2": {
+   "type": "f32",
+   "n": 1470,
+   "sha": "73b23f8fc50d239e162089df912e7bf6f033419dea624cddd67ec9398a0fedb4",
+   "file": "cond_water-7_2.bin"
+  },
+  "zone:water-7:position": {
+   "type": "f32",
+   "n": 34551,
+   "sha": "cd927a3f180430dc2e8407cda28790fb7f4881425b2d6fda4d25ece8a3a6a716",
+   "file": "zone_water-7_position.bin"
+  },
+  "zone:water-7:normal": {
+   "type": "f32",
+   "n": 34551,
+   "sha": "8ad853ca0dcb2b11663ad1efb7f20b0f89eeefed4e4ef1eb6181cceb91b7d890",
+   "file": "zone_water-7_normal.bin"
+  },
+  "zone:water-7:color": {
+   "type": "f32",
+   "n": 34551,
+   "sha": "12bae7b108f13cb2789d95b108e99243d9a0684b13a0bee446954c949fff9b39",
+   "file": "zone_water-7_color.bin"
+  },
+  "zone:water-7:onormal": {
+   "type": "f32",
+   "n": 34551,
+   "sha": "c765d2dc8b4e31548b2dfd4d6f7a52aec57c0c385ed1d53705b0adfe7311768b",
+   "file": "zone_water-7_onormal.bin"
+  },
+  "flora:water-7|tree": {
+   "type": "f32",
+   "n": 64,
+   "sha": "b83e331459ae85a276d0ceba11ad4251415bbaa4ca4c7f0273535b42beefea41",
+   "file": "flora_water-7_tree.bin"
+  },
+  "flora:water-7|bush": {
+   "type": "f32",
+   "n": 48,
+   "sha": "18a55f1f1a02312c6f75566f5c9583fcb0e31e895cf123138040eee41796aea5",
+   "file": "flora_water-7_bush.bin"
+  },
+  "flora:water-7|flowers": {
+   "type": "f32",
+   "n": 48,
+   "sha": "1ed2de54a20015e5f8176f86af514139a5b6f705c7930c06a097460ee556ca7d",
+   "file": "flora_water-7_flowers.bin"
+  },
+  "flora:water-7|rock": {
+   "type": "f32",
+   "n": 16,
+   "sha": "bebeef2cdaad6708041362df2eb59be498c2fbe074a9e977a827c8ce7c462cfb",
+   "file": "flora_water-7_rock.bin"
+  },
+  "dyn:water-7": {
+   "type": "f64",
+   "n": 96,
+   "sha": "de8c8239dd31018e8ec2fd371d254315dc5157c3e73ffd6a2ec8d145969d0dcd",
+   "file": "dyn_water-7.bin"
+  },
+  "zone:whisky-peak:position": {
+   "type": "f32",
+   "n": 26961,
+   "sha": "bd192aba94a4ca36ed10712b57fdc1883a89448c58f6e547f8ecc773e19e86f6",
+   "file": "zone_whisky-peak_position.bin"
+  },
+  "zone:whisky-peak:normal": {
+   "type": "f32",
+   "n": 26961,
+   "sha": "6cc8d851ccfa11aaed34eedb6dac26a595617180aee89c12cc5d09a4a6c3a60b",
+   "file": "zone_whisky-peak_normal.bin"
+  },
+  "zone:whisky-peak:color": {
+   "type": "f32",
+   "n": 26961,
+   "sha": "d4a201a023ff4e170b920fbfd93580b18a9d9b0c7916aee98f30a01c76698ff7",
+   "file": "zone_whisky-peak_color.bin"
+  },
+  "zone:whisky-peak:onormal": {
+   "type": "f32",
+   "n": 26961,
+   "sha": "63f73615d3e801346c7bd2918013e2bd81ca1b2892b68798a584207930de819a",
+   "file": "zone_whisky-peak_onormal.bin"
+  },
+  "flora:whisky-peak|cactus": {
+   "type": "f32",
+   "n": 160,
+   "sha": "071299b3e4c1699054b6da88e1fc820cd63212a9071916bcb06517d96953afc8",
+   "file": "flora_whisky-peak_cactus.bin"
+  },
+  "flora:whisky-peak|palm": {
+   "type": "f32",
+   "n": 64,
+   "sha": "7a85538ee17b7b1ab0023ab4a2f7f88bd457d1553c401f6c9dd574b3feb99cee",
+   "file": "flora_whisky-peak_palm.bin"
+  },
+  "dyn:whisky-peak": {
+   "type": "f64",
+   "n": 96,
+   "sha": "1b8d076d68f5443ae70808aaf49f675bf1cf81cffbf687e89b56cb5fa329ed34",
+   "file": "dyn_whisky-peak.bin"
+  },
+  "cond:whole-cake:1": {
+   "type": "f32",
+   "n": 210,
+   "sha": "e63bb480faa4736c1d724d0614d8aeeb8cd44675ea5ce299eb524d988646d325",
+   "file": "cond_whole-cake_1.bin"
+  },
+  "cond:whole-cake:2": {
+   "type": "f32",
+   "n": 345,
+   "sha": "fb17ca4c582daeb2d896905ecdeaaef058e8c462106660f54bdfb7424fe4619a",
+   "file": "cond_whole-cake_2.bin"
+  },
+  "zone:whole-cake:position": {
+   "type": "f32",
+   "n": 27525,
+   "sha": "b7affbd78a2040ffd539236c3c6a20c0fef9fb985fcb4366969b6928c362bc6f",
+   "file": "zone_whole-cake_position.bin"
+  },
+  "zone:whole-cake:normal": {
+   "type": "f32",
+   "n": 27525,
+   "sha": "2dfeaef080cf44b6190f557bafb5e9699c66d58f827f79e59a8579776f1deca7",
+   "file": "zone_whole-cake_normal.bin"
+  },
+  "zone:whole-cake:color": {
+   "type": "f32",
+   "n": 27525,
+   "sha": "830293f04da3d0e65fac4bc385152fa86896d5458904d63b5b18fe646fbcad75",
+   "file": "zone_whole-cake_color.bin"
+  },
+  "zone:whole-cake:onormal": {
+   "type": "f32",
+   "n": 27525,
+   "sha": "342766cf64921cf6b08c2d7c1e430b2b7f46824c29d0c175cfd988f331ae8e42",
+   "file": "zone_whole-cake_onormal.bin"
+  },
+  "flora:whole-cake|nw-lolly": {
+   "type": "f32",
+   "n": 112,
+   "sha": "bb5fa526de64c27039a38782e2b7d6349312e10b79800c9878ab4df9d9e01dfa",
+   "file": "flora_whole-cake_nw-lolly.bin"
+  },
+  "flora:whole-cake|nw-candytree": {
+   "type": "f32",
+   "n": 80,
+   "sha": "6ea66d344e8c47c96b73e3d8d4fdbe0361d86619158ffd061b89a1a1bd14da2f",
+   "file": "flora_whole-cake_nw-candytree.bin"
+  },
+  "flora:whole-cake|nw-facetree": {
+   "type": "f32",
+   "n": 128,
+   "sha": "c2e6a473980d5157fba158b7d0b771d635555647dfa0de3a046a87b9c93eafb8",
+   "file": "flora_whole-cake_nw-facetree.bin"
+  },
+  "flora:whole-cake|nw-choco": {
+   "type": "f32",
+   "n": 128,
+   "sha": "4bb18fdf9c5cdab6576481b38deecf67c206cc0f041f2586215d6779bb964705",
+   "file": "flora_whole-cake_nw-choco.bin"
+  },
+  "dyn:whole-cake": {
+   "type": "f64",
+   "n": 112,
+   "sha": "c38379d481a4b5efc70bd29b02a39f8131a8ae0cffa47348cbcc3f0c7933b9cb",
+   "file": "dyn_whole-cake.bin"
+  },
+  "dyn:dirs": {
+   "type": "f64",
+   "n": 321,
+   "sha": "73baf9c3821ed05b6714cc331df36e60566b266cb1b88e427d0585bebc231538",
+   "file": "dyn_dirs.bin"
+  },
+  "chests": {
+   "type": "f64",
+   "n": 15,
+   "sha": "1e80a88b45365fe0faa2f2e6b78af1c80e2545a2a458f0902602d688c4734b8b",
+   "file": "chests.bin"
+  },
+  "npc:brogy": {
+   "type": "f64",
+   "n": 8,
+   "sha": "1fc74e862a7a4e18c2ef5e890c6f13d9472db6a66cc4803f4c61532a862947bd",
+   "file": "npc_brogy.bin"
+  },
+  "npc:brook": {
+   "type": "f64",
+   "n": 8,
+   "sha": "6f2b9f8b523bd22f9ffe3b71d14dd5ea418442a918324c6361287edc8875b789",
+   "file": "npc_brook.bin"
+  },
+  "npc:chopper": {
+   "type": "f64",
+   "n": 8,
+   "sha": "f7e4511d696e94fa28b964a1b670580d4b8f296680a52b982081d4b9c6f88554",
+   "file": "npc_chopper.bin"
+  },
+  "npc:coby": {
+   "type": "f64",
+   "n": 8,
+   "sha": "be017061e0f0f726c126a1fd3dadeb7a54a2b477da73b3515a4cbd980035a74d",
+   "file": "npc_coby.bin"
+  },
+  "npc:crocus": {
+   "type": "f64",
+   "n": 8,
+   "sha": "89a48a8d1e63d0ae10985d236010f4ca122fdd0ef298012ee68f22fdb5743d84",
+   "file": "npc_crocus.bin"
+  },
+  "npc:franky": {
+   "type": "f64",
+   "n": 8,
+   "sha": "e6867560d926812c4a8e361cbcd77626d6c7a98f83b50fdd77ad3472ceec178c",
+   "file": "npc_franky.bin"
+  },
+  "npc:golden-bell": {
+   "type": "f64",
+   "n": 8,
+   "sha": "a116e79e1fd4bf55370a548d9996baef535dc94de94d0894ab28f06ef1430a08",
+   "file": "npc_golden-bell.bin"
+  },
+  "npc:hancock": {
+   "type": "f64",
+   "n": 8,
+   "sha": "031d54050cd1ba98d69516aac4203d9b3272428d9549bcff08ebf2807711a7d2",
+   "file": "npc_hancock.bin"
+  },
+  "npc:ivankov": {
+   "type": "f64",
+   "n": 8,
+   "sha": "78552745109fd0f260eebd3c2155b44dd7df2cc38c37b421700650433b76b6b6",
+   "file": "npc_ivankov.bin"
+  },
+  "npc:jinbe": {
+   "type": "f64",
+   "n": 8,
+   "sha": "4388c776e71cbbf3fbcc8b88106846e6e68a4c0470ba31b7982993067fdd3809",
+   "file": "npc_jinbe.bin"
+  },
+  "npc:kaya": {
+   "type": "f64",
+   "n": 8,
+   "sha": "b5dbcdf1d8e802a15b6d47e62064bd9bf4d2b9acfc1cc56852ca897083b4ff7e",
+   "file": "npc_kaya.bin"
+  },
+  "npc:kureha": {
+   "type": "f64",
+   "n": 8,
+   "sha": "d93cd3948918c8337cc92ac7a066bf27445fc30bf47069f56f5b6593935c0795",
+   "file": "npc_kureha.bin"
+  },
+  "npc:laboon": {
+   "type": "f64",
+   "n": 8,
+   "sha": "8585e61db7be300f6c7a24d905859c93f5935036a527872d2d8625c9f7163d9e",
+   "file": "npc_laboon.bin"
+  },
+  "npc:luffy": {
+   "type": "f64",
+   "n": 8,
+   "sha": "ff3b60e40afffd9ffe88753b8d683bdfd4f2df7c256892475ec3f0959edfb7c7",
+   "file": "npc_luffy.bin"
+  },
+  "npc:nami": {
+   "type": "f64",
+   "n": 8,
+   "sha": "edea239a89055959711e7b3e1afea17b6dbfb652964bbfc78cd8cf32d5bfdc10",
+   "file": "npc_nami.bin"
+  },
+  "npc:news-coo": {
+   "type": "f64",
+   "n": 8,
+   "sha": "9e279250aa2c0ba6e1bfe3ec6b96582d3c2febec50775d868528f6bc4844f9a8",
+   "file": "npc_news-coo.bin"
+  },
+  "npc:robin": {
+   "type": "f64",
+   "n": 8,
+   "sha": "f95f60fb41ed3eaf6ba79fadf8515c43e12cb54ec3fa1b376d02d9b07feec429",
+   "file": "npc_robin.bin"
+  },
+  "npc:sanji": {
+   "type": "f64",
+   "n": 8,
+   "sha": "630c75c3ad16b988996bfe34035d9fff7f96cede327369b2403f87094440672f",
+   "file": "npc_sanji.bin"
+  },
+  "npc:usopp": {
+   "type": "f64",
+   "n": 8,
+   "sha": "cea3cc304071ef51a271b1095076020fa701a3db3d602ce3afe9dea8f0279e40",
+   "file": "npc_usopp.bin"
+  },
+  "npc:vivi": {
+   "type": "f64",
+   "n": 8,
+   "sha": "3c2a3f2467b15965cbd2d49b95ed12e74a315ec5c991e6ab6a3b341fd4ae37a9",
+   "file": "npc_vivi.bin"
+  },
+  "npc:zeff": {
+   "type": "f64",
+   "n": 8,
+   "sha": "71377ade581343ca5e669565ff5628ff438860f393fd54ed4c51a766bb4403b1",
+   "file": "npc_zeff.bin"
+  },
+  "npc:zoro": {
+   "type": "f64",
+   "n": 8,
+   "sha": "15bd906ece20ed881588f81677a5bb0a57776bef15369c3a4974bfbb569a8a1d",
+   "file": "npc_zoro.bin"
+  },
+  "walk:decks": {
+   "type": "f64",
+   "n": 2760,
+   "sha": "f2f9389804cad855ea7e87f19cd9d7693ee9b8e731b3f5a012e1e05190ee4e3d",
+   "file": "walk_decks.bin"
+  },
+  "walk:platforms": {
+   "type": "f64",
+   "n": 901,
+   "sha": "d2d6ace3722b113641f4b8712923112b49eacd6b2f1b1ae62cfae2145df8bd00",
+   "file": "walk_platforms.bin"
+  },
+  "walk:launchers": {
+   "type": "f64",
+   "n": 0,
+   "sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "file": "walk_launchers.bin"
+  },
+  "walk:lanes": {
+   "type": "f64",
+   "n": 154,
+   "sha": "2dbef7455c1eeb193ef181cd95b3b13f180eb88f7950b02d2c2e7e79f2ccc32c",
+   "file": "walk_lanes.bin"
+  },
+  "walk:rides": {
+   "type": "f64",
+   "n": 187,
+   "sha": "122a1f5f74af81cbd1676624da7ac6335e0197ad6f62135642f4a0a4404ee08f",
+   "file": "walk_rides.bin"
+  },
+  "walk:colliders": {
+   "type": "f64",
+   "n": 7605,
+   "sha": "12506e85a1b12a65ce05f55de9fec6de7fd227320f8b6d83f81925082f5ed190",
+   "file": "walk_colliders.bin"
+  },
+  "zones": {
+   "type": "f64",
+   "n": 108,
+   "sha": "9ec3b562a5b0c4448fb144d573f22101534afeaff87dc3943eb3d5a7fc1219a4",
+   "file": "zones.bin"
+  }
+ }
+}

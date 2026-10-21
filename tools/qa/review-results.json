@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-17",
+  "tests": 15,
+  "layoutAssertions": 28,
+  "travel": {
+    "drift": {
+      "arrived": true,
+      "end": 0.5427029978065558,
+      "gameSeconds": 43.01460000002223,
+      "land": 0,
+      "minTale": 8.972927400648723,
+      "offLane": 0,
+      "running": false,
+      "seconds": 43.004
+    },
+    "errors": [],
+    "story": {
+      "done": true,
+      "finale": true
+    }
+  },
+  "boots": [
+    {
+      "buildMs": 458,
+      "warmMs": 322
+    },
+    {
+      "buildMs": 436,
+      "warmMs": 213
+    },
+    {
+      "buildMs": 423,
+      "warmMs": 256
+    },
+    {
+      "buildMs": 437,
+      "warmMs": 169
+    },
+    {
+      "buildMs": 422,
+      "warmMs": 175
+    }
+  ],
+  "medianBuildMs": 436,
+  "downloadKiB": {
+    "gzip": 324.2,
+    "brotli": 268.3
+  },
+  "labels": {
+    "desktop": {
+      "count": 6,
+      "overlaps": 0,
+      "offscreen": 0,
+      "tracked": "Baratie"
+    },
+    "portrait": {
+      "width": 390,
+      "height": 844,
+      "largeText": true,
+      "overlaps": 0,
+      "offscreen": 0
+    }
+  },
+  "locks": {
+    "dialogueDrift": 0,
+    "menuDrift": 0,
+    "resumedDistance": 1.3228
+  },
+  "banners": {
+    "perMinute": 4,
+    "repeatSeconds": 150,
+    "landfallSeconds": 1.5
+  },
+  "limitations": [
+    "Story progression uses target teleports.",
+    "Touch regression tests use synthetic events, not a physical device.",
+    "Existing layout gate does not prove every complete walking route."
+  ]
+}

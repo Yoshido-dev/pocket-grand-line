@@ -1,0 +1,362 @@
+[
+ {
+  "id": "alabasta",
+  "lat": -4,
+  "lon": 70,
+  "rM": 8.3,
+  "land": 11.6,
+  "props": 9.5,
+  "tall": 9.1,
+  "verts": 7621
+ },
+ {
+  "id": "amazon-lily",
+  "lat": 18,
+  "lon": 205,
+  "rM": 4.8,
+  "land": 6.1,
+  "props": 8.6,
+  "tall": 8.6,
+  "verts": 6221
+ },
+ {
+  "id": "baratie",
+  "lat": 34,
+  "lon": 90,
+  "rM": 6,
+  "land": 18.2,
+  "props": 18.6,
+  "tall": 8.5,
+  "verts": 6245
+ },
+ {
+  "id": "cocoyasi",
+  "lat": 54,
+  "lon": 138,
+  "rM": 8,
+  "land": 14.2,
+  "props": 12.1,
+  "tall": 7.1,
+  "verts": 9439
+ },
+ {
+  "id": "coo-beach",
+  "lat": -42,
+  "lon": 55,
+  "rM": 7.3,
+  "land": 16,
+  "props": 9.2,
+  "tall": 7.5,
+  "verts": 4261
+ },
+ {
+  "id": "dressrosa",
+  "lat": 8,
+  "lon": 214,
+  "rM": 6.1,
+  "land": 7.3,
+  "props": 6.8,
+  "tall": 7.3,
+  "verts": 6753
+ },
+ {
+  "id": "drum",
+  "lat": 4,
+  "lon": 40,
+  "rM": 6,
+  "land": 9.4,
+  "props": 12.6,
+  "tall": 13.6,
+  "verts": 6398
+ },
+ {
+  "id": "egghead",
+  "lat": 7,
+  "lon": 318,
+  "rM": 5.2,
+  "land": 6.2,
+  "props": 5.7,
+  "tall": 8.3,
+  "verts": 5936
+ },
+ {
+  "id": "enies-lobby",
+  "lat": -8,
+  "lon": 112,
+  "rM": 5.7,
+  "land": 9.3,
+  "props": 9.1,
+  "tall": 11.3,
+  "verts": 6057
+ },
+ {
+  "id": "fish-man-island",
+  "lat": 0,
+  "lon": 180,
+  "rM": 7.3,
+  "land": 10.6,
+  "props": 9.9,
+  "tall": 5.5,
+  "verts": 8524
+ },
+ {
+  "id": "impel-down",
+  "lat": -18,
+  "lon": 140,
+  "rM": 4.4,
+  "land": 4.5,
+  "props": 4.9,
+  "tall": 11.1,
+  "verts": 4343
+ },
+ {
+  "id": "jaya-skypiea",
+  "lat": 4,
+  "lon": 100,
+  "rM": 5.3,
+  "land": 6.8,
+  "props": 7.1,
+  "tall": 12.3,
+  "verts": 6794
+ },
+ {
+  "id": "kamabakka",
+  "lat": -10,
+  "lon": 50,
+  "rM": 5.2,
+  "land": 7.2,
+  "props": 6.9,
+  "tall": 7,
+  "verts": 11370
+ },
+ {
+  "id": "laugh-tale-fog",
+  "lat": 0,
+  "lon": 340,
+  "rM": 3.3,
+  "land": 5.1,
+  "props": 4.6,
+  "tall": 1.6,
+  "verts": 542
+ },
+ {
+  "id": "little-garden",
+  "lat": -8,
+  "lon": 28,
+  "rM": 5.7,
+  "land": 8.7,
+  "props": 7.5,
+  "tall": 4.5,
+  "verts": 2540
+ },
+ {
+  "id": "loguetown",
+  "lat": 24,
+  "lon": 16,
+  "rM": 5.2,
+  "land": 7.9,
+  "props": 8.4,
+  "tall": 7.4,
+  "verts": 7534
+ },
+ {
+  "id": "marineford",
+  "lat": -9,
+  "lon": 168,
+  "rM": 6.1,
+  "land": 8.5,
+  "props": 7.4,
+  "tall": 10.5,
+  "verts": 7366
+ },
+ {
+  "id": "mary-geoise",
+  "lat": 9,
+  "lon": 180,
+  "rM": 4.4,
+  "land": 0,
+  "props": 10.3,
+  "tall": 12.2,
+  "verts": 9521
+ },
+ {
+  "id": "north-stair",
+  "lat": 90,
+  "lon": 0,
+  "rM": 3.3,
+  "land": 14.9,
+  "props": 16.4,
+  "tall": 9.8,
+  "verts": 6024
+ },
+ {
+  "id": "ohara",
+  "lat": -48,
+  "lon": 272,
+  "rM": 6.6,
+  "land": 10.8,
+  "props": 11.2,
+  "tall": 8.1,
+  "verts": 8495
+ },
+ {
+  "id": "pine-point",
+  "lat": 60,
+  "lon": 300,
+  "rM": 6.6,
+  "land": 13.1,
+  "props": 10.1,
+  "tall": 13.8,
+  "verts": 2466
+ },
+ {
+  "id": "punk-hazard",
+  "lat": -6,
+  "lon": 194,
+  "rM": 5.2,
+  "land": 7.6,
+  "props": 6.4,
+  "tall": 7.6,
+  "verts": 3145
+ },
+ {
+  "id": "sabaody",
+  "lat": 5,
+  "lon": 162,
+  "rM": 6.3,
+  "land": 9.2,
+  "props": 10,
+  "tall": 8.9,
+  "verts": 8963
+ },
+ {
+  "id": "sea-king-drum",
+  "lat": 13.43,
+  "lon": 41.44,
+  "rM": 0,
+  "land": 0,
+  "props": 8.1,
+  "tall": 2.5,
+  "verts": 3493
+ },
+ {
+  "id": "sea-king-alabasta",
+  "lat": 16.17,
+  "lon": 78.18,
+  "rM": 0,
+  "land": 0,
+  "props": 9.1,
+  "tall": 2.5,
+  "verts": 3767
+ },
+ {
+  "id": "sea-king-water7",
+  "lat": 23.44,
+  "lon": 117.72,
+  "rM": 0,
+  "land": 0,
+  "props": 9.3,
+  "tall": 2.5,
+  "verts": 3767
+ },
+ {
+  "id": "sea-king-ohara",
+  "lat": -18.48,
+  "lon": 205.57,
+  "rM": 0,
+  "land": 0,
+  "props": 9.1,
+  "tall": 2.5,
+  "verts": 3767
+ },
+ {
+  "id": "south-stair",
+  "lat": -90,
+  "lon": 0,
+  "rM": 3.3,
+  "land": 11.5,
+  "props": 14.8,
+  "tall": 14,
+  "verts": 6402
+ },
+ {
+  "id": "sunny-dock",
+  "lat": 40,
+  "lon": 42,
+  "rM": 9.3,
+  "land": 18.8,
+  "props": 13.5,
+  "tall": 10.3,
+  "verts": 12956
+ },
+ {
+  "id": "syrup-village",
+  "lat": 64,
+  "lon": 40,
+  "rM": 7.3,
+  "land": 14.4,
+  "props": 12.6,
+  "tall": 8.4,
+  "verts": 8620
+ },
+ {
+  "id": "thriller-bark",
+  "lat": -7,
+  "lon": 150,
+  "rM": 3.3,
+  "land": 5.8,
+  "props": 8.3,
+  "tall": 7.2,
+  "verts": 5432
+ },
+ {
+  "id": "twin-capes",
+  "lat": 0,
+  "lon": 5.32,
+  "rM": 8,
+  "land": 9.3,
+  "props": 10.8,
+  "tall": 11.8,
+  "verts": 11898
+ },
+ {
+  "id": "wano",
+  "lat": 1,
+  "lon": 240,
+  "rM": 8,
+  "land": 12.2,
+  "props": 11.1,
+  "tall": 10,
+  "verts": 9512
+ },
+ {
+  "id": "water-7",
+  "lat": 1,
+  "lon": 128,
+  "rM": 8.6,
+  "land": 11,
+  "props": 11.9,
+  "tall": 13.2,
+  "verts": 11517
+ },
+ {
+  "id": "whisky-peak",
+  "lat": 6,
+  "lon": 22,
+  "rM": 5.2,
+  "land": 9,
+  "props": 7,
+  "tall": 13.2,
+  "verts": 8987
+ },
+ {
+  "id": "whole-cake",
+  "lat": -5,
+  "lon": 268,
+  "rM": 7,
+  "land": 8.5,
+  "props": 8.3,
+  "tall": 9.9,
+  "verts": 9175
+ }
+]

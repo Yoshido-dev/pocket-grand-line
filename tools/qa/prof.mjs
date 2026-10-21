@@ -1,0 +1,27 @@
+import { chromium } from 'playwright-core';
+import fs from 'node:fs';
+const browser = await chromium.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: true, args: ['--use-angle=d3d11', '--ignore-gpu-blocklist', '--enable-unsafe-swiftshader'] });
+const page = await browser.newPage({ viewport: { width: 960, height: 600 } });
+const cdp = await page.context().newCDPSession(page);
+await cdp.send('Profiler.enable');
+await cdp.send('Profiler.setSamplingInterval', { interval: 100 });
+await page.goto(process.argv[2]);
+await page.waitForSelector('#b-start', { timeout: 60000 });
+await cdp.send('Profiler.start');
+await page.reload();
+await page.waitForSelector('#b-start', { timeout: 60000 });
+const { profile } = await cdp.send('Profiler.stop');
+console.log('boot', JSON.stringify(await page.evaluate(() => window.__boot)));
+const byId = new Map(profile.nodes.map((n) => [n.id, n]));
+const self = new Map();
+const dt = profile.timeDeltas; let total = 0;
+profile.samples.forEach((id, i) => { const n = byId.get(id); const k = `${n.callFrame.functionName || '(anon)'} ${n.callFrame.url.split('/').pop()}:${n.callFrame.lineNumber}`; self.set(k, (self.get(k) || 0) + dt[i] / 1000); total += dt[i] / 1000; });
+const rows = [...self.entries()].sort((a, b) => b[1] - a[1]).slice(0, 40);
+for (const [k, v] of rows) console.log(v.toFixed(1).padStart(7), k);
+// inclusive time for named functions
+const parent = new Map(); for (const n of profile.nodes) for (const c of n.children || []) parent.set(c, n.id);
+const incl = new Map();
+profile.samples.forEach((id, i) => { const seen = new Set(); let cur = id; while (cur) { const n = byId.get(cur); const k = `${n.callFrame.functionName || '(anon)'}:${n.callFrame.lineNumber}`; if (!seen.has(k)) { seen.add(k); incl.set(k, (incl.get(k) || 0) + dt[i] / 1000); } cur = parent.get(cur); } });
+console.log('--- inclusive');
+for (const [k, v] of [...incl.entries()].sort((a, b) => b[1] - a[1]).slice(0, 45)) console.log(v.toFixed(1).padStart(7), k);
+await browser.close();

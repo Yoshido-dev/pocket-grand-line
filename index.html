@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+    <meta name="theme-color" content="#5db8f0" />
+    <title>Pocket Grand Line — a tiny One Piece planet</title>
+    <meta name="description" content="A cozy tiny-planet delivery adventure through a miniature One Piece world. Unofficial, non-commercial fan project." />
+    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pocket Grand Line" />
+    <meta property="og:description" content="Deliver parcels for the Straw Hats across a tiny planet that holds the whole Grand Line. A cozy One Piece fan game that runs in your browser." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pocket Grand Line" />
+    <meta name="twitter:description" content="Deliver parcels for the Straw Hats across a tiny planet that holds the whole Grand Line. A cozy One Piece fan game that runs in your browser." />
+    <!--share-image-->
+    <style>
+      html,body{margin:0;height:100%;background:#5db8f0;overflow:hidden}
+      #boot{position:fixed;inset:0;display:grid;place-items:center;z-index:5;background:radial-gradient(circle at 50% 42%,#cdefff,#5db8f0 70%);color:#2b2235;text-align:center;transition:opacity .6s ease}
+      #boot.gone{opacity:0;pointer-events:none}
+      #boot .globe{width:96px;height:96px;margin:0 auto;border-radius:50%;border:4px solid #2b2235;overflow:hidden;position:relative;background:#66c8f0;box-shadow:0 6px 0 rgba(43,34,53,.35)}
+      #boot .band{position:absolute;left:-10%;right:-10%;top:40%;height:20%;background:#2f7fdb;opacity:.85}
+      #boot .wall{position:absolute;top:-10%;bottom:-10%;width:14%;left:43%;background:#c8463d;border-left:3px solid #8b2c2a;animation:spin 2.4s linear infinite}
+      #boot .wall.b{animation-delay:-1.2s}
+      #boot h1{margin:16px 0 4px;font:700 22px/1.1 Georgia,'Times New Roman',serif;letter-spacing:.14em}
+      #boot p{margin:0;font:600 14px/1.4 Georgia,'Times New Roman',serif;color:#3b3f6e}
+      @keyframes spin{0%{transform:translateX(-380%) scaleX(.3)}25%{transform:translateX(-190%) scaleX(.8)}50%{transform:translateX(0) scaleX(1)}75%{transform:translateX(190%) scaleX(.8)}100%{transform:translateX(380%) scaleX(.3)}}
+      @media (prefers-reduced-motion:reduce){#boot .wall{animation:none}}
+    </style>
+  </head>
+  <body>
+    <div id="boot">
+      <div>
+        <div class="globe" aria-hidden="true"><div class="band"></div><div class="wall"></div><div class="wall b"></div></div>
+        <h1>POCKET GRAND LINE</h1>
+        <p>Folding the world map onto a very small ball…</p>
+      </div>
+    </div>
+    <canvas id="c" tabindex="0" aria-label="Game view"></canvas>
+    <div id="ui"></div>
+    <noscript>This tiny planet needs JavaScript to spin.</noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

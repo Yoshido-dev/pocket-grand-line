@@ -1,0 +1,74 @@
+X POST — Pocket Grand Line
+(character counts use X's rules; all under 280)
+
+HASHTAG PLAN: X recommends at most 2 hashtags per post, so each post carries 1-2.
+Saturdays: #OnePiece #ScreenshotSaturday. Other days: #OnePiece #indiedev.
+In a thread, spread the rest: post 2 #indiedev #gamedev, post 3 #threejs.
+Do not add chapter or episode hashtags (e.g. this week's manga chapter): X's rules say posting unrelated posts to trends can get an account suspended.
+
+=== OPTION A: one post, on a Saturday (278/280) ===
+Images, in this order: 05-wano-torii.jpg, 03-sea-king-bridge.jpg, 10-sunset-feast.jpg, 14-talking-to-luffy.jpg
+
+Making a One Piece fan game, inspired by Messenger by Abeto.
+
+You're a courier on a tiny planet holding the whole Grand Line, delivering for the Straw Hats from dawn to the sunset feast.
+
+Runs in the browser. Every model and sound is made in code.
+
+#OnePiece #ScreenshotSaturday
+
+=== OPTION A on any other day (268/280) ===
+
+Making a One Piece fan game, inspired by Messenger by Abeto.
+
+You're a courier on a tiny planet holding the whole Grand Line, delivering for the Straw Hats from dawn to the sunset feast.
+
+Runs in the browser. Every model and sound is made in code.
+
+#OnePiece #indiedev
+
+
+=== OPTION B: a 3-post thread ===
+
+--- 1/3 (243/280) ---
+Images: 05-wano-torii.jpg, 03-sea-king-bridge.jpg, 10-sunset-feast.jpg, 14-talking-to-luffy.jpg
+(on other days swap #ScreenshotSaturday for #indiedev and drop #indiedev from post 2)
+
+Working on a little One Piece fan game, inspired by Messenger by Abeto.
+
+You're a courier on a tiny planet that holds the whole Grand Line, carrying parcels for the Straw Hats from dawn until the sunset feast. 🧵
+
+#OnePiece #ScreenshotSaturday
+
+--- 2/3 (270/280) ---
+Images: 07-alabasta-vivi.jpg, 04-fish-man-island.jpg, 08-drum-chopper.jpg, 11-golden-bell.jpg
+
+Walk from Foosha past Reverse Mountain to Wano, via Drum, Alabasta, Water 7, Fish-Man Island and more: 30+ islands, 20+ characters, eight deliveries.
+
+Cross the Calm Belt on a sleeping Sea King, ride the currents, take the Knock-Up Stream to the sky.
+
+#indiedev #gamedev
+
+--- 3/3 (277/280) ---
+Images: 16-tiny-planet.jpg, 15-eagle-eye.jpg, 12-night-lighthouse.jpg, 13-night-thriller-bark.jpg
+
+There are no asset files at all. Every island, face and tune is generated in code, so the whole game is about 330 KB and runs in the browser. Built with three.js.
+
+Unofficial, non-commercial fan project. One Piece belongs to Eiichiro Oda, Shueisha and Toei Animation.
+
+#threejs
+
+
+=== ALT TEXT (paste into each image's description on X) ===
+05-wano-torii: A small courier in a green cap stands under a red torii gate at sunset, facing a five-storey pagoda and a waterfall, with cherry trees and falling petals around them.
+03-sea-king-bridge: The courier walks along the back of a sleeping green Sea King lying across a calm sea, toward a ship with a sun figurehead and a village with a windmill.
+10-sunset-feast: Seen from above, the courier stands with a crowd of chibi One Piece characters around a feast table on a ship's lawn deck under an orange sunset sky.
+14-talking-to-luffy: The courier stands in shallow water in front of a ship whose sun-shaped figurehead holds a boy in a straw hat; a dialogue box at the bottom reads "Shishishi! You're a good messenger!"
+07-alabasta-vivi: The courier stands in a desert town before a domed palace, facing a girl with long blue hair and a large white duck.
+04-fish-man-island: The courier stands inside a giant soap-bubble dome with a coral palace, coral spires and fish swimming outside.
+08-drum-chopper: The courier climbs snowy stairs toward a small reindeer in a pink hat and a tall old woman, beside grey stone peaks and pine trees.
+11-golden-bell: At sunset the courier stands on a cloud next to a large golden bell hanging in a wooden frame.
+16-tiny-planet: The courier stands on a sandy beach that curves away like a tiny planet, with palm trees, deck chairs and a sign reading "News Coos on holiday. Back at sunset. Probably."
+15-eagle-eye: A top-down view of a tiny round world: a desert island with a palace, a snowy island, a jungle island and a long orange Sea King lying in the sea.
+12-night-lighthouse: At night the courier stands beside a striped lighthouse at the foot of a red mountain with a blue river running up its side.
+13-night-thriller-bark: Under a starry sky the courier stands in a spooky graveyard before a crooked mansion with glowing windows.

@@ -1,0 +1,1021 @@
+{
+  "format": 1,
+  "files": {
+    "src/content/zones/alabasta.ts": {
+      "at": [
+        "[ - 11.4 , 71.9 ]"
+      ],
+      "authorR": [
+        "38"
+      ],
+      "spots": [
+        "{ vivi : { x : 0 , z : 1.33 , rot : 0 } }"
+      ],
+      "zone.id": [
+        "'alabasta'"
+      ],
+      "zone.lat": [
+        "- 4"
+      ],
+      "zone.lon": [
+        "70"
+      ]
+    },
+    "src/content/zones/amazon-lily.ts": {
+      "approach": [
+        "[ Z . ll ( - 5.4 , - 0.2 ) ]"
+      ],
+      "at": [
+        "[ - 19.0 , 47.3 ]"
+      ],
+      "authorR": [
+        "50"
+      ],
+      "constant.F": [
+        "frame ( 18 , 205 )"
+      ],
+      "constant.PAL": [
+        "[ - 0.1 , - 1.4 ]"
+      ],
+      "constant.Z": [
+        "F . Z"
+      ],
+      "spots": [
+        "{ hancock : { x : - 1.32 , z : PAL [ 1 ] , rot : 270 } }"
+      ],
+      "zone.id": [
+        "'amazon-lily'"
+      ],
+      "zone.lat": [
+        "18"
+      ],
+      "zone.lon": [
+        "205"
+      ]
+    },
+    "src/content/zones/baratie.ts": {
+      "approach": [
+        "[ Z . ll ( . . . P0 ) , Z . ll ( . . . PM ) ]"
+      ],
+      "at": [
+        "[ 32.639 , 80.927 , 6.0 ]"
+      ],
+      "authorR": [
+        "38"
+      ],
+      "constant.BH": [
+        "frameAt ( - 2.72 , 1.31 , 110 )"
+      ],
+      "constant.DECK": [
+        "2.05 * S + Y0"
+      ],
+      "constant.P0": [
+        "BH . at ( 6.8 , 2.4 )"
+      ],
+      "constant.PM": [
+        "BH . at ( 4.6 , 2.4 )"
+      ],
+      "constant.S": [
+        "0.85"
+      ],
+      "constant.sp": [
+        "( gx : number , gz : number , dH : number ) = > { const [ x , z ] = BH . at ( gx , gz ) ; return { x , z , rot : Z . rot ( x , z , BH . H + dH ) , y : DECK , abs : true } ; }"
+      ],
+      "constant.Y0": [
+        "- 0.25"
+      ],
+      "constant.Z": [
+        "zf ( 34 , 90 )"
+      ],
+      "spots": [
+        "{ sanji : sp ( - 0.9 , 3.2 , - 100 ) , zeff : sp ( 0.25 , 1.75 , - 35 ) , }"
+      ],
+      "zone.id": [
+        "'baratie'"
+      ],
+      "zone.lat": [
+        "34"
+      ],
+      "zone.lon": [
+        "90"
+      ]
+    },
+    "src/content/zones/cocoyasi.ts": {
+      "authorR": [
+        "38"
+      ],
+      "constant.Z": [
+        "zf ( 54 , 138 )"
+      ],
+      "spots": [
+        "{ nami : { x : - 0.76 , z : 0.67 , rot : Z . rot ( - 0.76 , 0.67 , 150 ) } , }"
+      ],
+      "zone.id": [
+        "'cocoyasi'"
+      ],
+      "zone.lat": [
+        "54"
+      ],
+      "zone.lon": [
+        "138"
+      ]
+    },
+    "src/content/zones/coo-beach.ts": {
+      "at": [
+        "[ - 45.4 , 56.4 ]"
+      ],
+      "authorR": [
+        "38"
+      ],
+      "constant.BARREL": [
+        "[ 0.35 , - 2.6 ]"
+      ],
+      "constant.Z": [
+        "zf ( - 42 , 55 )"
+      ],
+      "spots": [
+        "{ 'news-coo' : { x : 0 , z : 0 , rot : Z . rot ( 0 , 0 , 180 ) , y : 0.2 } , barrel : { x : BARREL [ 0 ] , z : BARREL [ 1 ] , rot : Z . rot ( . . . BARREL , 200 ) } , }"
+      ],
+      "zone.id": [
+        "'coo-beach'"
+      ],
+      "zone.lat": [
+        "- 42"
+      ],
+      "zone.lon": [
+        "55"
+      ]
+    },
+    "src/content/zones/dressrosa.ts": {
+      "approach": [
+        "[ Z . ll ( 0.6 , - 5.8 ) ]"
+      ],
+      "at": [
+        "[ 11.5 , 222.0 ]"
+      ],
+      "authorR": [
+        "50"
+      ],
+      "constant.F": [
+        "frame ( 8 , 214 )"
+      ],
+      "constant.Z": [
+        "F . Z"
+      ],
+      "zone.id": [
+        "'dressrosa'"
+      ],
+      "zone.lat": [
+        "8"
+      ],
+      "zone.lon": [
+        "214"
+      ]
+    },
+    "src/content/zones/drum.ts": {
+      "approach": [
+        "[ L ( - 1.4 , 5.0 ) ]"
+      ],
+      "at": [
+        "[ 6.7 , 49.5 ]"
+      ],
+      "authorR": [
+        "38"
+      ],
+      "call.chest": [
+        "chest ( 'chest-drum' , - 1.4 , - 3.9 , 180 )"
+      ],
+      "constant.L": [
+        "( x : number , z : number ) = > ll ( 4 , 40 , x , z )"
+      ],
+      "spots": [
+        "{ chopper : { x : - 1.32 , z : 0.66 , rot : 0 } , kureha : { x : 0.66 , z : 1.33 , rot : 290 } , }"
+      ],
+      "zone.id": [
+        "'drum'"
+      ],
+      "zone.lat": [
+        "4"
+      ],
+      "zone.lon": [
+        "40"
+      ]
+    },
+    "src/content/zones/egghead.ts": {
+      "approach": [
+        "[ Z . ll ( - 5.1 , - 1.8 ) ]"
+      ],
+      "at": [
+        "[ - 12.0 , 325.0 ]"
+      ],
+      "authorR": [
+        "50"
+      ],
+      "constant.F": [
+        "frame ( 7 , 318 )"
+      ],
+      "constant.Z": [
+        "F . Z"
+      ],
+      "zone.id": [
+        "'egghead'"
+      ],
+      "zone.lat": [
+        "7"
+      ],
+      "zone.lon": [
+        "318"
+      ]
+    },
+    "src/content/zones/enies-lobby.ts": {
+      "approach": [
+        "[ G . Z . ll ( . . . pol ( 315 , 7.0 ) ) ]"
+      ],
+      "at": [
+        "[ - 10.8 , 134.2 ]"
+      ],
+      "authorR": [
+        "50"
+      ],
+      "constant.C": [
+        "[ - 0.3 , - 1.2 ]"
+      ],
+      "constant.G": [
+        "geo ( - 8 , 112 )"
+      ],
+      "constant.pol": [
+        "( b : number , r : number ) : V2 = > [ C [ 0 ] + Math . sin ( ( b * Math . PI ) / 180 ) * r , C [ 1 ] + Math . cos ( ( b * Math . PI ) / 180 ) * r ]"
+      ],
+      "constant.Z": [
+        "G . Z"
+      ],
+      "zone.id": [
+        "'enies-lobby'"
+      ],
+      "zone.lat": [
+        "- 8"
+      ],
+      "zone.lon": [
+        "112"
+      ]
+    },
+    "src/content/zones/fish-man-island.ts": {
+      "authorR": [
+        "38"
+      ],
+      "call.chest": [
+        "chest ( 'chest-fish-man' , dx - 1.4 , dz + 2.0 , 160 )"
+      ],
+      "constant.LON": [
+        "180"
+      ],
+      "spots": [
+        "{ jinbe : { x : 2.75 , z : - 1.75 , rot : 295 } }"
+      ],
+      "zone.id": [
+        "'fish-man-island'"
+      ],
+      "zone.lat": [
+        "0"
+      ],
+      "zone.lon": [
+        "LON"
+      ]
+    },
+    "src/content/zones/impel-down.ts": {
+      "at": [
+        "[ - 19.3 , 170.9 ]"
+      ],
+      "authorR": [
+        "50"
+      ],
+      "zone.id": [
+        "'impel-down'"
+      ],
+      "zone.lat": [
+        "- 18"
+      ],
+      "zone.lon": [
+        "140"
+      ]
+    },
+    "src/content/zones/jaya-skypiea.ts": {
+      "approach": [
+        "[ [ 2 , 97 ] ]"
+      ],
+      "at": [
+        "[ 11.0 , 78.7 ]"
+      ],
+      "authorR": [
+        "38"
+      ],
+      "call.ride": [
+        "ride ( 'ride-knock-up' , [ [ V [ 0 ] + 0.03 , V [ 1 ] + 0.03 , 4.5 ] , [ V [ 0 ] + 0.4 , V [ 1 ] + 0.35 , 11.8 ] , [ - 0.6 , - 0.25 , 12.9 ] , [ 0.3 , 0.3 , DECK + 0.25 ] ] , 2.5 , { x : V [ 0 ] , z : V [ 1 ] , r : 0.85 , delay : 0.5 } )",
+        "ride ( 'ride-milky-road' , ride , 3.0 )"
+      ],
+      "constant.C": [
+        "[ D * Math . cos ( 4 / RD ) , D ]"
+      ],
+      "constant.DECK": [
+        "9"
+      ],
+      "constant.deckLL": [
+        "L ( C [ 0 ] , C [ 1 ] )"
+      ],
+      "constant.L": [
+        "( x : number , z : number ) = > ll ( 4 , 100 , x , z )"
+      ],
+      "constant.RD": [
+        "180 / Math . PI"
+      ],
+      "constant.V": [
+        "[ - 3 * D * Math . cos ( 4 / RD ) , - 2 * D ]"
+      ],
+      "platforms": [
+        "[ { lat : deckLL [ 0 ] , lon : deckLL [ 1 ] , r : 4 * D , h : DECK , surface : 'cloud' , edgeRide : 'ride-milky-road' } , { lat : deckLL [ 0 ] , lon : deckLL [ 1 ] , r : 3.25 , h : DECK - 0.4 , surface : 'cloud' , edgeRide : 'ride-milky-road' } , { lat : deckLL [ 0 ] , lon : deckLL [ 1 ] , r : 3.85 , h : DECK - 0.8 , surface : 'cloud' , edgeRide : 'ride-milky-road' } , ]"
+      ],
+      "spots": [
+        "{ 'golden-bell' : { x : 0.55 , z : 1.75 , y : DECK , abs : true , rot : 180 } }"
+      ],
+      "zone.id": [
+        "'jaya-skypiea'"
+      ],
+      "zone.lat": [
+        "4"
+      ],
+      "zone.lon": [
+        "100"
+      ]
+    },
+    "src/content/zones/kamabakka.ts": {
+      "at": [
+        "[ - 11.4 , 96.4 ]"
+      ],
+      "authorR": [
+        "50"
+      ],
+      "spots": [
+        "{ ivankov : { x : 1.15 , z : - 1.75 , rot : 200 } }"
+      ],
+      "zone.id": [
+        "'kamabakka'"
+      ],
+      "zone.lat": [
+        "- 10"
+      ],
+      "zone.lon": [
+        "50"
+      ]
+    },
+    "src/content/zones/laugh-tale-fog.ts": {
+      "authorR": [
+        "38"
+      ],
+      "zone.id": [
+        "'laugh-tale-fog'"
+      ],
+      "zone.lat": [
+        "0"
+      ],
+      "zone.lon": [
+        "340"
+      ]
+    },
+    "src/content/zones/little-garden.ts": {
+      "at": [
+        "[ - 11.6 , 27.1 ]"
+      ],
+      "authorR": [
+        "50"
+      ],
+      "spots": [
+        "{ brogy : { x : - 3.55 , z : 0.45 , rot : 125 , y : - 0.55 } }"
+      ],
+      "zone.id": [
+        "'little-garden'"
+      ],
+      "zone.lat": [
+        "- 8"
+      ],
+      "zone.lon": [
+        "28"
+      ]
+    },
+    "src/content/zones/loguetown.ts": {
+      "at": [
+        "[ 28.7 , 13.7 ]"
+      ],
+      "authorR": [
+        "50"
+      ],
+      "zone.id": [
+        "'loguetown'"
+      ],
+      "zone.lat": [
+        "24"
+      ],
+      "zone.lon": [
+        "16"
+      ]
+    },
+    "src/content/zones/marineford.ts": {
+      "at": [
+        "[ - 10.9 , 155.7 ]"
+      ],
+      "authorR": [
+        "50"
+      ],
+      "spots": [
+        "{ coby : { x : - 1.0 , z : 1.95 , rot : 200 } }"
+      ],
+      "zone.id": [
+        "'marineford'"
+      ],
+      "zone.lat": [
+        "- 9"
+      ],
+      "zone.lon": [
+        "168"
+      ]
+    },
+    "src/content/zones/mary-geoise.ts": {
+      "authorR": [
+        "50"
+      ],
+      "call.ride": [
+        "ride ( id , [ [ s * 1.35 , z , TOP + 0.02 ] , [ s * 2.0 , z , TOP + 0.1 ] , [ s * 2.62 , z , TOP + 0.1 ] , . . . lift . reverse ( ) ] , 5.2 , { x : s * 1.35 , z , r : 0.45 } )",
+        "ride ( id , [ . . . lift , [ s * 1.75 , z , TOP + 0.65 ] , [ s * 0.75 , z , TOP + 0.02 ] ] , 5 , { x : cx ( s , 0 , 0.05 ) , z , r : 0.5 } )"
+      ],
+      "constant.cx": [
+        "( s : number , home : number , h : number ) = > s * ( home ? 2.6 + 0.46 * ( ( h - 0.05 ) / 5.5 ) : 2.95 - 0.66 * ( ( h - 0.05 ) / 5.5 ) )"
+      ],
+      "constant.TOP": [
+        "5.55"
+      ],
+      "home": [
+        "number",
+        "number"
+      ],
+      "spots": [
+        "{ plaza : { x : 0 , z : - 1.7 , rot : 180 } }"
+      ],
+      "zone.id": [
+        "'mary-geoise'"
+      ],
+      "zone.lat": [
+        "9"
+      ],
+      "zone.lon": [
+        "180"
+      ]
+    },
+    "src/content/zones/north-stair.ts": {
+      "authorR": [
+        "38"
+      ],
+      "call.chest": [
+        "chest ( 'chest-north-stair' , - 6.3 , 4.5 , Z . rot ( - 6.3 , 4.5 , 90 ) )"
+      ],
+      "constant.Z": [
+        "zf ( 90 , 0 )"
+      ],
+      "zone.id": [
+        "'north-stair'"
+      ],
+      "zone.lat": [
+        "90"
+      ],
+      "zone.lon": [
+        "0"
+      ]
+    },
+    "src/content/zones/ohara.ts": {
+      "at": [
+        "[ - 45.0 , 228.0 ]"
+      ],
+      "authorR": [
+        "38"
+      ],
+      "spots": [
+        "{ robin : { x : 0.89 , z : 0 , rot : 50 } }"
+      ],
+      "zone.id": [
+        "'ohara'"
+      ],
+      "zone.lat": [
+        "- 48"
+      ],
+      "zone.lon": [
+        "272"
+      ]
+    },
+    "src/content/zones/pine-point.ts": {
+      "at": [
+        "[ 57.0 , 300.0 ]"
+      ],
+      "authorR": [
+        "38"
+      ],
+      "call.chest": [
+        "chest ( 'chest-pine-point' , - 1.5 , - 1.25 , Z . rot ( - 1.5 , - 1.25 , 200 ) )"
+      ],
+      "constant.Z": [
+        "zf ( 60 , 300 )"
+      ],
+      "spots": [
+        "{ zoro : { x : 0.52 , z : 0.55 , rot : Z . rot ( 0.52 , 0.55 , 45 ) } , }"
+      ],
+      "zone.id": [
+        "'pine-point'"
+      ],
+      "zone.lat": [
+        "60"
+      ],
+      "zone.lon": [
+        "300"
+      ]
+    },
+    "src/content/zones/punk-hazard.ts": {
+      "at": [
+        "[ 2.0 , 204.0 ]"
+      ],
+      "authorR": [
+        "50"
+      ],
+      "zone.id": [
+        "'punk-hazard'"
+      ],
+      "zone.lat": [
+        "- 6"
+      ],
+      "zone.lon": [
+        "194"
+      ]
+    },
+    "src/content/zones/sabaody.ts": {
+      "at": [
+        "[ 11.6 , 152.7 ]"
+      ],
+      "authorR": [
+        "38"
+      ],
+      "constant.LAT": [
+        "5"
+      ],
+      "constant.LON": [
+        "162"
+      ],
+      "spots": [
+        "{ brook : { x : - 1.32 , z : 0 , rot : 90 } }"
+      ],
+      "zone.id": [
+        "'sabaody'"
+      ],
+      "zone.lat": [
+        "LAT"
+      ],
+      "zone.lon": [
+        "LON"
+      ]
+    },
+    "src/content/zones/sea-kings.ts": {},
+    "src/content/zones/south-stair.ts": {
+      "authorR": [
+        "38"
+      ],
+      "constant.deg": [
+        "( r : number ) = > ( r * 180 ) / Math . PI"
+      ],
+      "constant.face": [
+        "( x : number , z : number , b : number ) = > b - deg ( Math . atan2 ( x , z ) )"
+      ],
+      "spots": [
+        "{ 'zoro-night' : { x : 0.66 , z : - 0.5 , rot : face ( 0.66 , - 0.5 , 90 ) } }"
+      ],
+      "zone.id": [
+        "'south-stair'"
+      ],
+      "zone.lat": [
+        "- 90"
+      ],
+      "zone.lon": [
+        "0"
+      ]
+    },
+    "src/content/zones/sunny-dock.ts": {
+      "approach": [
+        "[ Z . ll ( GANG [ 0 ] , - 2.6 ) , Z . ll ( GANG [ 0 ] , - 4.9 ) ]"
+      ],
+      "authorR": [
+        "38"
+      ],
+      "constant.DECK": [
+        "SUNNY_LAWN - 0.4"
+      ],
+      "constant.GANG": [
+        "[ - 1.8 , - 2.35 ]"
+      ],
+      "constant.ROOF": [
+        "SUNNY_ROOF - 0.4"
+      ],
+      "constant.SH": [
+        "frameAt ( - 4.4 , - 7.2 , 90 )"
+      ],
+      "constant.sp": [
+        "( gx : number , gz : number , dH : number , y = DECK ) = > { const [ x , z ] = SH . at ( gx , gz ) ; return { x , z , rot : Z . rot ( x , z , SH . H + dH ) , y , abs : true } ; }"
+      ],
+      "constant.Z": [
+        "zf ( 40 , 42 )"
+      ],
+      "spots": [
+        "{ figurehead : sp ( 0 , 6.6 , 0 , 3.65 ) , 'deck-nami' : sp ( 0.9 , 4.55 , 190 ) , arrival : sp ( 1.4 , 1.3 , 0 ) , 'feast-luffy' : sp ( - 0.35 , 4.85 , 180 ) , 'feast-zoro' : sp ( 0.5 , 3.65 , 90 ) , 'feast-sanji' : sp ( - 1.2 , 3.65 , - 90 ) , 'feast-nami' : sp ( 0.5 , 2.75 , 90 ) , 'feast-usopp' : sp ( - 1.2 , 2.75 , - 90 ) , 'feast-chopper' : sp ( 0.5 , 1.85 , 90 ) , 'feast-robin' : sp ( - 1.2 , 1.85 , - 90 ) , 'feast-kaya' : sp ( 0.85 , 0.7 , 20 ) , 'feast-vivi' : sp ( - 1.15 , 0.7 , - 25 ) , 'feast-zeff' : sp ( 0.5 , - 0.35 , 90 ) , 'feast-crocus' : sp ( - 1.2 , - 0.35 , - 90 ) , 'feast-kureha' : sp ( 0.5 , - 1.2 , 90 ) , 'feast-jinbe' : sp ( - 1.25 , - 1.2 , - 90 ) , 'feast-brook' : sp ( 0.75 , - 2.7 , 0 , ROOF ) , 'feast-franky' : sp ( - 0.85 , - 2.7 , 0 , ROOF ) , }"
+      ],
+      "zone.id": [
+        "'sunny-dock'"
+      ],
+      "zone.lat": [
+        "40"
+      ],
+      "zone.lon": [
+        "42"
+      ]
+    },
+    "src/content/zones/syrup-village.ts": {
+      "at": [
+        "[ 59.8 , 40.8 ]"
+      ],
+      "authorR": [
+        "38"
+      ],
+      "constant.Z": [
+        "zf ( 64 , 40 )"
+      ],
+      "spots": [
+        "{ usopp : { x : - 1.2 , z : - 0.63 , rot : Z . rot ( - 1.2 , - 0.63 , 49 ) } , kaya : { x : 1.08 , z : 1.36 , rot : Z . rot ( 1.08 , 1.36 , 229 ) } , 'franky-hide' : { x : - 1.75 , z : - 2.35 , rot : Z . rot ( - 1.75 , - 2.35 , 20 ) } , }"
+      ],
+      "zone.id": [
+        "'syrup-village'"
+      ],
+      "zone.lat": [
+        "64"
+      ],
+      "zone.lon": [
+        "40"
+      ]
+    },
+    "src/content/zones/thriller-bark.ts": {
+      "at": [
+        "[ - 11.0 , 241.0 ]"
+      ],
+      "authorR": [
+        "38"
+      ],
+      "zone.id": [
+        "'thriller-bark'"
+      ],
+      "zone.lat": [
+        "- 7"
+      ],
+      "zone.lon": [
+        "150"
+      ]
+    },
+    "src/content/zones/twin-capes.ts": {
+      "anchor": [
+        "[ 0 , 0 ]"
+      ],
+      "approach": [
+        "[ [ 1.35 , 9.6 ] , [ 6.4 , 18.5 ] , ]"
+      ],
+      "authorR": [
+        "38"
+      ],
+      "constant.CRO": [
+        "[ 7.96 , 2.65 ]"
+      ],
+      "constant.MX": [
+        "- 7 * D"
+      ],
+      "spots": [
+        "{ crocus : { x : CRO [ 0 ] + MX , z : CRO [ 1 ] , rot : 223 } , laboon : { x : 16 * D + MX , z : - 3 * D , rot : 270 , y : 0 , abs : true } , }"
+      ],
+      "zone.id": [
+        "'twin-capes'"
+      ],
+      "zone.lat": [
+        "0"
+      ],
+      "zone.lon": [
+        "7"
+      ]
+    },
+    "src/content/zones/wano.ts": {
+      "approach": [
+        "[ ll ( POOL [ 0 ] , POOL [ 1 ] - 0.4 ) , ll ( - 6.3 , STAIR_Z ) ]"
+      ],
+      "at": [
+        "[ 9.0 , 306.0 ]"
+      ],
+      "authorR": [
+        "38"
+      ],
+      "call.chest": [
+        "chest ( 'chest-wano' , 0.0 , 3.9 , 200 )"
+      ],
+      "call.ride": [
+        "ride ( 'ride-koi-lift' , [ [ qx , qz , - 0.1 ] , [ qx , qz + 0.45 , 1.3 ] , [ qx , qz + 1.1 , 3.1 ] , [ qx , qz + 2.0 , 3.3 ] , [ qx , qz + 3.0 , 2.6 ] ] , 2.0 , { x : qx , z : qz , r : 0.6 } )"
+      ],
+      "constant.LAT": [
+        "1"
+      ],
+      "constant.ll": [
+        "( x : number , z : number ) : [ number , number ] = > [ LAT + z / M , LON + x / ( M * Math . cos ( LAT * ( Math . PI / 180 ) ) ) ]"
+      ],
+      "constant.LON": [
+        "240"
+      ],
+      "constant.M": [
+        "0.6632"
+      ],
+      "constant.POOL": [
+        "[ PX , PZ - 4.3 ]"
+      ],
+      "constant.PX": [
+        "- 0.2"
+      ],
+      "constant.PZ": [
+        "1.4"
+      ],
+      "constant.STAIR_Z": [
+        "1.0"
+      ],
+      "spots": [
+        "{ 'zoro-nap' : { x : - 1.33 , z : 1.99 , rot : 140 } }"
+      ],
+      "zone.id": [
+        "'wano'"
+      ],
+      "zone.lat": [
+        "LAT"
+      ],
+      "zone.lon": [
+        "LON"
+      ]
+    },
+    "src/content/zones/water-7.ts": {
+      "approach": [
+        "[ T0 . L ( - 1.2 , - 2.3 ) , T0 . L ( 4.3 , - 2.3 ) ]"
+      ],
+      "at": [
+        "[ 5.7 , 114.9 ]"
+      ],
+      "authorR": [
+        "38"
+      ],
+      "constant.T0": [
+        "terra ( 1 , 128 )"
+      ],
+      "spots": [
+        "{ franky : { x : - 2.0 , z : - 2.65 , rot : 340 } }"
+      ],
+      "zone.id": [
+        "'water-7'"
+      ],
+      "zone.lat": [
+        "1"
+      ],
+      "zone.lon": [
+        "128"
+      ]
+    },
+    "src/content/zones/whisky-peak.ts": {
+      "at": [
+        "[ 10.8 , 24.9 ]"
+      ],
+      "authorR": [
+        "50"
+      ],
+      "zone.id": [
+        "'whisky-peak'"
+      ],
+      "zone.lat": [
+        "6"
+      ],
+      "zone.lon": [
+        "22"
+      ]
+    },
+    "src/content/zones/whole-cake.ts": {
+      "approach": [
+        "[ Z . ll ( 0.4 , - 4.6 ) , Z . ll ( 7.4 , - 0.85 ) ]"
+      ],
+      "at": [
+        "[ - 10.0 , 282.0 ]"
+      ],
+      "authorR": [
+        "50"
+      ],
+      "constant.F": [
+        "frame ( - 5 , 268 )"
+      ],
+      "constant.Z": [
+        "F . Z"
+      ],
+      "zone.id": [
+        "'whole-cake'"
+      ],
+      "zone.lat": [
+        "- 5"
+      ],
+      "zone.lon": [
+        "268"
+      ]
+    },
+    "src/content/cast/brogy.ts": {
+      "home": [
+        "{ zone : 'little-garden' , spot : 'brogy' }"
+      ]
+    },
+    "src/content/cast/brook.ts": {
+      "home": [
+        "{ zone : 'sabaody' , spot : 'brook' }"
+      ],
+      "homes": [
+        "[ feast ( 'brook' , undefined , [ 'A feast! My stomach is growling! …I have no stomach. Yohoho!' ] ) , { when : ( p ) = > p . done ( 'j6-long-way-round' ) , zone : 'sabaody' , spot : 'brook' , ambient : [ 'He sang! I felt it right down to the bone! Yohoho!' , 'Thank you, courier. Truly.' ] } , ]"
+      ]
+    },
+    "src/content/cast/chopper.ts": {
+      "constant.shy": [
+        "\"I'm not hiding! …Is it working?\""
+      ],
+      "home": [
+        "{ zone : 'drum' , spot : 'chopper' }"
+      ],
+      "homes": [
+        "[ feast ( 'chopper' , 'sway' , [ \"A party! I'm not excited! …I'm SO excited!\" ] ) , { when : ( p ) = > p . done ( 'j3-cant-climb' ) , zone : 'drum' , spot : 'chopper' , ambient : [ \"'Greatest doctor on all seas'… that doesn't make me happy, you jerk!\" , shy ] } , ]"
+      ]
+    },
+    "src/content/cast/coby.ts": {
+      "home": [
+        "{ zone : 'marineford' , spot : 'coby' }"
+      ]
+    },
+    "src/content/cast/crocus.ts": {
+      "home": [
+        "{ zone : 'twin-capes' , spot : 'crocus' , y : 0.12 }"
+      ],
+      "homes": [
+        "[ { when : ( p : Progress ) = > p . active ( 'j8-hold-my-hat' ) , zone : 'sunny-dock' , spot : 'feast-crocus' , idle : 'stand' , ambient : [ 'A feast, at my age? Doctor says yes.' , \"I left the lamp lit. He'll be fine. He has the stars.\" ] } ]"
+      ]
+    },
+    "src/content/cast/franky.ts": {
+      "home": [
+        "{ zone : 'water-7' , spot : 'franky' }"
+      ],
+      "homes": [
+        "[ feast ( 'franky' , 'hips' , [ 'My ship, my crew, one SUPER party!' ] ) , { when : ( p ) = > p . active ( 'j5-not-crying' , 1 ) , zone : 'syrup-village' , spot : 'franky-hide' , idle : 'shy' , ambient : [ '(Two star-tattooed forearms poke out from behind the sapling.)' , \"I'm not here! And I'm NOT crying!\" ] } , ]"
+      ]
+    },
+    "src/content/cast/golden-bell.ts": {
+      "home": [
+        "{ zone : 'jaya-skypiea' , spot : 'golden-bell' }"
+      ]
+    },
+    "src/content/cast/hancock.ts": {
+      "home": [
+        "{ zone : 'amazon-lily' , spot : 'hancock' }"
+      ]
+    },
+    "src/content/cast/ivankov.ts": {
+      "home": [
+        "{ zone : 'kamabakka' , spot : 'ivankov' }"
+      ]
+    },
+    "src/content/cast/jinbe.ts": {
+      "home": [
+        "{ zone : 'fish-man-island' , spot : 'jinbe' }"
+      ],
+      "homes": [
+        "[ feast ( 'jinbe' ) ]"
+      ]
+    },
+    "src/content/cast/kaya.ts": {
+      "home": [
+        "{ zone : 'syrup-village' , spot : 'kaya' }"
+      ],
+      "homes": [
+        "[ { when : ( p : Progress ) = > p . active ( 'j8-hold-my-hat' ) , zone : 'sunny-dock' , spot : 'feast-kaya' , idle : 'shy' , ambient : [ 'I brought dessert. Usopp-san says he brought the stories.' , \"I've never been to a pirate feast. It's very loud. I love it.\" ] } ]"
+      ]
+    },
+    "src/content/cast/kureha.ts": {
+      "home": [
+        "{ zone : 'drum' , spot : 'kureha' }"
+      ],
+      "homes": [
+        "[ { when : ( p : Progress ) = > p . active ( 'j8-hold-my-hat' ) , zone : 'sunny-dock' , spot : 'feast-kureha' , ambient : [ 'Hee-hee! Juice? At my age? Fine, just one.' , 'Hee-hee! That reindeer had better eat his vegetables.' ] } ]"
+      ]
+    },
+    "src/content/cast/laboon.ts": {
+      "constant.BAY": [
+        "{ zone : 'twin-capes' , spot : 'laboon' , x : 7.29 , z : - 1.72 }"
+      ],
+      "home": [
+        "BAY"
+      ],
+      "homes": [
+        "[ { . . . BAY , when : ( p ) = > p . done ( 'j6-long-way-round' ) , ambient : [ '(He hums the answer again, quietly, to himself.)' , '(The spout is almost hat-shaped. Almost.)' , '(Laboon looks less like he is waiting. More like he is expecting.)' ] , } , ]"
+      ]
+    },
+    "src/content/cast/luffy.ts": {
+      "constant.feast": [
+        "( id : string , idle ? : IdleKind , ambient ? : string [ ] ) = > ( { when : ( p : Progress ) = > p . active ( J8 ) , zone : 'sunny-dock' , spot : 'feast-' + id , idle , ambient } )"
+      ],
+      "constant.J8": [
+        "'j8-hold-my-hat'"
+      ],
+      "home": [
+        "{ zone : 'sunny-dock' , spot : 'figurehead' }"
+      ],
+      "homes": [
+        "[ feast ( 'luffy' , 'hips' , [ 'FEAST! Everybody came!' , 'Shishishi! Kanpai soon!' ] ) ]"
+      ]
+    },
+    "src/content/cast/nami.ts": {
+      "home": [
+        "{ zone : 'cocoyasi' , spot : 'nami' }"
+      ],
+      "homes": [
+        "[ feast ( 'nami' , 'hips' , [ \"Tonight goes on Luffy's tab.\" ] ) , { when : ( p ) = > ! p . done ( 'j1-meat-urgent' ) , zone : 'sunny-dock' , spot : 'deck-nami' , ambient : [ \"He didn't ask. He never asks.\" , \"Luffy's paying you. Eventually. Probably.\" ] } , ]"
+      ]
+    },
+    "src/content/cast/news-coo.ts": {
+      "home": [
+        "{ zone : 'coo-beach' , spot : 'news-coo' }"
+      ]
+    },
+    "src/content/cast/robin.ts": {
+      "home": [
+        "{ zone : 'ohara' , spot : 'robin' }"
+      ],
+      "homes": [
+        "[ feast ( 'robin' , undefined , [ 'Fufu. A table this lively deserves a footnote.' ] ) , { when : ( p ) = > p . done ( 'j7-laughter-tree' ) , zone : 'ohara' , spot : 'robin' , ambient : [ 'Fufu. Apparently I count.' , 'It bloomed. Thank you, courier.' ] } , ]"
+      ]
+    },
+    "src/content/cast/sanji.ts": {
+      "home": [
+        "{ zone : 'baratie' , spot : 'sanji' }"
+      ],
+      "homes": [
+        "[ feast ( 'sanji' ) ]"
+      ]
+    },
+    "src/content/cast/usopp.ts": {
+      "constant.tale": [
+        "'A Sea King once signed for my parcel. True story.'"
+      ],
+      "home": [
+        "{ zone : 'syrup-village' , spot : 'usopp' }"
+      ],
+      "homes": [
+        "[ feast ( 'usopp' , undefined , [ 'I drew a flag for tonight. Top secret.' ] ) , { when : ( p ) = > p . done ( 'j5-not-crying' ) , zone : 'syrup-village' , spot : 'usopp' , ambient : [ 'That bottle? From a secret admirer. Obviously.' , \"I'm not crying. It's… boat dust.\" ] } , { when : ( p ) = > p . done ( 'j3-cant-climb' ) , zone : 'syrup-village' , spot : 'usopp' , ambient : [ \"Cured! Now I have Can't-Leave-This-Fence disease.\" , tale ] } , ]"
+      ]
+    },
+    "src/content/cast/vivi.ts": {
+      "home": [
+        "{ zone : 'alabasta' , spot : 'vivi' }"
+      ],
+      "homes": [
+        "[ { when : ( p : Progress ) = > p . active ( 'j8-hold-my-hat' ) , zone : 'sunny-dock' , spot : 'feast-vivi' , idle : 'sway' , ambient : [ 'To friends! (Juice only, Karoo.)' , 'Quack! (Karoo has found the dessert table.)' ] } ]"
+      ]
+    },
+    "src/content/cast/zeff.ts": {
+      "home": [
+        "{ zone : 'baratie' , spot : 'zeff' }"
+      ],
+      "homes": [
+        "[ { when : ( p : Progress ) = > p . active ( 'j8-hold-my-hat' ) , zone : 'sunny-dock' , spot : 'feast-zeff' , ambient : [ 'Eat first. Toast after.' , 'Somebody hand the eggplant a plate before he feeds everyone but himself.' ] } ]"
+      ]
+    },
+    "src/content/cast/zoro.ts": {
+      "constant.zzz": [
+        "'Zzz…'"
+      ],
+      "home": [
+        "{ zone : 'pine-point' , spot : 'zoro' }"
+      ],
+      "homes": [
+        "[ { when : ( p ) = > p . night , zone : 'south-stair' , spot : 'zoro-night' , idle : 'sit' , ambient : [ \"Every direction's north from here.\" ] } , feast ( 'zoro' , 'cross' , [ '…I walked straight. Got here first.' ] ) , { when : ( p ) = > p . done ( 'j2-too-salty' ) , zone : 'wano' , spot : 'zoro-nap' , ambient : [ 'Found Wano. Took a nap. Productive day.' , zzz ] } , ]"
+      ]
+    },
+    "src/content/world.ts": {
+      "source": [
+        "import type { Vector3 } from 'three' ; import { DEG , clamp , fbm , retargetPoint , smoothstep } from '../core/math' ; import type { Content , TimeOfDay } from './types' ; const R = 60 ; const R0 = 38 ; const rt = ( alat : number , alon : number , lat : number , lon : number ) = > retargetPoint ( alat , alon , lat , lon , R0 , R ) ; const dk = ( deg : number ) = > ( deg * R0 ) / R ; export const PUNK_HAZARD_LINE : [ number , number ] [ ] = [ [ - 7.5 , 4.4 ] , [ - 2.11 , 1.36 ] , [ 0.36 , - 0.02 ] , [ 3.46 , - 1.76 ] , [ 7.5 , - 2.55 ] ] ; function ll ( d : Vector3 ) { const lat = Math . asin ( clamp ( d . y , - 1 , 1 ) ) / DEG ; let lon = Math . atan2 ( d . x , d . z ) / DEG ; if ( lon < 0 ) lon + = 360 ; return { lat , lon } ; } type RegionId = 'paradise' | 'new-world' | 'calm-belt-north' | 'calm-belt-south' | 'east-blue' | 'north-blue' | 'west-blue' | 'south-blue' ; function regionOf ( lat : number , lon : number ) : RegionId { const a = Math . abs ( lat ) ; const east = lon < 180 ; if ( a < = 15 ) return east ? 'paradise' : 'new-world' ; if ( a < = 21 ) return lat > 0 ? 'calm-belt-north' : 'calm-belt-south' ; if ( lat > 0 ) return east ? 'east-blue' : 'north-blue' ; return east ? 'south-blue' : 'west-blue' ; } const REGION_NAME : Record < RegionId , string > = { paradise : 'PARADISE' , 'new-world' : 'NEW WORLD' , 'calm-belt-north' : 'CALM BELT' , 'calm-belt-south' : 'CALM BELT' , 'east-blue' : 'EAST BLUE' , 'north-blue' : 'NORTH BLUE' , 'west-blue' : 'WEST BLUE' , 'south-blue' : 'SOUTH BLUE' , } ; const SEA : Record < RegionId , [ number , number ] > = { 'east-blue' : [ 0 x6fdcd3 , 0 x36b5c2 ] , 'north-blue' : [ 0 x8cc9da , 0 x5d8ba6 ] , 'west-blue' : [ 0 x8e98e8 , 0 x5560c8 ] , 'south-blue' : [ 0 x6fe0b8 , 0 x2db596 ] , paradise : [ 0 x66c8f0 , 0 x2f7fdb ] , 'new-world' : [ 0 x66c8f0 , 0 x2f7fdb ] , 'calm-belt-north' : [ 0 x2a4a78 , 0 x2a4a78 ] , 'calm-belt-south' : [ 0 x2a4a78 , 0 x2a4a78 ] , } ; const GRASS : Record < RegionId , number > = { 'east-blue' : 0 x8ccb5e , 'north-blue' : 0 x6fb98a , 'west-blue' : 0 x5fb3a0 , 'south-blue' : 0 xa9c35a , paradise : 0 x7bc86c , 'new-world' : 0 x94b957 , 'calm-belt-north' : 0 x7bc86c , 'calm-belt-south' : 0 x7bc86c , } ; const off = ( lat : number , m : number ) = > ( m / R / DEG ) / Math . max ( 0.2 , Math . cos ( lat * DEG ) ) ; const off0 = ( lat : number , m : number ) = > ( m / R0 / DEG ) / Math . max ( 0.2 , Math . cos ( lat * DEG ) ) ; const time : TimeOfDay = { keys : { dawn : { elev : 10 , zenith : 0 x9fc7f0 , horizon : 0 xffd9b0 , sun : 0 xffd2a0 , light : 0.78 , fog : 0 xffd9b0 } , morning : { elev : 30 , zenith : 0 x7cbcf0 , horizon : 0 xe6f0ff , sun : 0 xfff0d6 , light : 0.95 , fog : 0 xe6f0ff } , noon : { elev : 60 , zenith : 0 x5db8f0 , horizon : 0 xcdefff , sun : 0 xfff6e6 , light : 1.05 , fog : 0 xcdefff } , afternoon : { elev : 40 , zenith : 0 x62b0ea , horizon : 0 xd8ecff , sun : 0 xffeccc , light : 1.0 , fog : 0 xd8ecff } , golden : { elev : 15 , zenith : 0 x6fa8e0 , horizon : 0 xffc27a , sun : 0 xffc070 , light : 0.86 , fog : 0 xffc27a } , sunset : { elev : 5 , zenith : 0 x7a4e9e , horizon : 0 xff9455 , sun : 0 xff9a60 , light : 0.72 , fog : 0 xff9455 } , night : { elev : 35 , zenith : 0 x1a2244 , horizon : 0 x3b3f6e , sun : 0 xb8c8ff , light : 0.42 , fog : 0 x3b3f6e , night : true } , } , of ( p ) { if ( p . night ) return 'night' ; if ( p . active ( 'j8-hold-my-hat' ) ) return 'sunset' ; let n = 0 ; for ( const j of [ 'j1-meat-urgent' , 'j2-too-salty' , 'j3-cant-climb' , 'j4-friend-price' , 'j5-not-crying' , 'j6-long-way-round' , 'j7-laughter-tree' ] ) if ( p . done ( j ) ) n + + ; if ( n = = = 0 ) return 'dawn' ; if ( n < = 3 ) return 'morning' ; if ( n = = = 4 ) return 'noon' ; if ( n < = 6 ) return 'afternoon' ; return 'golden' ; } , } ; export const world : Content [ 'world' ] = { radius : R , seaFloor : - 0.35 , baseBiome : 'grass' , seaBed ( d ) { const lat = Math . abs ( Math . asin ( clamp ( d . y , - 1 , 1 ) ) / DEG ) ; const belt = smoothstep ( 14.5 , 15.5 , lat ) * ( 1 - smoothstep ( 20.5 , 21.5 , lat ) ) ; return - 0.35 - 0.45 * belt + fbm ( d . x * 6 , d . y * 6 , d . z * 6 , 2 ) * 0.08 ; } , grass ( d ) { const { lat , lon } = ll ( d ) ; return GRASS [ regionOf ( lat , lon ) ] ; } , sea ( d ) { const { lat , lon } = ll ( d ) ; const r = regionOf ( lat , lon ) ; const [ shallow , deep ] = SEA [ r ] ; return { shallow , deep , waves : r . startsWith ( 'calm' ) ? 0 : 1 } ; } , region ( d ) { const { lat , lon } = ll ( d ) ; if ( Math . abs ( d . x ) < Math . sin ( 2.6 / R ) ) return { id : 'red-line' , name : 'RED LINE' } ; const r = regionOf ( lat , lon ) ; return { id : r , name : REGION_NAME [ r ] } ; } , global : { ridges : [ { a : [ 0 , 0 ] , b : [ 90 , 0 ] , full : true , width : dk ( 3.0 ) , h : 5 , top : 0.4 , biome : 'red-rock' , gaps : [ { lat : 0 , lon : 0 , r : dk ( 3.2 ) } , { lat : 0 , lon : 180 , r : dk ( 2.4 ) } , ] , } , ] , } , wall : { normal : [ 1 , 0 , 0 ] , band : dk ( 3.0 ) , openings : [ { lat : 0 , lon : 0 , r : dk ( 9 ) } , { lat : 0 , lon : 180 , r : dk ( 3.2 ) } , { lat : 90 , lon : 0 , r : dk ( 7 ) } , { lat : - 90 , lon : 0 , r : dk ( 7 ) } , { lat : 9 , lon : 180 , r : ( 4.5 * 50 ) / R } , ] , } , crossings : [ { id : 'reverse-mountain' , label : 'VIA REVERSE MOUNTAIN' , pos : rt ( 0 , 0 , 1 , 6 ) , neg : rt ( 0 , 0 , - 2 , 353 ) } , { id : 'fish-man-tunnel' , label : 'VIA THE FISH-MAN TUNNEL' , pos : rt ( 0 , 180 , 0 , 176.5 ) , neg : rt ( 0 , 180 , 0 , 183.5 ) } , { id : 'north-stair' , label : 'VIA THE NORTH STAIR' , pos : rt ( 90 , 0 , 85.5 , 90 ) , neg : rt ( 90 , 0 , 85.5 , 270 ) } , { id : 'south-stair' , label : 'VIA THE SOUTH STAIR' , pos : rt ( - 90 , 0 , - 85.5 , 90 ) , neg : rt ( - 90 , 0 , - 85.5 , 270 ) } , { id : 'mary-geoise' , label : 'VIA MARY GEOISE (BONDOLA)' , pos : [ 9 , 180 - ( 2.8 * 50 ) / R ] , neg : [ 9 , 180 + ( 2.8 * 50 ) / R ] } , ] , lanes : [ { id : 'lane-east' , pts : [ [ 56 , off ( 56 , 3.6 ) ] , [ 32 , off ( 32 , 3.6 ) ] , rt ( 0 , 0 , 8 , off0 ( 8 , 3.6 ) ) ] , width : 3 , speed : 2.6 } , { id : 'lane-north' , pts : [ [ 56 , 360 - off ( 56 , 3.6 ) ] , [ 32 , 360 - off ( 32 , 3.6 ) ] , rt ( 0 , 0 , 8 , 360 - off0 ( 8 , 3.6 ) ) ] , width : 3 , speed : 2.6 } , { id : 'lane-west' , pts : [ [ - 56 , 360 - off ( - 56 , 3.6 ) ] , [ - 32 , 360 - off ( - 32 , 3.6 ) ] , rt ( 0 , 0 , - 8 , 360 - off0 ( - 8 , 3.6 ) ) ] , width : 3 , speed : 2.6 } , { id : 'lane-south' , pts : [ [ - 56 , off ( - 56 , 3.6 ) ] , [ - 32 , off ( - 32 , 3.6 ) ] , rt ( 0 , 0 , - 8 , off0 ( - 8 , 3.6 ) ) ] , width : 3 , speed : 2.6 } , { id : 'lane-paradise' , pts : [ [ 1.5 , 17 ] , [ - 3 , 36 ] , [ - 8 , 48 ] , [ - 6 , 57.5 ] , [ 2.5 , 68 ] , [ - 3 , 102.5 ] , [ - 9 , 114 ] , [ - 5.5 , 123.5 ] , [ 1.5 , 131.5 ] , [ - 0.5 , 157 ] , [ 0 , 167.5 ] ] , width : 3 , speed : 3.2 , } , { id : 'lane-jinbe' , pts : [ rt ( 0 , 180 , 0 , 185 ) , . . . PUNK_HAZARD_LINE . map ( ( [ x , z ] ) = > ( { zone : 'punk-hazard' , x , z } ) ) , [ 0.5 , 250 ] , [ 1 , 288 ] , [ - 6.5 , 307.5 ] , [ - 3 , 330 ] , [ - 10.5 , 339.5 ] , rt ( 0 , 0 , - 2 , 352 ) ] , width : 3 , speed : 4.4 , } , ] , defaultMood : { sky : { zenith : 0 x5db8f0 , horizon : 0 xcdefff , sun : 0 xfff6e6 } , fog : 0 xcdefff , fogNear : 18 , fogFar : 54 , light : 1 , space : 0 } , time , spawn : { zone : 'coo-beach' , x : 0 , z : - 1.5 , rot : 0 } , } ;"
+      ]
+    },
+    "src/content/story.ts": {
+      "source": [
+        "import { CanvasTexture , CatmullRomCurve3 , DoubleSide , Group , Mesh , MeshToonMaterial , PlaneGeometry , SRGBColorSpace , TubeGeometry , Vector3 , type BufferGeometry } from 'three' ; import type { Gesture } from '../chars/anim' ; import { arc , dirFromLatLon , frameQuat , headingTo } from '../core/math' ; import type { Game } from '../game/game' ; import type { NPC } from '../game/npcs' ; import type { JobDef , Line , StepDef , Story } from '../game/types' ; import { outlineChar , toonChar , toonColor , toonRamp } from '../render/materials' ; import { addOutlineNormals , ball } from '../render/shapes' ; import { CREDITS , TEAM } from './copy' ; import { items , strawHat } from './items' ; const J1 = 'j1-meat-urgent' ; const J2 = 'j2-too-salty' ; const J3 = 'j3-cant-climb' ; const J4 = 'j4-friend-price' ; const J5 = 'j5-not-crying' ; const J6 = 'j6-long-way-round' ; const J7 = 'j7-laughter-tree' ; const J8 = 'j8-hold-my-hat' ; const AFTER_J1 = [ J1 ] ; type Cued = Line & { cue ? : string } ; const L = ( s : string ) : Cued = > { const i = s . indexOf ( ': ' ) ; const [ head , cue ] = s . slice ( 0 , i ) . split ( '!' ) ; const [ who , gesture ] = head . split ( '.' ) ; return { who : who = = = '~' ? 'narrator' : who , text : s . slice ( i + 2 ) , gesture : gesture as Gesture | undefined , cue } ; } ; const C = ( . . . s : string [ ] ) = > s . map ( L ) ; const S = ( to : string , text : string , lines : Line [ ] , o : Partial < StepDef > = { } ) : StepDef = > ( { to , text , lines , . . . o } ) ; const jobs : JobDef [ ] = [ { id : J1 , title : 'Meat, Urgent' , giver : 'luffy' , gets : 'meat-napkin' , intro : C ( 'luffy.cheer: First job: MEAT!' , 'luffy.point: Take my order to Sanji at the Baratie. The fish-shaped restaurant, past the sand spit.' , 'luffy: I drew it myself, so he knows exactly what I want. Shishishi!' , \"nami: The needle on your wrist points at whoever's waiting for you. Follow it, not him.\" , ) , steps : [ S ( 'sanji' , \"TAKE LUFFY'S ORDER (A DRAWING OF MEAT ON A NAPKIN) TO SANJI AT THE BARATIE\" , C ( 'sanji: A delivery from the Sunny? Let me guess.' , \"sanji.facepalm: A napkin drawing. He's getting better. That one has a bone.\" , 'sanji.kick: One meat on the bone, coming right up.' , \"sanji: Carry it close, and don't let him smell it early. He can smell meat through a wall.\" , ) , { gets : 'meat-on-bone' } ) , S ( 'luffy' , \"BRING THE MEAT ON THE BONE TO LUFFY ON THE SUNNY. DON'T LET HIM SMELL IT EARLY.\" , C ( '~!boing: (SHLOOORP. The meat is gone. So is the bone.)' , 'luffy.cheer: MEEEAT! Thanks, messenger!' , \"luffy: Sanji put a rice ball in your bag. The note says NOT LUFFY. I can read that much.\" , 'nami: Good work. Now the real deliveries start. The whole planet is waiting.' , ) , { stamp : 'AND EATEN' } ) , ] , reward : { emote : 'meat' , outfit : 'red-vest' } , } , { id : J2 , title : 'Too Salty' , giver : 'sanji' , requires : AFTER_J1 , gets : 'bento' , intro : C ( \"sanji: You. Courier. You've got honest hands.\" , 'sanji: Leftovers. Nobody wanted them. Take them to the moss-head.' , 'sanji: He says he\\'s in the crow\\'s nest. He is never in the crow\\'s nest.' , 'zeff: Leftovers, he says. He was up before dawn making them.' , 'sanji.kick: Shut it, old man!' , ) , steps : [ S ( 'zoro' , 'TAKE THE BENTO MARKED \"LEFTOVERS. NOT FOR ZORO.\" TO ZORO. HE SAYS HE\\'S IN THE CROW\\'S NEST.' , C ( \"zoro: Hm? It's tall. So it's the crow's nest.\" , 'zoro: How did I cross the red wall? There were stairs. I took them. Twice.' , 'zoro: Leftovers? From the curly-brow?' , \"zoro.shake: ...Fine. I'll get rid of them.\" , '~: (Thirty seconds later the box is spotless. Garnish included.)' , 'zoro.doze: Tell him: too salty.' , ) , { gets : 'empty-bento' } ) , S ( 'sanji' , 'RETURN THE BENTO BOX TO SANJI AT THE BARATIE. ZORO\\'S REVIEW: \"TOO SALTY.\"' , C ( \"sanji: Back already? Let's see the damage.\" , '~: (Not a grain of rice left. Even the garnish is gone.)' , \"sanji.facepalm: 'Too salty,' says the moss-head.\" , 'zeff: An empty box is the only review worth reading. You got the same one from me, eggplant.' , '~: (Sanji turns away. You can still see the grin.)' , ) , { stamp : 'REVIEW: TOO SALTY' } ) , ] , reward : { emote : 'zzz' , outfit : 'black-suit' } , } , { id : J3 , title : \"Can't-Climb-Mountains Disease\" , giver : 'usopp' , requires : AFTER_J1 , gets : 'sick-note' , intro : C ( 'usopp.shiver: Courier! Thank goodness. I have a terrible, rare and extremely real illness.' , \"usopp: Can't-Climb-Snowy-Mountains disease. Look, my knees are knocking.\" , 'usopp.point: Take this note to Doctor Chopper at Drum. Walk over the sleeping Sea King. It\\'s faster.' , \"usopp: Don't wake it. I didn't. Probably.\" , ) , steps : [ S ( 'chopper' , 'TAKE USOPP\\'S NOTE TO CHOPPER AT DRUM: \"URGENT. I HAVE CAN\\'T-CLIMB-SNOWY-MOUNTAINS DISEASE.\"' , C ( 'chopper: A note? For me?' , 'chopper.hop: URGENT?! A patient! Somebody get a doctor!' , 'chopper: ...Oh. Me.' , 'chopper.wave: Bravery pills! One a day, with meals. Take them to him, quick!' , \"~: (Under the label, in Kureha's handwriting: SUGAR.)\" , 'kureha: Hee-hee! Best medicine I ever prescribed.' , ) , { gets : 'bravery-pills' } ) , S ( 'usopp' , 'BRING CHOPPER\\'S BRAVERY PILLS TO USOPP. (KUREHA\\'S LABEL UNDERNEATH: \"SUGAR.\")' , C ( 'usopp: Pills! From a real doctor!' , '~: (Crunch. Crunch.)' , \"usopp.flex: I feel brave. Braver than a mountain. Don't make me climb one.\" , 'usopp: A doctor this good needs a certificate. Captain Usopp will write one!' , 'usopp.point: Signed by me and my eight thousand followers. Run it back to him!' , ) , { gets : 'certificate' } ) , S ( 'chopper' , 'TAKE USOPP\\'S CERTIFICATE TO CHOPPER: \"GREATEST DOCTOR ON ALL SEAS.\"' , C ( \"chopper: 'Greatest doctor on all seas'?\" , \"chopper.wiggle: Compliments don't make me happy, you jerk!\" , '~: (It is the happiest wiggle on the planet.)' , \"kureha: Hee-hee! He'll frame that. Don't tell him I said so.\" , ) , { stamp : 'PATIENT CURED. MOSTLY.' } ) , ] , reward : { emote : 'wiggle' , outfit : 'goggles' } , } , { id : J4 , title : 'Friend Price' , giver : 'nami' , requires : AFTER_J1 , gets : 'tangerine-crate' , intro : C ( 'nami: There you are. I have a job, and you have legs.' , 'nami: Tangerines from my grove, for a friend in Alabasta. Princess Vivi.' , \"nami: The invoice says FRIEND PRICE: 0 BERRIES. Don't get used to it.\" , 'nami.point: Hold the crate over your head in the Calm Belt. Wet tangerines cost extra.' , ) , steps : [ S ( 'vivi' , 'TAKE NAMI\\'S TANGERINES TO VIVI IN ALABASTA. INVOICE ATTACHED: \"FRIEND PRICE: 0 BERRIES.\"' , C ( 'vivi: Tangerines? From Nami-san?' , '~: (Karoo tries to eat the invoice.)' , \"vivi.shake: Karoo, no! That's mail, not lunch!\" , 'vivi.laugh: Zero Berries? She has never charged me less.' , \"vivi: Wait here. I'm writing back.\" , '~: (She seals a letter and draws a big X on the front.)' , ) , { gets : 'x-letter' } ) , S ( 'nami' , \"BRING VIVI'S SEALED LETTER (A BIG X ON THE FRONT) TO NAMI AT COCOYASI.\" , C ( 'nami: From Vivi? Let me see.' , '~: (Inside: one Berry coin, and a note. I INSIST ON PAYING. —V.)' , 'nami.xmark: ...' , \"nami: One Berry. I'm framing it.\" , ) , { stamp : '1 BERRY, FRAMED' } ) , ] , reward : { emote : 'x-mark' , outfit : 'desert-wrap' } , } , { id : J5 , title : 'Not Crying' , giver : 'kaya' , requires : AFTER_J1 , gets : 'merry-sketch' , intro : C ( \"kaya: Oh! You're the courier everyone's talking about.\" , \"kaya: Merry, our butler, drew this long ago. A little ship with a sheep's head. Usopp-san's first ship.\" , \"kaya: The shipwright at Water 7 will know what to do with it.\" , \"kaya: Please don't tell Usopp-san. Not yet.\" , ) , steps : [ S ( 'franky' , \"TAKE MERRY THE BUTLER'S OLD SKETCH OF THE GOING MERRY TO FRANKY AT WATER 7. DON'T TELL USOPP.\" , C ( 'franky: A sketch? Lemme see that.' , 'franky: Whoever drew this loved that ship. ...Gimme ten seconds.' , '~!hammer: (Franky ducks under a sheet. BANG. CLANG. BANG-BANG.)' , \"franky.super: Ship in a bottle! Tell him it's from a secret admirer.\" , 'franky: Not me. Definitely not Franky. SUPER not Franky.' , ) , { gets : 'ship-in-bottle' } ) , S ( 'usopp' , 'DELIVER THE SHIP IN A BOTTLE TO USOPP. FROM \"A SECRET ADMIRER (NOT FRANKY).\"' , C ( 'usopp: For me? From a secret admirer?' , \"usopp: It's... it's the...\" , \"usopp.shake: I'm not crying! It's... Can't-Stop-Looking-At-Boats disease!\" , 'franky.super: ME NEITHER!' , '~: (Two grown men hug behind the sapling. Neither of them is crying. Officially.)' , ) , { stamp : 'TWO GROWN MEN NOT CRYING' } ) , ] , reward : { emote : 'super' , outfit : 'flower-shirt' } , } , { id : J6 , title : 'The Long Way Round' , giver : 'brook' , requires : AFTER_J1 , gets : 'brook-dial' , receivedStamp : 'DIAL: MADE IN SKYPIEA' , intro : C ( 'brook.bow: Yohoho! A courier! May I borrow your legs? I seem to have only bones.' , 'brook: Long ago my crew promised a whale we would come back after sailing around the world.' , 'brook: This Tone Dial holds my message for him. Laboon, at Twin Capes.' , \"brook: We promised to come back after sailing around the world. Even a small one. I won't cheat, so neither will you. Eastward, please.\" , 'brook: Jinbe at Fish-Man Island knows the way under the wall.' , ) , steps : [ S ( 'jinbe' , \"TAKE BROOK'S TONE DIAL TO JINBE AT FISH-MAN ISLAND. IT'S A MESSAGE FOR LABOON.\" , C ( 'jinbe: A Tone Dial, bound for Twin Capes. The long way, I take it.' , 'jinbe: Going on is as short as going back. Round worlds are kind that way.' , 'jinbe.point: Ride my current. It runs the whole New World, all the way to the mountain.' , 'jinbe: Keep the dial dry. And no turning back.' , ) ) , S ( 'crocus' , 'CARRY THE DIAL ON THROUGH THE NEW WORLD TO CROCUS AT TWIN CAPES. NO TURNING BACK.' , C ( 'crocus: Hm. A Tone Dial, carried the long way round.' , \"crocus: Go on, then. Play it for him.\" , '~: (Click. A cheerful voice, a violin, a laugh that rattles like bones, and an old, old promise roll out over the bay.)' , ) , { via : 'reverse-mountain' , gets : 'laboon-dial' } ) , S ( 'brook' , \"CARRY LABOON'S ANSWER BACK TO BROOK AT SABAODY.\" , C ( 'brook: Is that... his answer?' , '~!song: (Click. One long, enormous note fills the stage.)' , 'brook: Fifty years I waited to keep that promise, and you walked it before my tea went cold.' , 'brook.jawdrop: I could cry, if I had tear ducts! Yohohoho!' , \"brook: Binks' Sake I'm saving for when we meet.\" , ) , { stamp : 'PROMISE KEPT, BY PROXY' } ) , ] , reward : { emote : 'yohoho' , outfit : 'afro' } , } , { id : J7 , title : 'Grows Better with Laughter' , giver : 'robin' , requires : AFTER_J1 , gets : 'baby-snail' , intro : C ( 'robin: Trees grow better with laughter. This one has had a long winter.' , 'robin: This baby Den Den Mushi copies whatever it hears. Would you collect a few laughs for me?' , 'robin: Jinbe first. Then Brook.' , 'robin: If this fails, we bury the snail. Fufu. Joking.' , ) , steps : [ S ( 'jinbe' , 'TAKE THE BABY TRANSPONDER SNAIL TO JINBE. IT COPIES WHAT IT HEARS. ROBIN WANTS LAUGHS.' , C ( 'jinbe: A laugh? For a tree?' , \"jinbe.shake: I don't laugh on command.\" , '~: (You pull your very best face. The snail pulls it too.)' , 'jinbe.laugh: ...Your face. HA! HA HA HA HA!' , '~: (Puru. The snail copies his laugh, and his face. Tusks and all.)' , 'jinbe: Take it to Brook. He laughs for free.' , ) ) , S ( 'brook' , 'TAKE THE SNAIL TO BROOK AT SABAODY FOR ONE MORE LAUGH.' , C ( \"brook: A laugh for Robin-san's tree? With pleasure!\" , 'brook.jawdrop: Yohohohoho!' , '~: (The snail wears a tiny afro for one second. Then it is gone.)' , \"brook: It copied my hair! I'm flattered to the bone!\" , ) ) , S ( 'robin' , 'BRING THE SNAIL BACK TO ROBIN AT OHARA.' , C ( \"robin: Let's hear them.\" , '~: (HA HA HA! Yohohoho! A new leaf for every laugh.)' , \"~: (Then the snail plays one nobody asked for. A small, soft 'Fufu.')\" , 'robin: ...It overheard me when I handed it over.' , '~: (The sapling bursts into bloom.)' , 'robin.laugh: Fufu. Apparently I count.' , ) , { stamp : 'SAPLING IN BLOOM' } ) , ] , reward : { emote : 'laugh' , outfit : 'explorer-boots' } , } , { id : J8 , title : 'Hold My Hat' , giver : 'luffy' , requires : [ J2 , J3 , J4 , J5 , J6 , J7 ] , gets : '' , intro : C ( '~!ring: Purupurupuru... purupurupuru... gacha!' , 'luffy.cheer: FEAST! EVERYBODY TO THE SUNNY!' , \"luffy: Messenger, you too! Sanji's cooking everything!\" , '~: (The sun is sinking. Head back to the Sunny.)' , ) , steps : [ S ( 'luffy' , 'COME BACK TO THE SUNNY. FEAST AT SUNSET.' , C ( \"luffy.point: My hat! Messenger! Bring it back. It's my treasure.\" , 'sanji: The captain stays at the table.' , 'nami.point: Cloud over Jaya. Trust your navigator.' , \"usopp: Ride the Knock-Up Stream. It's perfectly safe. I've heard.\" , ) ) , S ( 'golden-bell' , \"FETCH LUFFY'S STRAW HAT FROM THE GOLDEN BELL ON THE CLOUD OVER JAYA. RIDE THE KNOCK-UP STREAM.\" , C ( \"~: (The straw hat hangs on the Golden Bell's frame, rocking in the sky wind.)\" , '~: (You lift it off with both hands. The frame tips. The bell swings...)' , ) ) , S ( 'luffy' , 'CARRY THE STRAW HAT BACK TO LUFFY. BOTH HANDS. NO TRYING IT ON.' , C ( 'luffy.cheer: My hat!' , 'luffy: You carried it with both hands. Shishishi! Hold still...' , ) , { item : 'straw-hat' , stamp : 'HAT RETURNED. KANPAI!' } ) , ] , } , ] ; const st = { open : 0 , neck : 0 , eaten : false , call : 0 , gust : false , gone : false , flying : false , beat : false , tale : false , flagT : 0 , shot : false } ; const tweens : { t : number ; d : number ; f : ( k : number ) = > void ; done : ( ) = > void } [ ] = [ ] ; const tween = ( d : number , f : ( k : number ) = > void ) = > new Promise < void > ( ( done ) = > tweens . push ( { t : 0 , d , f , done } ) ) ; const until = async ( g : Game , test : ( ) = > boolean ) = > { while ( ! test ( ) ) await g . wait ( 100 ) ; } ; const near = ( g : Game , n : NPC | undefined , m : number ) : n is NPC = > ! ! n & & g . npcs . distance ( n , g . player . dir ) < m ; const ease = ( k : number ) = > 1 - ( 1 - k ) * ( 1 - k ) ; function slerp ( a : Vector3 , b : Vector3 , u : number , out = new Vector3 ( ) ) { const th = arc ( a , b ) ; if ( th < 1e-5 ) return out . copy ( a ) ; const s = Math . sin ( th ) ; return out . copy ( a ) . multiplyScalar ( Math . sin ( ( 1 - u ) * th ) / s ) . addScaledVector ( b , Math . sin ( u * th ) / s ) . normalize ( ) ; } function zonePoint ( g : Game , zone : string , x : number , z : number , h : number ) : Vector3 { if ( ! g . world . zone ( zone ) ) return g . point ( 0 , 0 , h ) ; return g . world . localDir ( zone , x , z ) . multiplyScalar ( g . world . R + h ) ; } function spot ( g : Game , zone : string , name : string ) : Vector3 | null { const s = g . world . zone ( zone ) ? . spots ? . [ name ] ; if ( ! s ) return null ; const d = g . world . localDir ( zone , s . x , s . z ) ; return d . multiplyScalar ( g . world . R + ( s . abs ? ( s . y ? ? 0 ) : g . world . ground ( d ) . h + ( s . y ? ? 0 ) ) ) ; } function solid ( geo : BufferGeometry ) : Mesh { addOutlineNormals ( geo ) ; const m = new Mesh ( geo , toonChar ) ; m . add ( new Mesh ( geo , outlineChar ) ) ; return m ; } let hat : Mesh | null = null ; const theHat = ( ) = > ( hat ? ? = solid ( strawHat ( ) ) ) ; async function fling ( g : Game ) { const R = g . world . R ; const end = spot ( g , 'sunny-dock' , 'arrival' ) ? ? zonePoint ( g , 'sunny-dock' , 1.38 , - 1.73 , 2.2 ) ; const lu = g . npc ( 'luffy' ) ; const shoulder = lu ? lu . rig . group . position . clone ( ) . addScaledVector ( lu . dir , 0.9 ) : end . clone ( ) . addScaledVector ( end . clone ( ) . normalize ( ) , 1 ) ; const mat = toonColor ( 0 xf5c99a ) ; const arm = new Mesh ( undefined , mat ) ; const fist = new Mesh ( ball ( 0.24 , 0 xffffff , { } , 10 ) , mat ) ; g . scene . add ( arm , fist ) ; const hand = new Vector3 ( ) ; const pts = Array . from ( { length : 25 } , ( ) = > new Vector3 ( ) ) ; const a = new Vector3 ( ) ; const b = new Vector3 ( ) ; const draw = ( e : number ) = > { hand . copy ( g . player . position ) . addScaledVector ( g . player . dir , 0.9 ) ; a . copy ( shoulder ) . normalize ( ) ; b . copy ( hand ) . normalize ( ) ; const ra = shoulder . length ( ) ; const rb = hand . length ( ) ; const lift = arc ( a , b ) * R * 0.3 + 1.5 ; pts . forEach ( ( p , i ) = > { const u = ( i / 24 ) * e ; slerp ( a , b , u , p ) . multiplyScalar ( ra + ( rb - ra ) * u + lift * Math . sin ( Math . PI * u ) ) ; } ) ; arm . geometry . dispose ( ) ; arm . geometry = new TubeGeometry ( new CatmullRomCurve3 ( pts ) , 40 , 0.13 , 6 ) ; fist . position . copy ( pts [ 24 ] ) ; } ; g . sound . sfx ( 'boing' ) ; await tween ( 0.8 , ( k ) = > draw ( ease ( k ) ) ) ; const ride = g . ride ( 'ride-intro-fling' , [ slerp ( g . player . dir , end . clone ( ) . normalize ( ) , 0.5 ) . multiplyScalar ( R + 26 ) , end ] , 3 ) ; let live = true ; void ride . then ( ( ) = > ( live = false ) ) ; const cross = dirFromLatLon ( 0 , 4 ) ; const cam = g . cam ; const [ d0 , h0 ] = [ cam . dist , cam . height ] ; await tween ( 3 , ( k ) = > { if ( ! live ) return ; draw ( 1 ) ; const e = Math . sin ( Math . PI * Math . min ( 1 , k * 1.15 ) ) ; cam . dist = d0 + 4 * e ; cam . height = h0 + 7 * e ; cam . fwd . lerp ( headingTo ( g . player . dir , cross , a ) , 0.07 ) ; } ) ; await ride ; [ cam . dist , cam . height ] = [ d0 , h0 ] ; g . scene . remove ( arm , fist ) ; arm . geometry . dispose ( ) ; if ( lu ) g . player . place ( g . player . dir , headingTo ( g . player . dir , lu . dir ) ) ; } function neck ( g : Game , lu : NPC ) { const d = g . npcs . distance ( lu , g . player . dir ) ; st . neck = 1 ; lu . attend = g . player . position . clone ( ) ; lu . attendT = 2.6 ; lu . anim . neckReach = Math . max ( 3 , d - 0.6 ) ; lu . anim . play ( 'neck' ) ; g . sound . sfx ( 'boing' ) ; g . player . locked = true ; g . cam . mode = 'talk' ; g . cam . talkTarget . copy ( lu . rig . group . position ) ; setTimeout ( ( ) = > ( st . eaten = true ) , 900 ) ; setTimeout ( ( ) = > { g . player . locked = false ; g . cam . mode = 'follow' ; void g . talk ( lu ) ; } , 2250 ) ; } async function hatGust ( g : Game ) { const lu = g . npc ( 'luffy' ) ; if ( ! lu | | st . gust ) return ; st . gust = true ; const h = theHat ( ) ; const start = lu . rig . bones . get ( 'hat' ) ! . getWorldPosition ( new Vector3 ( ) ) ; const up = start . clone ( ) . normalize ( ) ; const to = ( spot ( g , 'jaya-skypiea' , 'golden-bell' ) ? ? zonePoint ( g , 'jaya-skypiea' , 0 , 0 , 9 ) ) . normalize ( ) ; const east = headingTo ( up , to ) ; const r0 = start . length ( ) ; const pUp = new Vector3 ( ) ; g . scene . add ( h ) ; st . gone = st . flying = true ; g . busy = true ; g . player . locked = true ; g . cam . mode = 'talk' ; g . attention ( start . clone ( ) . addScaledVector ( up , 2 ) , 3 ) ; g . sound . whoosh ( true ) ; lu . anim . play ( 'stretch' ) ; await tween ( 3 , ( k ) = > { if ( k < 0.4 ) { const t = ( k / 0.4 ) * Math . PI * 2 ; h . position . copy ( start ) . addScaledVector ( up , 1.6 * ( 1 - Math . cos ( t ) ) ) . addScaledVector ( east , 1.6 * Math . sin ( t ) ) ; } else { const u = ( k - 0.4 ) / 0.6 ; slerp ( up , to , u * 0.7 , h . position ) . multiplyScalar ( r0 + 11 * u * u ) ; h . scale . setScalar ( 1 + u ) ; } pUp . copy ( h . position ) . normalize ( ) ; frameQuat ( pUp , east , h . quaternion ) ; h . rotateY ( k * 18 ) ; h . rotateX ( Math . sin ( k * 20 ) * 0.4 ) ; g . cam . talkTarget . copy ( h . position ) . addScaledVector ( pUp , - 2.2 ) ; } ) ; g . scene . remove ( h ) ; h . scale . setScalar ( 1 ) ; st . flying = false ; g . cam . mode = 'follow' ; g . busy = false ; g . player . locked = false ; } const HATS : Record < string , ( c : CanvasRenderingContext2D , x : number , y : number , s : number ) = > void > = { goggles ( c , x , y , s ) { c . fillStyle = '#7a4a2b' ; c . fillRect ( x - 22 * s , y - 2 * s , 44 * s , 7 * s ) ; for ( const e of [ - 1 , 1 ] ) disc ( c , x + e * 9 * s , y + 1 * s , 7 * s , '#9fd6ee' , true ) ; } , afro ( c , x , y , s ) { for ( const [ dx , dy , r ] of [ [ 0 , - 10 , 24 ] , [ - 17 , - 2 , 15 ] , [ 17 , - 2 , 15 ] ] ) disc ( c , x + dx * s , y + dy * s , r * s , '#1d1a24' ) ; } , 'pink-top-hat' ( c , x , y , s ) { c . fillStyle = '#f27ba6' ; c . fillRect ( x - 24 * s , y - 1 * s , 48 * s , 6 * s ) ; c . fillRect ( x - 14 * s , y - 26 * s , 28 * s , 26 * s ) ; c . strokeStyle = '#ffffff' ; c . lineWidth = 3 * s ; c . beginPath ( ) ; c . moveTo ( x - 6 * s , y - 20 * s ) ; c . lineTo ( x + 6 * s , y - 8 * s ) ; c . moveTo ( x + 6 * s , y - 20 * s ) ; c . lineTo ( x - 6 * s , y - 8 * s ) ; c . stroke ( ) ; } , 'coo-cap' ( c , x , y , s ) { c . fillStyle = '#3a6ea5' ; c . beginPath ( ) ; c . ellipse ( x , y + 2 * s , 19 * s , 15 * s , 0 , Math . PI , 0 ) ; c . fill ( ) ; c . fillRect ( x - 2 * s , y , 30 * s , 5 * s ) ; c . fillStyle = '#ffffff' ; c . fillRect ( x - 19 * s , y - 2 * s , 38 * s , 3 * s ) ; } , } ; function disc ( c : CanvasRenderingContext2D , x : number , y : number , r : number , fill : string , ring = false ) { c . fillStyle = fill ; c . beginPath ( ) ; c . arc ( x , y , r , 0 , Math . PI * 2 ) ; c . fill ( ) ; if ( ring ) c . stroke ( ) ; } function drawFlag ( c : CanvasRenderingContext2D , w : number , h : number , head : string ) { const INK = '#2b2235' ; const CREAM = '#f3e9d2' ; c . fillStyle = '#2e8c8a' ; c . fillRect ( 0 , 0 , w , h ) ; c . strokeStyle = CREAM ; c . lineWidth = 3 ; c . strokeRect ( 5 , 5 , w - 10 , h - 10 ) ; const s = h / 100 ; const x = w / 2 ; const y = h * 0.47 ; c . lineWidth = 2.5 * s ; c . strokeStyle = INK ; for ( const a of [ - 0.45 , 0.45 ] ) { c . save ( ) ; c . translate ( x , y + 22 * s ) ; c . rotate ( a ) ; c . fillStyle = CREAM ; c . fillRect ( - 36 * s , - 12 * s , 72 * s , 24 * s ) ; c . strokeRect ( - 36 * s , - 12 * s , 72 * s , 24 * s ) ; c . beginPath ( ) ; c . moveTo ( - 36 * s , - 12 * s ) ; c . lineTo ( 0 , 3 * s ) ; c . lineTo ( 36 * s , - 12 * s ) ; c . stroke ( ) ; c . restore ( ) ; } const drawHat = HATS [ head ] ? ? HATS [ 'coo-cap' ] ; if ( head = = = 'afro' ) drawHat ( c , x , y - 12 * s , s ) ; disc ( c , x , y , 20 * s , CREAM ) ; c . fillRect ( x - 11 * s , y + 10 * s , 22 * s , 13 * s ) ; c . fillStyle = INK ; for ( const e of [ - 1 , 1 ] ) { c . beginPath ( ) ; c . ellipse ( x + e * 8 * s , y + 1 * s , 5 * s , 6 * s , 0 , 0 , Math . PI * 2 ) ; c . fill ( ) ; } c . beginPath ( ) ; c . moveTo ( x , y + 8 * s ) ; c . lineTo ( x - 3 * s , y + 13 * s ) ; c . lineTo ( x + 3 * s , y + 13 * s ) ; c . fill ( ) ; for ( let i = - 1 ; i < = 1 ; i + + ) c . fillRect ( x + i * 5 * s - 0.8 * s , y + 16 * s , 1.6 * s , 7 * s ) ; if ( head ! = = 'afro' ) drawHat ( c , x , y - 14 * s , s ) ; } interface Flag { root : Group ; cloth : Mesh < PlaneGeometry , MeshToonMaterial > ; ctx : CanvasRenderingContext2D ; tex : CanvasTexture ; head : string ; base : Float32Array ; eye : Vector3 ; look : Vector3 ; } let flag : Flag | null = null ; const FW = 1.4 ; const FLAG_LOW = - 2.5 ; const FLAG_HIGH = - 0.6 ; type PoleTop = { zone : string ; x : number ; z : number ; h : number ; rot : number } ; const POLE = Object . values ( import . meta . glob < { SUNNY_FLAG ? : PoleTop } > ( './zones/sunny-dock.ts' , { eager : true } ) ) [ 0 ] ? . SUNNY_FLAG ; function buildFlag ( g : Game ) : Flag | null { if ( ! POLE | | ! g . world . zone ( POLE . zone ) ) return null ; const d = g . world . localDir ( POLE . zone , POLE . x , POLE . z ) ; const { east , north } = g . world . northAt ( POLE . zone , d ) ; const H = ( POLE . rot * Math . PI ) / 180 ; const bow = north . clone ( ) . multiplyScalar ( Math . cos ( H ) ) . addScaledVector ( east , Math . sin ( H ) ) ; const star = east . clone ( ) . multiplyScalar ( Math . cos ( H ) ) . addScaledVector ( north , - Math . sin ( H ) ) ; const stream = star . clone ( ) . sub ( bow ) . normalize ( ) ; const root = new Group ( ) ; root . position . copy ( d ) . multiplyScalar ( g . world . R + POLE . h ) ; const eye = root . position . clone ( ) . addScaledVector ( stream . clone ( ) . cross ( d ) , 6.8 ) . addScaledVector ( bow , - 1 ) . addScaledVector ( d , 1.2 ) ; const look = root . position . clone ( ) . addScaledVector ( stream , FW / 2 ) . addScaledVector ( bow , 1.6 ) . addScaledVector ( d , - 1.5 ) ; frameQuat ( d , new Vector3 ( ) . crossVectors ( stream , d ) , root . quaternion ) ; const cv = document . createElement ( 'canvas' ) ; cv . width = 160 ; cv . height = 108 ; const ctx = cv . getContext ( '2d' ) ! ; const tex = new CanvasTexture ( cv ) ; tex . colorSpace = SRGBColorSpace ; const geo = new PlaneGeometry ( FW , 0.95 , 10 , 1 ) ; geo . translate ( FW / 2 + 0.05 , 0 , 0 ) ; const cloth = new Mesh ( geo , new MeshToonMaterial ( { map : tex , gradientMap : toonRamp , side : DoubleSide } ) ) ; cloth . position . y = FLAG_LOW ; root . add ( cloth ) ; g . scene . add ( root ) ; const f : Flag = { root , cloth , ctx , tex , head : '' , base : Float32Array . from ( geo . attributes . position . array ) , eye , look } ; paintFlag ( g , f ) ; return f ; } function paintFlag ( g : Game , f : Flag ) { const head = g . save . outfit . head ? ? 'coo-cap' ; if ( head = = = f . head ) return ; f . head = head ; drawFlag ( f . ctx , 160 , 108 , head ) ; f . tex . needsUpdate = true ; } async function raiseFlag ( g : Game ) { flag ? ? = buildFlag ( g ) ; g . flag ( 'flag-raised' ) ; if ( ! flag ) return ; const f = flag ; const c = g . cam . cam ; g . attention ( f . root . position , 3 ) ; g . cam . frozen = st . shot = true ; await tween ( 3 , ( k ) = > { f . cloth . position . y = FLAG_LOW + ( FLAG_HIGH - FLAG_LOW ) * ease ( k ) ; c . position . copy ( f . eye ) . addScaledVector ( f . root . position . clone ( ) . normalize ( ) , 0.6 * ( 1 - k ) ) ; c . up . copy ( f . root . position ) . normalize ( ) ; c . lookAt ( f . look ) ; } ) ; } const CUES : Record < string , ( g : Game ) = > void > = { boing : ( g ) = > g . sound . sfx ( 'boing' ) , ring : ( g ) = > g . sound . ring ( ) , song : ( g ) = > g . sound . sfx ( 'laboon-song' ) , hammer : ( g ) = > { for ( let i = 0 ; i < 4 ; i + + ) setTimeout ( ( ) = > g . sound . sfx ( 'hammer' ) , i * 420 ) ; } , kanpai : ( g ) = > { g . sound . sfx ( 'kanpai' ) ; for ( const n of g . npcs . list ) if ( n . rig . group . visible & & near ( g , n , 18 ) & & ! n . def . object ) { n . anim . play ( 'cheer' ) ; g . spawnEmote ( '🥤' , n . rig . group ) ; } g . player . anim . play ( 'cheer' ) ; g . spawnEmote ( '🥤' , g . player . rig . group ) ; } , flag : ( g ) = > void raiseFlag ( g ) , } ; let lastLine : Line | null = null ; let TALE : Vector3 | null = null ; const taleDir = ( g : Game ) = > { const z = g . world . zone ( 'laugh-tale-fog' ) ; return ( TALE ? ? = z ? dirFromLatLon ( z . lat , z . lon ) : dirFromLatLon ( 0 , 340 ) ) ; } ; export const story : Story = { maxOpen : 3 , firstContact : 'luffy' , finaleJob : J8 , items , jobs , opening : C ( \"luffy.cheer: You're our messenger now!\" , 'nami.facepalm: He didn\\'t ask. He never asks. We\\'ll pay you. Well, HE will.' , 'nami: Here, wear my Log Pose. I retuned it to people instead of islands.' , 'nami.point: Rule of this world: the red wall runs top to bottom, the Grand Line runs round the middle, and every sea flows up the mountain where they cross.' , \"luffy.wave: Oi, messenger! C'mere, c'mere! I've got a job!\" , ) , finale : C ( 'luffy.cheer: Looks good! Nope, mine.' , 'luffy.cheer!kanpai: KANPAI!' , \"nami: He walked straight. On this planet that's technically correct. Never tell him.\" , 'zoro: Told you. Walk straight.' , \"usopp.raise!flag: Every crew needs a flag. I drew yours. You're welcome.\" , '~: (Your flag climbs the aft pole and catches the last of the sun.)' , ) , end : { title : 'CONGRATULATIONS!' , poster : 'WANTED · FOR SERVICES TO THE CREW' , name : 'THE MESSENGER' , bounty : 'BOUNTY: 8 DELIVERIES · 1 HAT RETURNED · 0 PROMISES BROKEN' , footer : 'Every parcel home. KANPAI!' , button : 'CONTINUE' , credits : `${CREDITS} ${TEAM}` , } , hooks : { async opening ( g ) { const coo = g . npc ( 'news-coo' ) ; await g . converse ( C ( 'news-coo.salute: Coo. (Translation: you look like a courier.)' ) , near ( g , coo , 12 ) ? coo : null ) ; const touch = matchMedia ( '(pointer: coarse)' ) . matches ; g . ui . toast ( '👣' , touch ? 'HOLD TO MOVE' : 'WASD / HOLD MOUSE' , 'TAKE A FEW STEPS' , 3000 ) ; const m0 = g . player . metres ; const t0 = g . time ; await until ( g , ( ) = > g . time - t0 > 4 | | g . player . metres - m0 > 3 ) ; await until ( g , ( ) = > ! g . busy & & ! g . ui . panelOpen & & ! g . player . riding ) ; await g . say ( C ( \"luffy: OIIIII! MESSENGEEEER!\" ) ) ; await fling ( g ) ; st . open = 1 ; } , start ( job , g ) { if ( job . id = = = J2 ) { g . spinLogPose ( 1.5 ) ; g . ui . toast ( '🧭' , 'LOG POSE' , \"EVEN I CAN'T FIND HIM\" ) ; } } , async beforeStep ( job , i , g ) { if ( job . id = = = J8 & & i = = = 0 ) await hatGust ( g ) ; } , async afterStep ( job , i , g ) { if ( job . id = = = J1 & & i = = = 1 ) { st . eaten = false ; g . ui . toast ( '🍙' , 'IN YOUR SATCHEL' , 'A RICE BALL: \"FOR THE MESSENGER. NOT LUFFY.\"' , 3000 ) ; } if ( job . id = = = J6 & & i = = = 1 ) { g . sound . sfx ( 'laboon-song' ) ; const lab = g . npc ( 'laboon' ) ; g . attention ( lab ? lab . rig . group . position : zonePoint ( g , 'twin-capes' , 7.29 , - 1.72 , 4 ) , 4 ) ; lab ? . anim . play ( 'spout' ) ; await g . wait ( 4000 ) ; await until ( g , ( ) = > ! g . busy ) ; const short = g . jobs . progress . flag ( 'j6-short-way' ) ; await g . converse ( C ( \"crocus: Fifty years, and he's never sung like that.\" , . . . ( short ? [ \"crocus: Came the short way? The dial won't tell. I might.\" ] : [ ] ) , \"crocus.point: Light the lamp. Someone's keeping a promise.\" , 'crocus: His answer is in the dial now. Take it to whoever sent it. I can guess who.' , ) , g . npc ( 'crocus' ) ? ? null , ) ; } if ( job . id = = = J8 & & i = = = 1 ) { g . sound . sfx ( 'golden-bell' ) ; g . ui . toast ( '🔔' , 'PACKAGE RECEIVED (EVERYONE HEARD THAT)' , \"Luffy's Straw Hat\" , 3000 ) ; const bell = g . npc ( 'golden-bell' ) ; bell ? . anim . play ( 'wave' ) ; if ( bell ) g . attention ( bell . rig . group . position , 3 ) ; await g . wait ( 1400 ) ; await until ( g , ( ) = > ! g . busy ) ; await g . say ( C ( '~: (Far below, a tiny green deck cheers: \"THE FEAST BELL!\" Slide home on the Milky Road.)' ) ) ; } } , async finale ( g ) { g . npc ( 'luffy' ) ? . anim . play ( 'stretch' ) ; const h = theHat ( ) ; h . removeFromParent ( ) ; g . player . rig . bones . get ( 'hat' ) ? . add ( h ) ; h . position . set ( 0 , - 0.1 , 0 ) ; h . quaternion . identity ( ) ; h . rotateX ( - 0.15 ) ; st . beat = true ; g . sound . pop ( ) ; setTimeout ( ( ) = > { h . removeFromParent ( ) ; st . beat = false ; } , 850 ) ; await g . wait ( 420 ) ; } , tick ( g , dt ) { for ( let i = tweens . length - 1 ; i > = 0 ; i - - ) { const tw = tweens [ i ] ; tw . t + = dt ; const k = Math . min ( 1 , tw . t / tw . d ) ; tw . f ( k ) ; if ( k > = 1 ) { tweens . splice ( i , 1 ) ; tw . done ( ) ; } } const line = g . ui . currentLine ( ) as Cued | null ; if ( line ! = = lastLine ) { lastLine = line ; if ( line ? . cue ) CUES [ line . cue ] ? . ( g ) ; } if ( st . shot & & g . jobs . night ) { st . shot = false ; setTimeout ( ( ) = > ( g . cam . frozen = false ) , 400 ) ; } if ( g . cam . mode = = = 'title' | | g . cam . diving ) return ; const p = g . jobs . progress ; const idle = ! g . busy & & ! g . ui . panelOpen & & ! g . player . riding ; const lu = g . npc ( 'luffy' ) ; if ( st . open = = = 1 & & g . busy ) st . open = 2 ; else if ( st . open = = = 2 & & idle ) { st . open = 3 ; if ( p . step ( J1 ) = = = - 1 & & near ( g , lu , 12 ) ) void g . talk ( lu ) ; } if ( p . active ( J1 , 1 ) ) { if ( ! st . neck & & idle & & near ( g , lu , 10 ) ) neck ( g , lu ) ; if ( st . eaten ) g . player . rig . bones . get ( 'hand' ) ? . scale . setScalar ( 1e-3 ) ; } const d = g . player . dir ; if ( p . active ( J6 , 1 ) & & d . x > 0 & & d . z < - 0.85 & & Math . abs ( d . y ) < 0.25 & & ! p . flag ( 'j6-short-way' ) ) g . flag ( 'j6-short-way' ) ; if ( p . step ( J8 ) = = = - 1 & & jobs [ 7 ] . requires ! . every ( ( r ) = > p . done ( r ) ) ) { if ( idle ) st . call + = dt ; if ( st . call > 3.5 ) { st . call = - 1e9 ; void g . say ( jobs [ 7 ] . intro ) . then ( ( ) = > { if ( p . step ( J8 ) ! = = - 1 ) return ; g . jobs . start ( jobs [ 7 ] ) ; g . sound . jingle ( 'job' ) ; g . ui . logDot ( true ) ; } ) ; } } if ( p . active ( J8 , 0 ) & & ! st . gust & & idle & & near ( g , lu , 7 ) ) void g . talk ( lu ) ; const k = p . step ( J8 ) ; if ( lu & & ( ( k > = 0 & & k < 3 & & ( st . gone | | k > 0 ) ) | | st . beat ) ) lu . rig . bones . get ( 'hat' ) ? . scale . setScalar ( 1e-3 ) ; const bell = k = = = 1 & & ! st . beat ? g . npc ( 'golden-bell' ) : undefined ; if ( bell ) { const h = theHat ( ) ; if ( h . parent ! = = g . scene ) g . scene . add ( h ) ; const up = bell . rig . group . position . clone ( ) . normalize ( ) ; h . position . copy ( bell . rig . group . position ) . addScaledVector ( up , 2.66 ) ; frameQuat ( up , bell . face , h . quaternion ) ; h . translateX ( 0.5 ) ; h . rotateZ ( - 0.3 + Math . sin ( g . time * 1.3 ) * 0.1 ) ; } else if ( ! st . flying & & hat ? . parent = = = g . scene ) g . scene . remove ( hat ) ; if ( ! st . tale & & arc ( d , taleDir ( g ) ) * g . world . R < 7 ) { st . tale = true ; g . ui . toast ( '🌫️' , \"LUFFY'S RULE\" , \"DON'T TELL HIM WHAT'S IN THERE.\" , 3200 ) ; } if ( ! flag & & p . flag ( 'flag-raised' ) ) { flag = buildFlag ( g ) ; if ( flag ) flag . cloth . position . y = FLAG_HIGH ; } if ( flag & & flag . root . position . distanceToSquared ( g . player . position ) < 1600 ) { st . flagT - = dt ; if ( st . flagT < = 0 ) { st . flagT = 1 ; paintFlag ( g , flag ) ; } const pos = flag . cloth . geometry . attributes . position ; const a = pos . array as Float32Array ; for ( let i = 0 ; i < pos . count ; i + + ) { const x = flag . base [ i * 3 ] - 0.05 ; a [ i * 3 + 2 ] = Math . sin ( x * 4.5 - g . time * 5 ) * 0.09 * ( x / FW ) ; } pos . needsUpdate = true ; } } , } , } ;"
+      ]
+    }
+  }
+}

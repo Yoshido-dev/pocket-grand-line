@@ -1,0 +1,41 @@
+{
+ "url": "http://localhost:8787/",
+ "runs": [
+  {
+   "buildMs": 543,
+   "warmMs": 105,
+   "planet": 104,
+   "merge": 48
+  },
+  {
+   "buildMs": 563,
+   "warmMs": 42,
+   "planet": 109,
+   "merge": 51
+  },
+  {
+   "buildMs": 567,
+   "warmMs": 36,
+   "planet": 108,
+   "merge": 52
+  },
+  {
+   "buildMs": 564,
+   "warmMs": 36,
+   "planet": 110,
+   "merge": 51
+  },
+  {
+   "buildMs": 591,
+   "warmMs": 37,
+   "planet": 106,
+   "merge": 52
+  }
+ ],
+ "median": {
+  "buildMs": 564,
+  "warmMs": 37,
+  "planet": 108,
+  "merge": 51
+ }
+}
