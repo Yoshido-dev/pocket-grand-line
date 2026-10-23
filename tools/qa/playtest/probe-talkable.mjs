@@ -17,7 +17,7 @@ const out = await page.evaluate(() => {
     e.normalize();
     const nn = up.clone().cross(e).normalize();
     let best = null;
-    for (let r = 0.6; r <= 2.6; r += 0.25)
+    for (let r = 0.6; r < 2.8; r += 0.05)
       for (let a = 0; a < 360; a += 10) {
         const t = (a * Math.PI) / 180;
         const d = up.clone().addScaledVector(e, (Math.cos(t) * r) / R).addScaledVector(nn, (Math.sin(t) * r) / R).normalize();
@@ -25,7 +25,7 @@ const out = await page.evaluate(() => {
           const gh = w.ground(d, pf);
           if (w.isDeep(gh)) continue;
           const dz = Math.abs(gh.h - n.feet);
-          if (dz <= 2.6 && (!best || dz < best.dz)) best = { dz: +dz.toFixed(2), r: +r.toFixed(2), kind: gh.kind };
+          if (g.npcs.inReach(n, d, gh.h, 2.8) && (!best || dz < best.dz)) best = { dz: +dz.toFixed(2), r: +r.toFixed(2), kind: gh.kind };
         }
       }
     (best ? ok : bad).push(`${n.def.id.padEnd(20)} feet ${n.feet.toFixed(2).padStart(6)} ${JSON.stringify(ll(n.dir))} ${best ? JSON.stringify(best) : 'NO SPOT'}`);

@@ -178,9 +178,9 @@ export class Game {
   /** Heavy construction, split so the loader can paint first. */
   build() {
     const c = this.content;
-    // geodesic frequency scaled with the radius so the ground keeps its triangle size (48 / 30 at R = 50)
+    // Geodesic frequency scaled with the radius; 54 / 34 at R = 60 keeps boot within the laptop target.
     const R = this.world.R;
-    this.world.build(this.scene, this.quality === 'low' ? Math.round((30 * R) / 50) : Math.round((48 * R) / 50));
+    this.world.build(this.scene, this.quality === 'low' ? Math.round((28 * R) / 50) : Math.round((45 * R) / 50));
     this.jobs = new Jobs(c.story, this.save.jobs, this.save.tracked, this.save.flags, this.save.chests, this.save.finale);
     this.jobs.onChange = () => {
       this.world.updateConds(this.jobs.progress);

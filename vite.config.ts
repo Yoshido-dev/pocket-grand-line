@@ -19,7 +19,28 @@ const shareTags = site
 // Static, relative-path build so dist/ can be dropped on any static host (GitHub Pages, Netlify, itch.io).
 export default defineConfig({
   base: './',
-  plugins: [{ name: 'share-image', transformIndexHtml: (html) => html.replace('<!--share-image-->', shareTags) }],
+  // Keep shader modules available to the build transform instead of the prebundled Three.js copy.
+  resolve: { alias: [{ find: /^three$/, replacement: 'three/src/Three.js' }] },
+  plugins: [
+    { name: 'share-image', transformIndexHtml: (html) => html.replace('<!--share-image-->', shareTags) },
+    {
+      name: 'compact-shader-source',
+      apply: 'build',
+      enforce: 'pre',
+      transform(code, id) {
+        if (!/\/three\/src\/renderers\/shaders\/.+\.glsl\.js$/.test(id.replace(/\\/g, '/'))) return;
+        const first = code.indexOf('`');
+        const last = code.lastIndexOf('`');
+        if (first < 0 || last <= first) return;
+        // JS minifiers leave GLSL strings untouched. Keep directive line breaks and exact include/main
+        // markers used by shader hooks, while removing ordinary comments and indentation.
+        const shader = code.slice(first + 1, last)
+          .replace(/\/\*[\s\S]*?\*\/|\/\/[^\r\n]*/g, (comment) => /@license|@preserve|copyright|SPDX/i.test(comment) ? comment : ' ')
+          .split('\n').map((line) => line.trim()).filter(Boolean).join('\n');
+        return { code: code.slice(0, first + 1) + '\n' + shader + '\n' + code.slice(last), map: null };
+      },
+    },
+  ],
   build: {
     target: 'es2022',
     modulePreload: { polyfill: false },

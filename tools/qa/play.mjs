@@ -2,7 +2,7 @@
 // Teleports next to each target and talks; advances dialogue; waits out rides and moments.
 import { chromium } from 'playwright-core';
 const url = process.argv[2] || 'http://localhost:8787/';
-const shots = '<LOCAL_HOME>/.t3/tools/pw/shots/play';
+const shots = process.argv[3] || 'tools/qa/shots/play';
 import fs from 'node:fs';
 fs.mkdirSync(shots, { recursive: true });
 const browser = await chromium.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: true, args: ['--use-angle=d3d11', '--ignore-gpu-blocklist', '--enable-unsafe-swiftshader'] });

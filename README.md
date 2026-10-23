@@ -10,11 +10,11 @@ A cozy tiny-planet delivery adventure through a miniature One Piece world, in th
 
 | | Messenger (reference) | Pocket Grand Line |
 |---|---|---|
-| First load | ~5.7 MB (up to 17.5 MB) | **329.2 KiB gzip / 272.7 KiB brotli** (HTML + CSS + JS + icon, everything) |
+| First load | ~5.7 MB (up to 17.5 MB) | **326.4 KiB gzip / 270.4 KiB brotli** (HTML + CSS + JS + icon, everything) |
 | Model, texture and audio files | Draco meshes, KTX2 textures, OGG audio | none |
 | Fonts | MSDF font files | system fonts |
 | Saved on device | — | < 2 KB in `localStorage` |
-| World build on load | — | 516–590 ms across two foreground production loads |
+| World build on load | — | 614 ms median across five production loads |
 
 How:
 
@@ -23,7 +23,7 @@ How:
   - The planet is one analytic height function on a geodesic sphere.
   - Props are merged per zone. Flags, signs and posters are drawn on canvas.
 - **Synthesised audio.** Music, 17 ambiences, footsteps, voices and jingles are all WebAudio oscillators and filtered noise.
-- **One bundle.** three.js and the game ship as one hashed JS file. An inline CSS loader in `index.html` paints instantly.
+- **One bundle.** three.js and the game ship as one hashed JS file. The build trims shader comments and indentation while preserving shader directives and hooks. An inline CSS loader in `index.html` paints instantly.
 - **Cheap to render.** Zones beyond the horizon are hidden, flora is instanced per zone, and the terrain doesn't cast shadows. Pixel ratio adapts to frame time, and phones get a lighter planet with blob shadows.
 
 `npm run size` prints the real numbers and exits with a failure above **330 KiB gzip** for the complete `dist/`. `node scripts/modsize.mjs` shows what each module costs. The transfer and build figures above are reference measurements; rerun the checks for your build and machine.
@@ -37,7 +37,7 @@ npm run build      # static site in dist/ (drop it on any static host)
 npm run serve      # serves dist/ + the multiplayer relay on http://localhost:8787
 npm run size       # raw / gzip / brotli sizes against the budget
 npm run check      # TypeScript type check
-npm test           # save/progression, touch-input and path-geometry regressions (Node 22.18+)
+npm test           # save/progression, touch-input, path-geometry and shader regressions (Node 22.18+)
 ```
 
 ## Release
@@ -81,9 +81,11 @@ Standalone QA is also available after installing its optional dependency with `n
 node tools/qa/gaps.mjs http://localhost:8787/
 node tools/qa/play.mjs http://localhost:8787/
 node tools/qa/drift.mjs http://localhost:8787/
+node tools/qa/playtest/check-crossings.mjs http://localhost:8787/
+node tools/qa/playtest/autoplay.mjs http://localhost:8787/ tools/qa/shots/autoplay-new-run
 ```
 
-Those standalone scripts launch the configured system Chrome. The playthrough checks all eight jobs and the finale by teleporting between recipients; it does not prove that a player can walk every route. The layout and current-drift checks cover complementary travel constraints. See [HANDOVER.md](HANDOVER.md) for the full verification workflow, [the improvement review](docs/design/12-improvement-review.md) for the earlier design decisions and [the island-by-island review](docs/design/13-island-by-island.md) for the latest island design and QA.
+Those standalone scripts launch the configured system Chrome; run one at a time. `play.mjs` checks all eight jobs and the finale by teleporting between recipients. `autoplay.mjs` travels the full story with movement and talk controls and reports delivery percentages; give every run a new output folder. The crossing, layout and current-drift checks cover complementary travel constraints. See [the playtest tools](tools/qa/playtest/README.md) for the verification workflow, [the improvement review](docs/design/12-improvement-review.md) for the earlier design decisions and [the island-by-island review](docs/design/13-island-by-island.md) for the latest island design and QA. Generated QA captures and private handovers are excluded from version control.
 
 ## Controls
 

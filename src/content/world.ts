@@ -171,12 +171,12 @@ export const world: Content['world'] = {
     ],
   },
   crossings: [
-    { id: 'reverse-mountain', label: 'VIA REVERSE MOUNTAIN', pos: rt(0, 0, 1, 6), neg: rt(0, 0, -2, 353) },
+    { id: 'reverse-mountain', label: 'VIA REVERSE MOUNTAIN', pos: rt(0, 0, 1.5, 10.6), neg: rt(0, 0, -2.3, 351), crest: [0, 0] },
     { id: 'fish-man-tunnel', label: 'VIA THE FISH-MAN TUNNEL', pos: rt(0, 180, 0, 176.5), neg: rt(0, 180, 0, 183.5) },
     // the pole stairs are crossed from foot to foot, so walkers line up with the steps (the pyramids'
     // flanks are too steep to climb from the side)
-    { id: 'north-stair', label: 'VIA THE NORTH STAIR', pos: rt(90, 0, 77, 90), neg: rt(90, 0, 77, 270) },
-    { id: 'south-stair', label: 'VIA THE SOUTH STAIR', pos: rt(-90, 0, -77, 90), neg: rt(-90, 0, -77, 270) },
+    { id: 'north-stair', label: 'VIA THE NORTH STAIR', pos: rt(90, 0, 77, 90), neg: rt(90, 0, 77, 270), stairs: true },
+    { id: 'south-stair', label: 'VIA THE SOUTH STAIR', pos: rt(-90, 0, -77, 90), neg: rt(-90, 0, -77, 270), stairs: true },
     { id: 'mary-geoise', label: 'VIA MARY GEOISE (BONDOLA)', pos: [9, 180 - (2.8 * 50) / R], neg: [9, 180 + (2.8 * 50) / R] },
   ],
   // every sea flows to the mountain

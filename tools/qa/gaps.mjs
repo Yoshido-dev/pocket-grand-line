@@ -212,7 +212,10 @@ const measure = ({ KING, KING_LEGS, SEQ, VIA }) => {
     let n = 0;
     while (n++ < 60000) {
       if (arcM(p, b.dir) < 2) break;
-      const f = way.route(p, b.dir, toZone, VIA[i]).aim.clone();
+      // This is an ideal geometric walk; give the route its sampled standing height so a summit
+      // waypoint can finish climbing before the needle turns onto the far stair.
+      const feet = w.ground(p, 1e9).h;
+      const f = way.route(p, b.dir, toZone, VIA[i], feet, b.feet).aim.clone();
       f.addScaledVector(p, -p.dot(f)).normalize();
       p.addScaledVector(f, Math.tan(0.1 / R)).normalize();
       leg.m += 0.1;

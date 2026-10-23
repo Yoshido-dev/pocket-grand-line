@@ -84,7 +84,7 @@ test('rounded stamps cover a right-angle joint', () => {
 });
 
 test('full-size planet fixture builds in bounded time with finite geometry', () => {
-  const ground = new IcosahedronGeometry(61, 57); // 67,280 faces, matching desktop frequency 58.
+  const ground = new IcosahedronGeometry(61, 57); // 67,280 faces: larger than the production desktop mesh.
   const paths = Array.from({ length: 80 }, (_, i) => ({ pts: [[i % 2 ? 7 : -7, i * 4.5], [i % 2 ? 7 : -7, i * 4.5 + 3]], width: 1.2 }));
   const start = performance.now();
   const mesh = buildPaths(terrain(paths), ground);

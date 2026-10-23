@@ -40,6 +40,10 @@ export interface CrossingDef {
   /** Approach node on the +normal side of the wall and on the -normal side, [lat, lon]. */
   pos: [number, number];
   neg: [number, number];
+  /** Optional summit between the two approach nodes, for a crossing with bent stairs. */
+  crest?: [number, number];
+  /** Off the built stairway, guide back to its entrance instead of across the flank. */
+  stairs?: boolean;
 }
 
 export interface SeaColour {

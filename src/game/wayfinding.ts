@@ -78,6 +78,7 @@ interface Prepared {
   def: CrossingDef;
   pos: Vector3;
   neg: Vector3;
+  crest?: Vector3;
 }
 
 export class Wayfinder {
@@ -100,7 +101,7 @@ export class Wayfinder {
 
   constructor(world: World) {
     this.world = world;
-    this.crossings = (world.cfg.crossings ?? []).map((def) => ({ def, pos: dirFromLatLon(def.pos[0], def.pos[1]), neg: dirFromLatLon(def.neg[0], def.neg[1]) }));
+    this.crossings = (world.cfg.crossings ?? []).map((def) => ({ def, pos: dirFromLatLon(def.pos[0], def.pos[1]), neg: dirFromLatLon(def.neg[0], def.neg[1]), crest: def.crest ? dirFromLatLon(...def.crest) : undefined }));
   }
 
   route(from: Vector3, to: Vector3, toZone: string | null, via?: string, feet = 0, toFeet = -Infinity): Route {
@@ -156,18 +157,27 @@ export class Wayfinder {
         this.using = best;
         const near = sFrom > 0 ? best.pos : best.neg;
         const far = sFrom > 0 ? best.neg : best.pos;
+        const crest = best.crest;
         const dNear = arc(from, near) * R;
         // at the near node, or already on the way across (a stair's top landing, the tunnel): over to the
         // far one, and keep at it; beside it (at the foot of Reverse Mountain's flank) walk to it first
-        const onIt = w.ground(from, feet).kind !== 'terrain' && this.onCrossing(from, near, far);
-        if (dNear < 1.2 || onIt) this.over = best;
-        else if (this.over === best && dNear > 4 && arc(from, far) > arc(near, far)) this.over = null; // wandered back
-        const aim = this.over === best ? far : near;
-        return { aim, via: best.def.label, dist: (arc(from, aim) + (aim === near ? arc(near, far) : 0) + arc(far, to)) * R };
+        const built = w.ground(from, feet).kind !== 'terrain';
+        const onIt = built && this.onCrossing(from, near, crest ?? far, crest ? 0.35 : 1.5);
+        const offStair = crest ? !built && feet < w.ground(crest, 1e9).h - 0.5 : best.def.stairs && !onIt;
+        if ((dNear < (crest ? 0.3 : 1.2) && (!crest || built)) || onIt) this.over = best;
+        else if (this.over === best && (offStair || (dNear > 4 && arc(from, far) > arc(near, far)))) this.over = null; // off the stair: rejoin at its foot
+        // Climb the entry stair to the summit before turning onto the exit stair. The straight line
+        // between their feet cuts across Reverse Mountain's unwalkable flank.
+        const aim = this.over !== best ? near : crest && feet < w.ground(crest, 1e9).h - 0.5 ? crest : far;
+        const across = crest ? arc(near, crest) + arc(crest, far) : arc(near, far);
+        return { aim, via: best.def.label, dist: (arc(from, aim) + (aim === near ? across : aim === crest ? arc(crest, far) : 0) + arc(far, to)) * R };
       }
     }
     // on the target's side: forget the crossing; a forced via still applies until we pass through it
-    if (sFrom === sTo) this.using = this.over = null;
+    if (sFrom === sTo) {
+      if (this.using && via === this.using.def.id) this.passed.add(via);
+      this.using = this.over = null;
+    }
     if (via && sFrom === sTo) {
       const c = this.crossings.find((x) => x.def.id === via);
       // forced route on the same side (e.g. "carry on through the New World"): aim at the crossing first
@@ -204,10 +214,10 @@ export class Wayfinder {
 
   /** On the line from a crossing's near node to its far node, and past the near one? (The caller checks
    * the courier stands on its built path: stairs, landing, bridge, not the slope beside it.) */
-  private onCrossing(from: Vector3, near: Vector3, far: Vector3): boolean {
+  private onCrossing(from: Vector3, near: Vector3, far: Vector3, width = 1.5): boolean {
     const R = this.world.R;
     _g.crossVectors(near, far).normalize();
-    if (Math.abs(Math.asin(Math.max(-1, Math.min(1, from.dot(_g))))) * R > 1.5) return false;
+    if (Math.abs(Math.asin(Math.max(-1, Math.min(1, from.dot(_g))))) * R > width) return false;
     _q.copy(from).addScaledVector(_g, -from.dot(_g)).normalize();
     const total = arc(near, far);
     return arc(_q, far) < total && arc(near, _q) > 0.05 * total;

@@ -5,10 +5,11 @@ import { chromium } from 'playwright-core';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { blockedAhead } from './obstacles.mjs';
 
 const URL0 = process.argv[2] || 'http://localhost:8787/';
-const OUT = process.argv[3] || path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'shots', 'autoplay');
-fs.rmSync(OUT, { recursive: true, force: true });
+const OUT = path.resolve(process.argv[3] || path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'shots', 'autoplay'));
+if (fs.existsSync(OUT)) throw new Error(`Choose a new output directory to preserve the previous run: ${OUT}`);
 fs.mkdirSync(OUT, { recursive: true });
 const LIMIT_MIN = +(process.env.LIMIT_MIN || 40);
 
@@ -24,6 +25,7 @@ await page.reload();
 await page.waitForSelector('#b-start', { timeout: 60000 });
 await page.click('#b-start');
 await page.waitForTimeout(1500);
+await page.addScriptTag({ content: `window.__botBlocked = ${blockedAhead.toString()}` });
 
 await page.evaluate(() => {
   const g = window.__game;
@@ -39,6 +41,12 @@ await page.evaluate(() => {
   const ll = (d) => [+(Math.asin(Math.max(-1, Math.min(1, d.y))) * 180 / Math.PI).toFixed(2), +(((Math.atan2(d.x, d.z) * 180) / Math.PI + 360) % 360).toFixed(2)];
   const t0 = performance.now();
   const now = () => (performance.now() - t0) / 1000;
+  const progress = () => {
+    const jobs = g.jobs.story.jobs;
+    const deliveries = jobs.reduce((n, j) => n + Math.max(0, g.jobs.state[j.id]), 0);
+    const total = jobs.reduce((n, j) => n + j.steps.length, 0);
+    return { deliveries, total, percent: Math.round(deliveries / total * 100), jobsDone: g.jobs.doneCount(), jobsTotal: jobs.length };
+  };
   const bot = {
     events: [], legs: [], leg: null, done: false, shotQ: [], talks: [],
     st: { best: Infinity, bestT: 0, mode: 0, until: 0, n: 0 },
@@ -65,7 +73,7 @@ await page.evaluate(() => {
     if (now() - lastHb > 30) {
       lastHb = now();
       const tg = g.compassTarget();
-      ev('hb', { busy: !!g.busy, talking: !!g.ui.talking, offer: !!g.ui.offerOpen, panel: !!g.ui.panelOpen, riding: !!p.riding, diving: !!g.cam.diving, to: tg?.n.def.id ?? null, leg: bot.leg?.key ?? null, best: +bot.st.best.toFixed?.(1) });
+      ev('hb', { ...progress(), busy: !!g.busy, talking: !!g.ui.talking, offer: !!g.ui.offerOpen, panel: !!g.ui.panelOpen, riding: !!p.riding, diving: !!g.cam.diving, to: tg?.n.def.id ?? null, leg: bot.leg?.key ?? null, best: +bot.st.best.toFixed?.(1) });
     }
     const idle = !g.started || g.busy || p.riding || g.cam.diving;
     if (idle && !g.ui.talking && !g.ui.offerOpen) {
@@ -78,7 +86,7 @@ await page.evaluate(() => {
       for (const c of [...held]) hold(c, false);
       bot.done = true;
       if (bot.leg) { bot.leg.secs = +(now() - bot.leg.t).toFixed(1); bot.leg.metres = +(p.metres - bot.leg.m0).toFixed(1); bot.legs.push(bot.leg); bot.leg = null; }
-      ev('end');
+      ev('end', progress());
       bot.shotQ.push('99-end');
       return;
     }
@@ -122,6 +130,7 @@ await page.evaluate(() => {
     if (!bot.leg || bot.leg.key !== k) {
       if (bot.leg) { bot.leg.secs = +(now() - bot.leg.t).toFixed(1); bot.leg.metres = +(p.metres - bot.leg.m0).toFixed(1); bot.legs.push(bot.leg); }
       bot.leg = { key: k, to: tgt.n.def.id, t: now(), m0: p.metres, swims: 0, stuck: 0, vias: [] };
+      ev('progress', { ...progress(), leg: k });
       bot.st = { best: Infinity, bestT: now(), mode: 0, until: 0, n: 0 };
       bot.shotQ.push(`leg-${String(bot.legs.length + 1).padStart(2, '0')}-${tgt.n.def.id}`);
     }
@@ -146,16 +155,7 @@ await page.evaluate(() => {
     if (want.lengthSq() < 1e-12) want = p.face.clone();
     want.normalize();
     // steer round trees, rocks, houses and people like a player would; water and cliffs stay the Log Pose's job
-    const blocked = (dir) => {
-      for (const dist of [0.35, 0.7, 1.05]) {
-        const q = up.clone().addScaledVector(dir, dist / R).normalize();
-        // terrace walls and steps too tall to climb count like trees (deep water does not: that is routing)
-        if (dist < 1 && g.world.ground(q, p.feet).h - p.feet > 0.46) return true;
-        for (const c of g.world.walk.nearColliders(q))
-          if ((c.top === undefined || c.top > p.feet + 0.05) && arcM(q, c.dir) < c.r + 0.3) return true;
-      }
-      return false;
-    };
+    const blocked = (dir) => window.__botBlocked(g, p, dir);
     // a detour, once picked, is held for a second (or until the way ahead clears) instead of dithering
     if (bot.detour && (now() > bot.detour.until || !blocked(want))) bot.detour = null;
     if (bot.detour) {
@@ -229,7 +229,7 @@ const rep = await page.evaluate(() => {
   clearInterval(b.timer);
   if (b.leg) b.legs.push({ ...b.leg, unfinished: true });
   const p = window.__game.player;
-  return { legs: b.legs, events: b.events, talks: b.talks, metres: +p.metres.toFixed(1), swims: p.swims, jobs: window.__game.jobs.state, endText: document.getElementById('end')?.innerText?.slice(0, 300) };
+  return { done: b.done, endVisible: !document.getElementById('end')?.hidden, legs: b.legs, events: b.events, talks: b.talks, metres: +p.metres.toFixed(1), swims: p.swims, jobs: window.__game.jobs.state, endText: document.getElementById('end')?.innerText?.slice(0, 300) };
 });
 rep.logs = logs;
 rep.wallMinutes = +((Date.now() - started) / 60000).toFixed(1);
@@ -241,3 +241,4 @@ console.log('re-talks', rep.talks.filter((t) => t.restartedRightAfter).length, '
 console.log('END', JSON.stringify(rep.endText));
 console.log('LOGS', JSON.stringify(logs.slice(0, 20)));
 await browser.close();
+process.exitCode = rep.done && rep.endVisible && !rep.events.some(e => e.type === 'tick-error') && logs.length === 0 ? 0 : 1;

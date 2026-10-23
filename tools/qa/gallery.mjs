@@ -2,7 +2,7 @@
 import { chromium } from 'playwright-core';
 import fs from 'node:fs';
 const url = process.argv[2] || 'http://localhost:5173/';
-const out = process.argv[3] || '<LOCAL_HOME>/.t3/tools/pw/shots/gallery';
+const out = process.argv[3] || 'tools/qa/shots/gallery';
 const filter = process.argv[4] || '';
 fs.mkdirSync(out, { recursive: true });
 const browser = await chromium.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: true, args: ['--use-angle=d3d11', '--ignore-gpu-blocklist', '--enable-unsafe-swiftshader'] });

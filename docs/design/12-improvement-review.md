@@ -1,6 +1,6 @@
 # 12 — Improvement review: make the existing journey easier to read
 
-2026-10-17. The project is a procedural, eight-delivery adventure across 33 zones on a planet with a 60 m radius. Its strongest feature is the connection between recognizable places, characters and small story moments. The unfinished decongestion work in [HANDOVER.md](../../HANDOVER.md) identified the immediate problem: too many competing silhouettes, labels and arrival notifications.
+2026-10-17. The project is a procedural, eight-delivery adventure across 33 zones on a planet with a 60 m radius. Its strongest feature is the connection between recognizable places, characters and small story moments. The initial decongestion review identified the immediate problem: too many competing silhouettes, labels and arrival notifications.
 
 Adding more islands would increase travel and visual density before making the existing deliveries easier to follow. This pass therefore finishes the readability work and fixes interaction and save defects encountered during review. The story, procedural assets, existing crossings and local save format remain the foundation.
 
