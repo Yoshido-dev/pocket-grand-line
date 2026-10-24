@@ -1,0 +1,179 @@
+Pocket Grand Line: technologies, challenges, and solutions
+
+Pocket Grand Line is a browser-based 3D delivery adventure on a small spherical
+world with a 60-metre radius. It contains 32 named islands, four Sea King
+landmarks, 22 NPCs, and eight jobs containing 20 deliveries. The project combines
+procedural world generation, custom movement and routing, story progression,
+synthesized audio, and optional multiplayer presence.
+
+The languages and technologies used were:
+
+- TypeScript: the main game code, including terrain, characters, movement,
+  navigation, camera, quests, saving, audio, and UI behavior. Strict compiler
+  checks help catch incompatible data and incomplete control flow.
+- JavaScript with Node.js: build utilities, automated QA scripts, and the
+  optional HTTP/WebSocket server. The server uses Node's built-in modules.
+- HTML and CSS: the page, loading screen, dialogue, menus, HUD, responsive
+  layouts, and touch controls.
+- GLSL: shader effects for the ocean, outlines, fog, and camera cutaways,
+  integrated with Three.js materials.
+- Three.js r186 and WebGL 2: scene management, geometry, materials, lighting,
+  animation, and GPU rendering.
+- Browser APIs: Web Audio for synthesized sound, Canvas 2D for generated signs
+  and textures, localStorage for saves, Pointer Events for input, WebSocket for
+  network presence, and BroadcastChannel for communication between local tabs.
+- Vite 8, its Rolldown build pipeline, npm, and TypeScript 7: development,
+  dependency management, type checking, bundling, and production builds.
+- Node's test runner and Playwright Core with Chrome: regression tests and
+  browser-based story, movement, layout, and rendering checks.
+- Git: checkpoints, source history, and preparation for public sharing.
+  PowerShell supports Windows helper scripts; Python was also used for local
+  publication audits and backups, outside the game runtime.
+
+The main technical challenges and how we solved them were:
+
+1. Making movement work on a spherical world.
+
+   A flat-world controller cannot keep its usual up direction while walking
+   around a planet. Movement, orientation, and the camera must follow the
+   surface. We represented positions as unit directions, moved along great
+   circles, and used local east/north tangent frames and quaternions to keep
+   characters upright. Pole fallbacks and frame-rate-independent smoothing
+   helped keep movement and camera behavior stable.
+
+2. Creating recognizable places within a small download.
+
+   Detailed islands, characters, music, and effects could easily require large
+   asset downloads. We built the playable world's models from reusable shapes,
+   generated signs and posters on canvas, and synthesized music, ambience,
+   voices, and effects with Web Audio. Seeded randomness makes generated scenery
+   reproducible. Typed content modules keep island and story authoring organized.
+
+3. Keeping narrow paths attached to the terrain.
+
+   Trails could disappear between terrain vertices or bridge over sharp ridges.
+   We clipped path patches against the actual rendered ground triangles, with
+   rounded joins and spatial buckets to find intersecting triangles efficiently.
+   This keeps narrow trails continuous and fitted to the surface. Geometry tests
+   cover narrow paths, creases, bends, shoreline clipping, and build cost.
+
+4. Making navigation respect real walking routes.
+
+   A direct direction to a recipient sometimes pointed across deep water or
+   through a steep mountain flank. Piers, terraces, stairs, and decks also needed
+   usable exit routes. We added approach-node graphs and checked their links
+   using the player's slope, step, water, and collision rules. Routes retain
+   their next stop to avoid flickering between choices. Reverse Mountain gained
+   stair-foot entrances and a summit waypoint; crossing state and recovery rules
+   prevent premature direction changes and route walkers back after a slip.
+
+5. Preventing rescue traps and interaction shortcuts.
+
+   An unsafe rescue landing could put the player in deep water and repeatedly
+   return them there. We search for reachable-height dry ground or a clear deck
+   near the recipient and prevent deep-water positions from becoming recovery
+   points. NPC interactions now check vertical reach as well as ground distance,
+   so elevated characters and the Golden Bell require the intended access route.
+   Dialogue keys are consumed after use, preventing the final line from reopening
+   a conversation or triggering a jump. Focus handling also stops Enter from
+   unexpectedly activating a previously clicked HUD button.
+
+6. Making a dense miniature world readable.
+
+   Nearby islands, tall scenery, labels, and sails competed for the player's
+   attention. We reduced repeated decoration, reserved clear space around paths
+   and interaction spots, and checked island footprints and route anchors.
+   Island retargeting preserves local coastline shapes when layouts change.
+   Camera cutaway shaders reveal the courier behind obstructing scenery; fog and
+   outline fading reduce distant clutter. The overview measures label bounds,
+   prioritizes the destination, and displays at most six non-overlapping names.
+
+7. Supporting keyboard, mouse, touch, and small screens.
+
+   Touch movement, looking, and pinching initially competed for the same fingers.
+   We assigned gestures separate pointer ownership and added a deliberate
+   two-finger pinch handoff. Pointer cancellation, lost capture, and window blur
+   clear input state. Responsive UI adjustments, portrait camera limits, and
+   touch-specific prompts improved phone layouts. Regression tests cover the
+   gesture conflicts; phone layouts and gestures were checked through browser
+   emulation and synthesized touch events.
+
+8. Recovering progress from damaged or unavailable saves.
+
+   A malformed setting or job index should not destroy otherwise usable progress.
+   We validate saved data field by field, repair invalid values, deduplicate
+   collections, bound job indices, and reject unsafe object keys. Storage reads
+   and writes handle exceptions, including unavailable storage and quota errors.
+   Progress and settings are stored as a small versioned JSON save in the browser.
+
+9. Meeting the performance and transfer-size budget.
+
+   Routing fixes pushed the game to about 331.6 KiB gzip against a 330 KiB budget.
+   Ordinary JavaScript minification left sizeable GLSL strings untouched, so we
+   added a build transform that removes nonessential shader comments and spacing
+   while preserving directives, hook markers, and legal notices. A regression
+   test checks all 128 installed shader modules. The resulting game transfer is
+   326.4 KiB gzip or 270.4 KiB Brotli for HTML, CSS, JavaScript, and the icon.
+
+   Rendering also uses merged static props, instanced flora, shared materials,
+   horizon culling, adaptive pixel ratio, and a lighter phone quality mode.
+   Reducing rendered terrain detail brought median world construction to about
+   614 ms across five measured production loads. These are reference measurements;
+   timings vary by device and build. The separate link-preview image is excluded
+   from the gameplay transfer measurement because the game does not request it.
+
+10. Keeping multiplayer and deployment lightweight.
+
+    Optional multiplayer shares courier positions and emotes through a small
+    Node.js WebSocket relay, with message-size, rate, and connection limits.
+    Interpolation smooths incoming positions, and stale peers are removed.
+    BroadcastChannel supports same-browser tabs; the game remains playable when
+    a network relay is unavailable. This is lightweight social presence, with
+    each player's delivery progress saved locally.
+
+    Relative production asset paths let the build run under a hosting subfolder.
+    Build-time site URLs provide absolute images for link previews. During QA,
+    restarting the production server after a rebuild ensures its cached static
+    files match the bundle being tested.
+
+11. Proving that the whole journey is playable.
+
+    Teleporting between recipients verifies story progression but does not
+    exercise the intervening terrain. We combined story smoke checks with a bot
+    using movement and dialogue controls, real-controller crossing tests, island
+    route checks, screenshots, and browser-error monitoring. We also corrected
+    a bot obstacle probe that compared future stair blockers with the player's
+    current height instead of the upcoming walkable height.
+
+    The full control-driven run completed all 20 deliveries, eight jobs, and the
+    ending in about 12 minutes, with no recorded browser errors. It used one
+    in-game rescue after that bot steering problem. After correcting the bot,
+    the targeted keyboard replay completed the stair crossing without a rescue;
+    a new full-story run was not performed after that QA-only correction.
+
+12. Preparing a public repository without exposing private material.
+
+    Internal notes and QA artifacts contained local computer paths, and earlier
+    commits contained a personal email address. We preserved private backups
+    outside the repository, removed private artifacts from the public files and
+    Git history, made helper paths portable, and added ignore rules for local
+    credentials, environment files, notes, and generated captures. A fresh-clone
+    check and a scan of reachable history found no remaining credential-pattern
+    or personal-path findings at the time of cleanup.
+
+The recorded verification results were:
+
+- TypeScript check, production build, and the enforced size budget passed.
+- All 21 automated regression tests passed.
+- All 28 layout assertions and 229 island route cases passed.
+- All 15 crossing/controller checks passed.
+- Interaction reach was checked for all 22 NPCs; rescue placement was checked
+  for 13 delivery recipients.
+- The control-driven full story and the ending completed, subject to the bot
+  qualification described above.
+
+Implementation details and repeatable checks are in README.md, src/core/math.ts,
+src/world/, src/game/wayfinding.ts, src/core/input.ts, src/core/save.ts,
+src/render/materials.ts, src/audio/audio.ts, server/server.mjs, vite.config.ts,
+and tools/qa/playtest/README.md. Measurements summarize the verified release
+state; rerun the documented checks after future changes.

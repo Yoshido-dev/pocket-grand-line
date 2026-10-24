@@ -6,6 +6,8 @@ A cozy tiny-planet delivery adventure through a miniature One Piece world, in th
 
 > Unofficial, non-commercial fan project. One Piece and its characters belong to Eiichiro Oda, Shueisha and Toei Animation. Messenger belongs to Abeto. No official art, logos, models, music or code are used. Every model, texture and sound is generated in code at runtime.
 
+Read the [technical overview](TECHNICAL-OVERVIEW.txt) for the languages, tools, engineering challenges, solutions, and verification results.
+
 ## Why it is light
 
 | | Messenger (reference) | Pocket Grand Line |
