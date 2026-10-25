@@ -1,6 +1,9 @@
 import './ui/style.css';
 import { Game } from './game/game';
 import { content } from './content';
+import { inject } from '@vercel/analytics';
+
+inject();
 
 function fail(msg: string) {
   const boot = document.getElementById('boot');
